@@ -1,0 +1,48 @@
+﻿# Video files - large binary files
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+
+# Image files - large screenshots (40GB+ in PNGS directory)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+
+# JSON files in subdirectories (match metadata) but keep root-level JSON
+*/*.json
+
+# Large WoW combat log files (42GB+ total) 
+Logs/*.txt
+
+# Log files except build_index_errors.log
+*.log
+!build_index_errors.log
+
+# Python cache and IDE files
+__pycache__/
+*.py[cod]
+*.class
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+.temp/
+*.tmp
+*.temp
