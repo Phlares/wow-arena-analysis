@@ -13,6 +13,9 @@
 *.bmp
 *.tiff
 
+# Exclude entire PNGS directory
+PNGS/
+
 # JSON files in subdirectories (match metadata) but keep root-level JSON
 */*.json
 
