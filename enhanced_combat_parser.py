@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/env python3
-# enhanced_combat_parser.py
+# enhanced_combat_parser.py - FIXED VERSION
 
 import os
 import csv
@@ -45,7 +45,21 @@ class EnhancedCombatParser:
 
         # Load enhanced index with precise timestamps
         df = pd.read_csv(enhanced_index_csv)
-        df['precise_start_time'] = pd.to_datetime(df['precise_start_time'])
+
+        # FIX: Handle timestamp parsing more robustly
+        print("🔧 Parsing timestamps...")
+        try:
+            # Try ISO8601 format first (handles microseconds automatically)
+            df['precise_start_time'] = pd.to_datetime(df['precise_start_time'], format='ISO8601')
+        except ValueError:
+            try:
+                # Fallback: let pandas infer the format
+                df['precise_start_time'] = pd.to_datetime(df['precise_start_time'], format='mixed')
+            except ValueError:
+                # Last resort: manual cleaning
+                print("⚠️ Using manual timestamp cleaning...")
+                df['precise_start_time'] = df['precise_start_time'].apply(self._clean_timestamp)
+                df['precise_start_time'] = pd.to_datetime(df['precise_start_time'])
 
         print(f"📊 Loaded {len(df)} matches from enhanced index")
 
@@ -90,6 +104,29 @@ class EnhancedCombatParser:
         print(f"\n🎉 Enhanced parsing complete!")
         print(f"📈 Total matches processed: {total_processed}/{len(df)}")
         print(f"💾 Results saved to: {output_csv}")
+
+    def _clean_timestamp(self, timestamp_str):
+        """Clean timestamp string for parsing."""
+        if pd.isna(timestamp_str):
+            return timestamp_str
+
+        # Convert to string if it isn't already
+        ts = str(timestamp_str)
+
+        # Handle common timestamp format issues
+        # Remove any trailing/leading whitespace
+        ts = ts.strip()
+
+        # If it looks like it has microseconds, ensure proper format
+        if '.' in ts and len(ts.split('.')[-1]) > 3:
+            # Truncate microseconds to 6 digits max
+            parts = ts.split('.')
+            if len(parts) == 2:
+                base, microsec = parts
+                microsec = microsec[:6].ljust(6, '0')  # Pad or truncate to 6 digits
+                ts = f"{base}.{microsec}"
+
+        return ts
 
     def process_matches_group(self, matches_df: pd.DataFrame, log_files: list, output_csv: str,
                               time_window: int) -> int:
