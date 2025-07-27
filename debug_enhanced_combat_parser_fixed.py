@@ -478,7 +478,7 @@ class DebugEnhancedCombatParser:
         return best_match
 
     def find_best_match_with_verification(self, matching_starts, arena_events, video_duration, filename, log_file):
-        """Find best arena match using duration AND death correlation verification."""
+        """Find best arena match using duration AND confirmed death matches."""
         best_match = None
         best_score = -1
         
@@ -497,6 +497,9 @@ class DebugEnhancedCombatParser:
             # Regular arena format
             json_deaths = json_data
         
+        # Collect death match counts for all candidates
+        candidate_results = []
+        
         for start_time, start_info in matching_starts:
             # Find corresponding end for this start
             arena_duration = None
@@ -514,21 +517,45 @@ class DebugEnhancedCombatParser:
             duration_diff = abs(arena_duration - video_duration)
             duration_score = max(0, 1 - (duration_diff / 300))  # Normalize to 0-1 range
             
-            # Calculate death correlation score if we have JSON death data
-            death_score = 0.5  # Default neutral score
+            # Calculate confirmed death matches
+            confirmed_deaths = 0
             if json_deaths and player_name:
                 combat_deaths = self.find_death_events_in_arena(log_file, start_time, arena_end, player_name)
-                death_score = self.verify_death_correlation(json_deaths, combat_deaths, start_time)
+                confirmed_deaths = self.verify_death_correlation(json_deaths, combat_deaths, start_time)
             
-            # Combined score (weight duration more heavily, death correlation as tiebreaker)
-            combined_score = (duration_score * 0.7) + (death_score * 0.3)
+            candidate_results.append({
+                'start_time': start_time,
+                'start_info': start_info,
+                'duration_score': duration_score,
+                'confirmed_deaths': confirmed_deaths,
+                'arena_duration': arena_duration
+            })
+        
+        # Calculate death correlation scores based on confirmed death distribution
+        total_confirmed_deaths = sum(c['confirmed_deaths'] for c in candidate_results)
+        
+        for candidate in candidate_results:
+            confirmed_deaths = candidate['confirmed_deaths']
             
-            print(f"      Arena {start_time}: duration {arena_duration:.0f}s vs video {video_duration:.0f}s")
-            print(f"         Duration score: {duration_score:.2f}, Death correlation: {death_score:.2f}, Combined: {combined_score:.2f}")
+            if total_confirmed_deaths == 0:
+                # No confirmed deaths for any candidate - use neutral score
+                death_score = 0.5
+            elif confirmed_deaths == 0:
+                # This candidate has no confirmed deaths while others do
+                death_score = 0.0
+            else:
+                # Distribute score based on confirmed death proportion
+                death_score = confirmed_deaths / total_confirmed_deaths
+            
+            # Combined score (duration weighted 70%, death correlation 30%)
+            combined_score = (candidate['duration_score'] * 0.7) + (death_score * 0.3)
+            
+            print(f"      Arena {candidate['start_time']}: duration {candidate['arena_duration']:.0f}s vs video {video_duration:.0f}s")
+            print(f"         Duration score: {candidate['duration_score']:.2f}, Confirmed deaths: {confirmed_deaths}, Death score: {death_score:.2f}, Combined: {combined_score:.2f}")
             
             if combined_score > best_score:
                 best_score = combined_score
-                best_match = (start_time, start_info)
+                best_match = (candidate['start_time'], candidate['start_info'])
         
         return best_match
 
@@ -613,16 +640,16 @@ class DebugEnhancedCombatParser:
         
         return deaths
 
-    def verify_death_correlation(self, json_deaths: list, combat_deaths: list, arena_start: datetime) -> float:
-        """Calculate correlation score between JSON and combat log deaths."""
+    def verify_death_correlation(self, json_deaths: list, combat_deaths: list, arena_start: datetime) -> int:
+        """Calculate number of confirmed death matches between JSON and combat log."""
         if not json_deaths or not combat_deaths:
-            return 0.5  # Neutral score if no death data
+            return 0  # No matches possible
         
         print(f"      🔍 Verifying {len(json_deaths)} JSON deaths vs {len(combat_deaths)} combat deaths")
         
-        # Find matching deaths by name and time
-        matches = 0
-        tolerance = timedelta(seconds=10)  # Increased tolerance for timezone/precision differences
+        # Find confirmed death matches by name and time
+        confirmed_matches = 0
+        tolerance = timedelta(seconds=10)  # Tolerance for timezone/precision differences
         
         for json_death in json_deaths:
             json_name = json_death['name']
@@ -639,17 +666,14 @@ class DebugEnhancedCombatParser:
                 time_match = time_diff <= tolerance
                 
                 if name_match and time_match:
-                    matches += 1
+                    confirmed_matches += 1
                     print(f"         ✅ Match: {json_name} at {json_time} vs {combat_time} (diff: {time_diff.total_seconds():.1f}s)")
                     break
                 elif name_match:
                     print(f"         ⚠️ Name match but time off: {json_name} - {time_diff.total_seconds():.1f}s difference")
         
-        # Return correlation score (0.0 to 1.0)
-        score = matches / max(len(json_deaths), len(combat_deaths))
-        print(f"      🎯 Death correlation score: {score:.2f} ({matches}/{max(len(json_deaths), len(combat_deaths))} matches)")
-        
-        return score
+        print(f"      🎯 Confirmed death matches: {confirmed_matches}")
+        return confirmed_matches
 
     def extract_arena_info_from_filename(self, filename: str) -> Tuple[str, str]:
         """Extract bracket type and map name from video filename."""
