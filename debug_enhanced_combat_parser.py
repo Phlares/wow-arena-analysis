@@ -267,7 +267,9 @@ class DebugEnhancedCombatParser:
             'damage_done': 0,
             'healing_done': 0,
             'deaths_caused': 0,
-            'times_died': 0
+            'times_died': 0,
+            'spells_cast': [],  # NEW: Track which spells were cast
+            'spells_purged': []  # NEW: Track which auras were purged
         }
 
         # Discover pet name for this player
@@ -292,33 +294,21 @@ class DebugEnhancedCombatParser:
         arena_end_time = None
 
         try:
-            # PHASE 1: Find precise arena match start/end times
-            print(f"🎯 Phase 1: Finding precise arena match boundaries...")
-            with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
-                for line_num, line in enumerate(f, 1):
-                    event_time = self.parse_log_line_timestamp(line, None)
-                    if not event_time:
-                        continue
-
-                    # Check if within our broad time window first
-                    if window_start <= event_time <= window_end:
-                        if 'ARENA_MATCH_START' in line:
-                            arena_start_time = event_time
-                            print(f"   🚀 Arena start: {arena_start_time}")
-                            print(f"      Line: {line.strip()}")
-                        elif 'ARENA_MATCH_END' in line:
-                            arena_end_time = event_time
-                            print(f"   🏁 Arena end: {arena_end_time}")
-                            print(f"      Line: {line.strip()}")
-                            break  # Found end, stop looking
+            # PHASE 1: Smart arena boundary detection
+            print(f"🎯 Phase 1: Smart arena boundary detection...")
+            arena_start_time, arena_end_time = self.find_matching_arena_boundaries(
+                log_file, window_start, window_end, match_start, match['filename']
+            )
 
             # Use precise arena boundaries if found, otherwise use original window
             if arena_start_time and arena_end_time:
-                print(f"   ✅ Using precise arena boundaries")
+                print(f"   ✅ Found matching arena boundaries")
+                print(f"   🚀 Arena start: {arena_start_time}")
+                print(f"   🏁 Arena end: {arena_end_time}")
                 precise_start = arena_start_time
                 precise_end = arena_end_time
             else:
-                print(f"   ⚠️ Arena boundaries not found, using time window estimate")
+                print(f"   ⚠️ No matching arena found, using time window estimate")
                 precise_start = window_start
                 precise_end = window_end
 
@@ -346,17 +336,17 @@ class DebugEnhancedCombatParser:
                         # Parse the combat event with DEBUG
                         event_type = self.debug_process_combat_event(line, player_name, pet_name, features, event_time)
 
-                        # Count event types
+                        # Count event types for summary
                         if 'SPELL_CAST_SUCCESS' in line:
                             cast_events += 1
                         elif 'SPELL_INTERRUPT' in line:
                             interrupt_events += 1
+                        elif 'SPELL_DISPEL' in line and 'Devour Magic' in line:
+                            purge_events += 1
                         elif 'SPELL_AURA_APPLIED' in line and 'Precognition' in line:
                             precog_events += 1
                         elif 'UNIT_DIED' in line:
                             death_events += 1
-                        elif 'Devour Magic' in line:
-                            purge_events += 1
 
             print(f"\n📊 Parsing Summary:")
             print(f"   Total lines in log: {total_lines}")
@@ -374,6 +364,9 @@ class DebugEnhancedCombatParser:
             print(f"   precog_gained_own: {features['precog_gained_own']}")
             print(f"   precog_gained_enemy: {features['precog_gained_enemy']}")
             print(f"   purges_own: {features['purges_own']}")
+
+            print(f"\n📜 Spells Cast: {features['spells_cast']}")
+            print(f"🔥 Spells Purged: {features['spells_purged']}")
 
             return features
 
@@ -433,136 +426,324 @@ class DebugEnhancedCombatParser:
             try:
                 # Try format with 3-digit milliseconds
                 result = datetime.strptime(timestamp_clean, "%m/%d/%Y %H:%M:%S.%f")
-                return result
-            except ValueError:
-                # Try format without microseconds
-                result = datetime.strptime(timestamp_clean, "%m/%d/%Y %H:%M:%S")
-                return result
 
-        except Exception as e:
-            # DEBUG: Print parsing failures occasionally
-            if "SPELL_CAST_SUCCESS" in line or "SPELL_INTERRUPT" in line:
-                print(f"⚠️ Failed to parse timestamp from: {line.strip()[:70]}... Error: {e}")
-                print(
-                    f"   Trying to parse: '{timestamp_clean}'" if 'timestamp_clean' in locals() else "   No timestamp_clean")
-            return None
+    def find_matching_arena_boundaries(self, log_file: Path, window_start: datetime,
+                                       window_end: datetime, video_start: datetime,
+                                       filename: str) -> Tuple[Optional[datetime], Optional[datetime]]:
+        """
+        Smart arena boundary detection that finds the correct arena match.
+        Uses backward/forward search from video timestamp to find matching arena.
+        """
+        print(f"   🔍 Looking for arena match for video: {filename}")
+        print(f"   📅 Video timestamp: {video_start}")
 
-    def debug_process_combat_event(self, line: str, player_name: str, pet_name: Optional[str], features: Dict,
-                                   event_time: datetime) -> str:
-        """Process a single combat log event and update feature counters - DEBUG VERSION."""
-        try:
-            parts = line.strip().split(',')
-            if len(parts) < 3:
-                return "invalid_format"
+        # Extract expected arena info from filename
+        expected_bracket, expected_map = self.extract_arena_info_from_filename(filename)
+        print(f"   🎯 Expected: {expected_bracket} on {expected_map}")
 
-            # Get event type from the timestamp line
-            first_part = parts[0]
-            event_type = first_part.split()[-1] if ' ' in first_part else first_part
+        # Collect all arena events in the time window
+        arena_events = []
 
-            # DEBUG: Print event parsing for first few events
-            debug_count = features['cast_success_own'] + features['interrupt_success_own'] + features['purges_own']
-            if debug_count < 5:
-                print(f"      🔍 Event debug at {event_time}:")
-                print(f"         Event type: '{event_type}'")
-                print(f"         Line: {line.strip()[:100]}...")
+        with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                event_time = self.parse_log_line_timestamp(line, None)
+                if not event_time:
+                    continue
 
-            # Cast success events - EXCLUDE PET CASTS
-            if event_type == 'SPELL_CAST_SUCCESS' and len(parts) >= 3:
-                src = parts[2].strip('"').split('-', 1)[0]
+                # Look in a wider window to catch nearby matches
+                extended_start = window_start - timedelta(minutes=10)
+                extended_end = window_end + timedelta(minutes=10)
 
-                # Only count player casts, NOT pet casts
-                if src == player_name:
-                    features['cast_success_own'] += 1
-                    if debug_count < 5:
-                        print(f"         ✅ PLAYER CAST SUCCESS by {src}")
-                    return "cast_success"
-                elif pet_name and src == pet_name:
-                    # Check if this is a Devour Magic cast (purge)
-                    if len(parts) >= 11:
-                        spell_name = parts[10].strip('"')
-                        if spell_name == "Devour Magic":
-                            features['purges_own'] += 1
-                            if debug_count < 5:
-                                print(f"         🔥 PET PURGE (Devour Magic) by {src}")
-                            return "purge"
+                if extended_start <= event_time <= extended_end:
+                    if 'ARENA_MATCH_START' in line:
+                        arena_info = self.parse_arena_start_line(line, event_time)
+                        if arena_info:
+                            arena_events.append(('START', event_time, arena_info, line.strip()))
+                    elif 'ARENA_MATCH_END' in line:
+                        arena_events.append(('END', event_time, None, line.strip()))
 
-                    # Other pet casts - ignore
-                    if debug_count < 5:
-                        print(f"         ⚪ Pet cast ignored: {src}")
-                    return "pet_cast_ignored"
+        # Sort events by time
+        arena_events.sort(key=lambda x: x[1])
 
-            # Interrupt events
-            elif event_type == 'SPELL_INTERRUPT' and len(parts) >= 7:
-                src = parts[2].strip('"').split('-', 1)[0]
-                dst = parts[6].strip('"').split('-', 1)[0]
+        print(f"   📋 Found {len(arena_events)} arena events in extended window:")
+        for event_type, event_time, info, line in arena_events:
+            if event_type == 'START':
+                print(f"      🚀 {event_time}: START - {info['bracket']} on {info['map']} (Zone: {info['zone_id']})")
+            else:
+                print(f"      🏁 {event_time}: END")
 
-                # Treat pet as player for interrupts
-                if pet_name and src == pet_name:
-                    src = player_name
-                if pet_name and dst == pet_name:
-                    dst = player_name
+        # Strategy 1: Look backward from video time to find most recent arena start
+        print(f"   🔄 Strategy 1: Looking backward from video time...")
+        recent_start = None
+        for event_type, event_time, info, line in reversed(arena_events):
+            if event_time <= video_start and event_type == 'START':
+                if self.arena_info_matches(info, expected_bracket, expected_map):
+                    recent_start = (event_time, info)
+                    print(f"      ✅ Found matching arena start: {event_time}")
+                    break
+                else:
+                    print(f"      ❌ Arena doesn't match: {info['bracket']} on {info['map']}")
 
-                if src == player_name:
-                    features['interrupt_success_own'] += 1
-                    if debug_count < 5:
-                        print(f"         ✅ INTERRUPT SUCCESS by {src} on {dst} at {event_time}")
-                    return "interrupt_success"
-                elif dst == player_name:
-                    features['times_interrupted'] += 1
-                    if debug_count < 5:
-                        print(f"         ❌ INTERRUPTED: {dst} by {src} at {event_time}")
-                    return "got_interrupted"
-
-            # Precognition aura applications
-            elif event_type == 'SPELL_AURA_APPLIED' and len(parts) >= 11:
-                dst = parts[6].strip('"').split('-', 1)[0]
-                spell_name = parts[10].strip('"')
-
-                if spell_name == 'Precognition':
-                    if dst == player_name:
-                        features['precog_gained_own'] += 1
-                        if debug_count < 5:
-                            print(f"         ✅ PRECOGNITION gained by {dst} at {event_time}")
-                        return "precog_own"
+        # Strategy 2: If no backward match, look forward from video time
+        if not recent_start:
+            print(f"   🔄 Strategy 2: Looking forward from video time...")
+            for event_type, event_time, info, line in arena_events:
+                if event_time >= video_start and event_type == 'START':
+                    if self.arena_info_matches(info, expected_bracket, expected_map):
+                        recent_start = (event_time, info)
+                        print(f"      ✅ Found matching arena start: {event_time}")
+                        break
                     else:
-                        features['precog_gained_enemy'] += 1
-                        if debug_count < 5:
-                            print(f"         ⚠️ PRECOGNITION gained by enemy {dst} at {event_time}")
-                        return "precog_enemy"
+                        print(f"      ❌ Arena doesn't match: {info['bracket']} on {info['map']}")
 
-            # Death events
-            elif event_type == 'UNIT_DIED' and len(parts) >= 7:
-                died_unit = parts[6].strip('"').split('-', 1)[0]
-                if died_unit == player_name:
-                    features['times_died'] += 1
-                    if debug_count < 5:
-                        print(f"         💀 DEATH: {died_unit} at {event_time}")
-                    return "player_died"
+        if not recent_start:
+            print(f"   ❌ No matching arena start found")
+            return None, None
 
-            return event_type
+        # Find the corresponding arena end
+        start_time, start_info = recent_start
+        for event_type, event_time, info, line in arena_events:
+            if event_time > start_time and event_type == 'END':
+                print(f"      ✅ Found corresponding arena end: {event_time}")
+                return start_time, event_time
 
-        except Exception as e:
-            print(f"         ❌ Error processing event: {e}")
-            return "error"
+        print(f"   ⚠️ Found arena start but no corresponding end")
+        return start_time, None
 
-    def setup_output_csv(self, output_csv: str):
-        """Set up the output CSV file with headers."""
-        if not os.path.exists(output_csv):
-            with open(output_csv, 'w', newline='', encoding='utf-8') as f:
-                fieldnames = [
-                    'filename', 'match_start_time', 'cast_success_own', 'interrupt_success_own',
-                    'times_interrupted', 'precog_gained_own', 'precog_gained_enemy', 'purges_own',
-                    'damage_done', 'healing_done', 'deaths_caused', 'times_died'
-                ]
-                writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
+    def extract_arena_info_from_filename(self, filename: str) -> Tuple[str, str]:
+        """Extract bracket type and map name from video filename."""
+        try:
+            # Format: YYYY-MM-DD_HH-MM-SS_-_PLAYER_-_BRACKET_MAP_(RESULT).mp4
+            parts = filename.split('_-_')
+            if len(parts) >= 3:
+                bracket_map_result = parts[2]  # "3v3_Ruins_of_Lordaeron_(Win)"
 
-    def write_features_to_csv(self, features: Dict, output_csv: str):
-        """Write extracted features to the output CSV."""
-        with open(output_csv, 'a', newline='', encoding='utf-8') as f:
-            fieldnames = list(features.keys())
+                # Extract bracket (3v3, 2v2, etc.)
+                if bracket_map_result.startswith('3v3'):
+                    bracket = '3v3'
+                    map_part = bracket_map_result[4:]  # Remove "3v3_"
+                elif bracket_map_result.startswith('2v2'):
+                    bracket = '2v2'
+                    map_part = bracket_map_result[4:]  # Remove "2v2_"
+                elif 'Skirmish' in bracket_map_result:
+                    bracket = 'Skirmish'
+                    map_part = bracket_map_result.replace('Skirmish_', '')
+                elif 'Solo_Shuffle' in bracket_map_result:
+                    bracket = 'Solo Shuffle'
+                    map_part = bracket_map_result.replace('Solo_Shuffle_', '')
+                else:
+                    bracket = 'Unknown'
+                    map_part = bracket_map_result
+
+                # Extract map name (remove result suffix)
+                arena_map = map_part.split('_(')[0].replace('_', ' ')
+                # Handle special cases like "Tol'viron"
+                arena_map = arena_map.replace("Tol viron", "Tol'viron")
+
+                return bracket, arena_map
+        except:
+            pass
+
+        return 'Unknown', 'Unknown'
+
+    def parse_arena_start_line(self, line: str, event_time: datetime) -> Optional[Dict]:
+        """Parse ARENA_MATCH_START line to extract arena info."""
+        try:
+            # Format: 1/1/2025 20:22:03.932-5  ARENA_MATCH_START,572,38,3v3,1
+            parts = line.strip().split(',')
+            if len(parts) >= 5:
+                zone_id = parts[1].strip()
+                bracket = parts[3].strip()
+
+                # Map zone ID to arena name (common ones)
+                zone_map = {
+                    '572': 'Ruins of Lordaeron',
+                    '617': "Dalaran Sewers",
+                    '618': "The Ring of Valor",
+                    '1825': 'Hook Point',
+                    '1911': "Tol'viron Arena",
+                    '2547': 'Empyrean Domain',
+                    # Add more zone mappings as needed
+                }
+
+                arena_map = zone_map.get(zone_id, f'Zone_{zone_id}')
+
+                return {
+                    'zone_id': zone_id,
+                    'bracket': bracket,
+                    'map': arena_map,
+                    'time': event_time
+                }
+        except:
+            pass
+
+        return None
+
+    def arena_info_matches(self, arena_info: Dict, expected_bracket: str, expected_map: str) -> bool:
+        """Check if arena info matches expected values from filename."""
+        if not arena_info:
+            return False
+
+        # Bracket matching
+        bracket_match = (arena_info['bracket'] == expected_bracket or
+                         (expected_bracket == 'Skirmish' and arena_info['bracket'] in ['2v2', '3v3']))
+
+        # Map matching (case insensitive, handle common variations)
+        map_match = (arena_info['map'].lower() == expected_map.lower() or
+                     expected_map.lower() in arena_info['map'].lower() or
+                     arena_info['map'].lower() in expected_map.lower())
+
+        return bracket_match and map_match
+        except ValueError:
+        # Try format without microseconds
+        result = datetime.strptime(timestamp_clean, "%m/%d/%Y %H:%M:%S")
+        return result
+
+except Exception as e:
+# DEBUG: Print parsing failures occasionally
+if "SPELL_CAST_SUCCESS" in line or "SPELL_INTERRUPT" in line:
+    print(f"⚠️ Failed to parse timestamp from: {line.strip()[:70]}... Error: {e}")
+    print(f"   Trying to parse: '{timestamp_clean}'" if 'timestamp_clean' in locals() else "   No timestamp_clean")
+return None
+
+
+def debug_process_combat_event(self, line: str, player_name: str, pet_name: Optional[str], features: Dict,
+                               event_time: datetime) -> str:
+    """Process a single combat log event and update feature counters - DEBUG VERSION."""
+    try:
+        parts = line.strip().split(',')
+        if len(parts) < 3:
+            return "invalid_format"
+
+        # Get event type from the timestamp line
+        first_part = parts[0]
+        event_type = first_part.split()[-1] if ' ' in first_part else first_part
+
+        # DEBUG: Control debug output based on total events found
+        debug_count = (features['cast_success_own'] + features['interrupt_success_own'] +
+                       features['purges_own'] + features['times_interrupted'])
+        show_debug = debug_count < 10
+
+        # 1. SPELL_DISPEL events (Pet Purges)
+        if event_type == 'SPELL_DISPEL' and len(parts) >= 13:
+            src = parts[2].strip('"').split('-', 1)[0]
+            spell_name = parts[10].strip('"')  # The dispel spell (should be "Devour Magic")
+
+            if pet_name and src == pet_name and spell_name == "Devour Magic":
+                # The purged aura is in parts[12]
+                purged_aura = parts[12].strip('"')
+                features['purges_own'] += 1
+                features['spells_purged'].append(purged_aura)
+
+                if show_debug:
+                    print(f"      🔥 PET PURGE at {event_time}: {src} dispelled '{purged_aura}' with {spell_name}")
+                return "purge"
+
+        # 2. Cast success events - EXCLUDE PET CASTS (except purges handled above)
+        elif event_type == 'SPELL_CAST_SUCCESS' and len(parts) >= 11:
+            src = parts[2].strip('"').split('-', 1)[0]
+            spell_name = parts[10].strip('"')
+
+            # Only count player casts, NOT pet casts
+            if src == player_name:
+                features['cast_success_own'] += 1
+                features['spells_cast'].append(spell_name)
+
+                if show_debug:
+                    print(f"      ✅ PLAYER CAST at {event_time}: {src} cast '{spell_name}'")
+                return "cast_success"
+            elif pet_name and src == pet_name:
+                # Pet casts - ignore (purges handled separately above)
+                if show_debug:
+                    print(f"      ⚪ Pet cast ignored at {event_time}: {src} cast '{spell_name}'")
+                return "pet_cast_ignored"
+
+        # 3. Interrupt events
+        elif event_type == 'SPELL_INTERRUPT' and len(parts) >= 11:
+            src = parts[2].strip('"').split('-', 1)[0]
+            dst = parts[6].strip('"').split('-', 1)[0]
+            interrupt_spell = parts[10].strip('"')  # The spell used to interrupt
+
+            # Treat pet as player for interrupts
+            actual_src = src
+            actual_dst = dst
+            if pet_name and src == pet_name:
+                actual_src = player_name
+            if pet_name and dst == pet_name:
+                actual_dst = player_name
+
+            if actual_src == player_name:
+                features['interrupt_success_own'] += 1
+                if show_debug:
+                    print(
+                        f"      ✅ INTERRUPT SUCCESS at {event_time}: {actual_src} interrupted {actual_dst} with '{interrupt_spell}'")
+                return "interrupt_success"
+            elif actual_dst == player_name:
+                features['times_interrupted'] += 1
+                if show_debug:
+                    print(
+                        f"      ❌ GOT INTERRUPTED at {event_time}: {actual_dst} interrupted by {actual_src} using '{interrupt_spell}'")
+                return "got_interrupted"
+
+        # 4. Precognition aura applications
+        elif event_type == 'SPELL_AURA_APPLIED' and len(parts) >= 11:
+            dst = parts[6].strip('"').split('-', 1)[0]
+            spell_name = parts[10].strip('"')
+
+            if spell_name == 'Precognition':
+                if dst == player_name:
+                    features['precog_gained_own'] += 1
+                    if show_debug:
+                        print(f"      ✅ PRECOGNITION gained at {event_time}: {dst}")
+                    return "precog_own"
+                else:
+                    features['precog_gained_enemy'] += 1
+                    if show_debug:
+                        print(f"      ⚠️ PRECOGNITION gained by enemy at {event_time}: {dst}")
+                    return "precog_enemy"
+
+        # 5. Death events
+        elif event_type == 'UNIT_DIED' and len(parts) >= 7:
+            died_unit = parts[6].strip('"').split('-', 1)[0]
+            if died_unit == player_name:
+                features['times_died'] += 1
+                if show_debug:
+                    print(f"      💀 DEATH at {event_time}: {died_unit}")
+                return "player_died"
+
+        return event_type
+
+    except Exception as e:
+        print(f"      ❌ Error processing event at {event_time}: {e}")
+        print(f"         Line: {line.strip()[:150]}...")
+        return "error"
+
+
+def setup_output_csv(self, output_csv: str):
+    """Set up the output CSV file with headers."""
+    if not os.path.exists(output_csv):
+        with open(output_csv, 'w', newline='', encoding='utf-8') as f:
+            fieldnames = [
+                'filename', 'match_start_time', 'cast_success_own', 'interrupt_success_own',
+                'times_interrupted', 'precog_gained_own', 'precog_gained_enemy', 'purges_own',
+                'damage_done', 'healing_done', 'deaths_caused', 'times_died',
+                'spells_cast', 'spells_purged'  # NEW: Add spell tracking columns
+            ]
             writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writerow(features)
+            writer.writeheader()
+
+
+def write_features_to_csv(self, features: Dict, output_csv: str):
+    """Write extracted features to the output CSV."""
+    with open(output_csv, 'a', newline='', encoding='utf-8') as f:
+        # Convert lists to strings for CSV storage
+        features_for_csv = features.copy()
+        features_for_csv['spells_cast'] = '; '.join(features['spells_cast']) if features['spells_cast'] else ''
+        features_for_csv['spells_purged'] = '; '.join(features['spells_purged']) if features['spells_purged'] else ''
+
+        fieldnames = list(features_for_csv.keys())
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writerow(features_for_csv)
 
 
 def main():
