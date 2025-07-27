@@ -314,7 +314,7 @@ class ProductionEnhancedCombatParser:
     def find_matching_arena_boundaries(self, log_file: Path, window_start: datetime, 
                                        window_end: datetime, video_start: datetime, 
                                        filename: str, video_duration: float = 300) -> Tuple[Optional[datetime], Optional[datetime]]:
-        """Smart arena boundary detection that finds the correct arena match."""
+        """Smart arena boundary detection that finds the correct arena match - ENHANCED VERSION."""
         # Extract expected arena info from filename
         expected_bracket, expected_map = self.extract_arena_info_from_filename(filename)
         
@@ -356,6 +356,24 @@ class ProductionEnhancedCombatParser:
                         recent_start = (event_time, info)
                         break
         
+        # Handle potential duplicate matches (enhanced tiebreaker)
+        if recent_start:
+            matching_starts = []
+            start_time, start_info = recent_start
+            
+            # Find all matching arena starts within reasonable window
+            for event_type, event_time, info in arena_events:
+                if (event_type == 'START' and 
+                    self.arena_info_matches(info, expected_bracket, expected_map) and
+                    abs((event_time - video_start).total_seconds()) <= 600):  # Within 10 minutes
+                    matching_starts.append((event_time, info))
+            
+            if len(matching_starts) > 1:
+                # Use enhanced tiebreaker with duration matching
+                best_match = self.find_best_duration_match(matching_starts, arena_events, video_duration)
+                if best_match:
+                    recent_start = best_match
+        
         if not recent_start:
             return None, None
         
@@ -372,6 +390,28 @@ class ProductionEnhancedCombatParser:
                 return start_time, event_time
         
         return start_time, None
+
+    def find_best_duration_match(self, matching_starts, arena_events, video_duration):
+        """Find the best arena match based on duration comparison."""
+        best_match = None
+        best_duration_diff = float('inf')
+        
+        for start_time, start_info in matching_starts:
+            # Find corresponding end for this start
+            arena_duration = None
+            for event_type, event_time, info in arena_events:
+                if event_time > start_time and event_type == 'END':
+                    arena_duration = (event_time - start_time).total_seconds()
+                    break
+            
+            if arena_duration:
+                duration_diff = abs(arena_duration - video_duration)
+                
+                if duration_diff < best_duration_diff:
+                    best_duration_diff = duration_diff
+                    best_match = (start_time, start_info)
+        
+        return best_match
 
     def find_solo_shuffle_boundaries(self, start_time: datetime, start_info: Dict, 
                                      arena_events: list, video_duration: float) -> Tuple[datetime, Optional[datetime]]:
