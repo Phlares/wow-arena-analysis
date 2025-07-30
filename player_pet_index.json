@@ -1,0 +1,893 @@
+{
+  "metadata": {
+    "created_at": "2025-07-29T13:46:56.935799",
+    "total_players": 10,
+    "builder_version": "1.0"
+  },
+  "player_pets": {
+    "Phlurbotomy": {
+      "pet_names": [
+        "Zhaakun",
+        "Mezzmon",
+        "Crawler Mine",
+        "Overfiend",
+        "Ethereal Warpweaver",
+        "Darkglare",
+        "Overlord",
+        "Eye of Kilrogg",
+        "Jaknip",
+        "Pit Lord",
+        "Infernal Fragment",
+        "Diabolic Imp",
+        "Mother of Chaos",
+        "Druslith",
+        "Infernal"
+      ],
+      "summon_count": 2827,
+      "logs_with_summons": [
+        "WoWCombatLog-010125_201010.txt",
+        "WoWCombatLog-033025_174419.txt",
+        "WoWCombatLog-010525_213210.txt",
+        "WoWCombatLog-071525_185006.txt",
+        "WoWCombatLog-010325_205112.txt",
+        "WoWCombatLog-070625_215831.txt",
+        "WoWCombatLog-042125_222035.txt",
+        "WoWCombatLog-061325_221325.txt",
+        "WoWCombatLog-071225_175151.txt",
+        "WoWCombatLog-010225_203035.txt",
+        "WoWCombatLog-030625_155305.txt",
+        "WoWCombatLog-071825_202644.txt",
+        "WoWCombatLog-050625_221429.txt",
+        "WoWCombatLog-010525_152405.txt",
+        "WoWCombatLog-032125_131914.txt",
+        "WoWCombatLog-042625_190215.txt",
+        "WoWCombatLog-032425_180510.txt",
+        "WoWCombatLog-070725_233418.txt",
+        "WoWCombatLog-030825_003540.txt",
+        "WoWCombatLog-010725_163510.txt",
+        "WoWCombatLog-062425_005129.txt",
+        "WoWCombatLog-053125_220725.txt",
+        "WoWCombatLog-053025_234139.txt",
+        "WoWCombatLog-071725_204026.txt",
+        "WoWCombatLog-010325_163235.txt",
+        "WoWCombatLog-060625_215646.txt",
+        "WoWCombatLog-042625_181220.txt",
+        "WoWCombatLog-061625_202403.txt",
+        "WoWCombatLog-070525_201951.txt",
+        "WoWCombatLog-031125_003815.txt",
+        "WoWCombatLog-030725_211224.txt",
+        "WoWCombatLog-042725_152741.txt",
+        "WoWCombatLog-071325_002420.txt",
+        "WoWCombatLog-031125_212937.txt",
+        "WoWCombatLog-042025_193003.txt",
+        "WoWCombatLog-060625_214648.txt",
+        "WoWCombatLog-042125_151700.txt",
+        "WoWCombatLog-060125_181459.txt",
+        "WoWCombatLog-060825_215259.txt",
+        "WoWCombatLog-070825_202238.txt",
+        "WoWCombatLog-010425_141834.txt",
+        "WoWCombatLog-031225_150741.txt",
+        "WoWCombatLog-010825_203008.txt",
+        "WoWCombatLog-030725_133725.txt",
+        "WoWCombatLog-010225_180433.txt",
+        "WoWCombatLog-010425_200400.txt",
+        "WoWCombatLog-051025_191137.txt",
+        "WoWCombatLog-060525_210444.txt",
+        "WoWCombatLog-071925_002150.txt",
+        "WoWCombatLog-050825_183346.txt",
+        "WoWCombatLog-010225_182552.txt",
+        "WoWCombatLog-032825_175412.txt",
+        "WoWCombatLog-050625_182406.txt",
+        "WoWCombatLog-010725_220454.txt",
+        "WoWCombatLog-071525_001142.txt",
+        "WoWCombatLog-031825_192716.txt",
+        "WoWCombatLog-070725_221033.txt",
+        "WoWCombatLog-071125_183925.txt"
+      ],
+      "characters_found": [
+        "Phlurbotomy"
+      ]
+    },
+    "Phlares": {
+      "pet_names": [
+        "Chaos Tear",
+        "Warband Bank Convergence",
+        "Alliance Battle Standard",
+        "Vesper of Clarity",
+        "Zorpad",
+        "Graz'gorg",
+        "Lamplighter's Skiff",
+        "Swarthy Warning Sign",
+        "Frostbound Devoted",
+        "Anniversary Balloons",
+        "Overlord",
+        "Wax Statue",
+        "Magnetocraft",
+        "Vesper of Harmony",
+        "Totem of Harmony",
+        "Overfiend",
+        "Shadowy Tear",
+        "Observer",
+        "Dancing Flames",
+        "Red Wooden Sled",
+        "Darkglare",
+        "Sandbox Storm Gryphon",
+        "Zhaazhem",
+        "Eye of Kilrogg",
+        "Silversage Incense",
+        "Puntable Marmot",
+        "Infernal Fragment",
+        "Mother of Chaos",
+        "Infernal",
+        "Ethereal Warpweaver",
+        "Pit Lord",
+        "Unstable Tear",
+        "Prized Champion's Prestigious Banner",
+        "Trained Flyer",
+        "Diabolic Imp",
+        "Sellissa"
+      ],
+      "summon_count": 9268,
+      "logs_with_summons": [
+        "WoWCombatLog-010125_201010.txt",
+        "WoWCombatLog-012225_120358.txt",
+        "WoWCombatLog-031825_174229.txt",
+        "WoWCombatLog-062225_212651.txt",
+        "WoWCombatLog-010525_213210.txt",
+        "WoWCombatLog-071525_185006.txt",
+        "WoWCombatLog-012825_215537.txt",
+        "WoWCombatLog-021625_213810.txt",
+        "WoWCombatLog-070625_215831.txt",
+        "WoWCombatLog-020325_152255.txt",
+        "WoWCombatLog-031525_121258.txt",
+        "WoWCombatLog-040925_172258.txt",
+        "WoWCombatLog-032425_180510.txt",
+        "WoWCombatLog-052525_160015.txt",
+        "WoWCombatLog-022425_174758.txt",
+        "WoWCombatLog-053125_220725.txt",
+        "WoWCombatLog-040925_181311.txt",
+        "WoWCombatLog-061725_180953.txt",
+        "WoWCombatLog-062825_132130.txt",
+        "WoWCombatLog-041825_211728.txt",
+        "WoWCombatLog-032425_143012.txt",
+        "WoWCombatLog-022025_020712.txt",
+        "WoWCombatLog-061625_202403.txt",
+        "WoWCombatLog-032825_133938.txt",
+        "WoWCombatLog-021725_195245.txt",
+        "WoWCombatLog-011325_191237.txt",
+        "WoWCombatLog-022125_220824.txt",
+        "WoWCombatLog-070325_200121.txt",
+        "WoWCombatLog-071625_004602.txt",
+        "WoWCombatLog-062825_202954.txt",
+        "WoWCombatLog-010825_203008.txt",
+        "WoWCombatLog-021525_225638.txt",
+        "WoWCombatLog-062625_213111.txt",
+        "WoWCombatLog-052725_223617.txt",
+        "WoWCombatLog-032225_221605.txt",
+        "WoWCombatLog-052425_211545.txt",
+        "WoWCombatLog-050825_183346.txt",
+        "WoWCombatLog-031825_192716.txt",
+        "WoWCombatLog-070425_215443.txt",
+        "WoWCombatLog-060725_212913.txt",
+        "WoWCombatLog-031825_140946.txt",
+        "WoWCombatLog-062725_215947.txt",
+        "WoWCombatLog-021725_235536.txt",
+        "WoWCombatLog-052525_011726.txt",
+        "WoWCombatLog-010525_152405.txt",
+        "WoWCombatLog-062025_215903.txt",
+        "WoWCombatLog-052325_210048.txt",
+        "WoWCombatLog-010625_164033.txt",
+        "WoWCombatLog-040425_204805.txt",
+        "WoWCombatLog-030625_193004.txt",
+        "WoWCombatLog-030525_012702.txt",
+        "WoWCombatLog-032925_174120.txt",
+        "WoWCombatLog-052725_214215.txt",
+        "WoWCombatLog-022425_221225.txt",
+        "WoWCombatLog-070525_183546.txt",
+        "WoWCombatLog-021825_195030.txt",
+        "WoWCombatLog-041925_163203.txt",
+        "WoWCombatLog-060825_002404.txt",
+        "WoWCombatLog-021325_182827.txt",
+        "WoWCombatLog-050925_005726.txt",
+        "WoWCombatLog-020425_125530.txt",
+        "WoWCombatLog-032925_111112.txt",
+        "WoWCombatLog-020725_163522.txt",
+        "WoWCombatLog-070825_202238.txt",
+        "WoWCombatLog-010425_010735.txt",
+        "WoWCombatLog-011225_001945.txt",
+        "WoWCombatLog-040725_202642.txt",
+        "WoWCombatLog-030525_235233.txt",
+        "WoWCombatLog-062125_183545.txt",
+        "WoWCombatLog-032825_175412.txt",
+        "WoWCombatLog-010725_220454.txt",
+        "WoWCombatLog-031925_170400.txt",
+        "WoWCombatLog-030625_185808.txt",
+        "WoWCombatLog-051725_221037.txt",
+        "WoWCombatLog-011125_174132.txt",
+        "WoWCombatLog-011225_115432.txt",
+        "WoWCombatLog-052925_202128.txt",
+        "WoWCombatLog-032325_221746.txt",
+        "WoWCombatLog-021325_012533.txt",
+        "WoWCombatLog-060825_125651.txt",
+        "WoWCombatLog-032125_131914.txt",
+        "WoWCombatLog-040525_214556.txt",
+        "WoWCombatLog-030825_163014.txt",
+        "WoWCombatLog-010725_163510.txt",
+        "WoWCombatLog-041925_191435.txt",
+        "WoWCombatLog-040625_172819.txt",
+        "WoWCombatLog-022625_125134.txt",
+        "WoWCombatLog-061725_180642.txt",
+        "WoWCombatLog-022025_152247.txt",
+        "WoWCombatLog-010825_154051.txt",
+        "WoWCombatLog-062225_011431.txt",
+        "WoWCombatLog-071425_205317.txt",
+        "WoWCombatLog-070525_201951.txt",
+        "WoWCombatLog-032425_220631.txt",
+        "WoWCombatLog-011025_201159.txt",
+        "WoWCombatLog-032525_005937.txt",
+        "WoWCombatLog-062825_225728.txt",
+        "WoWCombatLog-031125_212937.txt",
+        "WoWCombatLog-012325_141556.txt",
+        "WoWCombatLog-011325_160001.txt",
+        "WoWCombatLog-040425_182655.txt",
+        "WoWCombatLog-022125_172254.txt",
+        "WoWCombatLog-011625_005125.txt",
+        "WoWCombatLog-031125_175236.txt",
+        "WoWCombatLog-021225_015925.txt",
+        "WoWCombatLog-030425_195947.txt",
+        "WoWCombatLog-021925_141938.txt",
+        "WoWCombatLog-040825_200539.txt",
+        "WoWCombatLog-020225_005231.txt",
+        "WoWCombatLog-032125_003003.txt",
+        "WoWCombatLog-071325_235828.txt",
+        "WoWCombatLog-010525_211757.txt",
+        "WoWCombatLog-020825_123622.txt",
+        "WoWCombatLog-022325_170543.txt",
+        "WoWCombatLog-032325_180118.txt",
+        "WoWCombatLog-062425_143412.txt",
+        "WoWCombatLog-011325_132843.txt",
+        "WoWCombatLog-020225_153605.txt",
+        "WoWCombatLog-021225_164505.txt",
+        "WoWCombatLog-042825_203154.txt",
+        "WoWCombatLog-020125_153531.txt",
+        "WoWCombatLog-012325_002152.txt",
+        "WoWCombatLog-022025_201059.txt",
+        "WoWCombatLog-011925_134127.txt",
+        "WoWCombatLog-061525_225450.txt",
+        "WoWCombatLog-052325_225747.txt",
+        "WoWCombatLog-021025_184319.txt",
+        "WoWCombatLog-062825_204740.txt",
+        "WoWCombatLog-062925_204528.txt",
+        "WoWCombatLog-011025_141400.txt",
+        "WoWCombatLog-011325_001844.txt",
+        "WoWCombatLog-012425_003348.txt",
+        "WoWCombatLog-013125_164758.txt",
+        "WoWCombatLog-020625_222641.txt",
+        "WoWCombatLog-021925_003305.txt",
+        "WoWCombatLog-020625_172227.txt",
+        "WoWCombatLog-061225_195134.txt",
+        "WoWCombatLog-020425_210002.txt",
+        "WoWCombatLog-053125_181710.txt",
+        "WoWCombatLog-062225_170321.txt",
+        "WoWCombatLog-053125_154027.txt",
+        "WoWCombatLog-071325_155337.txt",
+        "WoWCombatLog-070525_143040.txt",
+        "WoWCombatLog-032025_201436.txt",
+        "WoWCombatLog-040625_130948.txt",
+        "WoWCombatLog-010425_200400.txt",
+        "WoWCombatLog-021125_174142.txt",
+        "WoWCombatLog-041925_231905.txt",
+        "WoWCombatLog-021725_191539.txt",
+        "WoWCombatLog-062125_230725.txt",
+        "WoWCombatLog-011825_014101.txt",
+        "WoWCombatLog-030625_155305.txt",
+        "WoWCombatLog-021025_190713.txt",
+        "WoWCombatLog-071125_183925.txt"
+      ],
+      "characters_found": [
+        "Phlares"
+      ]
+    },
+    "Sluglishphsh": {
+      "pet_names": [
+        "Nheenum",
+        "Darkglare",
+        "Chotip",
+        "Prized Champion's Prestigious Banner"
+      ],
+      "summon_count": 752,
+      "logs_with_summons": [
+        "WoWCombatLog-010425_140507.txt",
+        "WoWCombatLog-071525_185006.txt",
+        "WoWCombatLog-011925_215917.txt",
+        "WoWCombatLog-010225_203035.txt",
+        "WoWCombatLog-070725_192440.txt",
+        "WoWCombatLog-070625_123026.txt",
+        "WoWCombatLog-011525_133348.txt",
+        "WoWCombatLog-010325_163235.txt",
+        "WoWCombatLog-070625_190047.txt",
+        "WoWCombatLog-030925_211429.txt",
+        "WoWCombatLog-012925_152840.txt",
+        "WoWCombatLog-070525_201951.txt",
+        "WoWCombatLog-071225_000155.txt",
+        "WoWCombatLog-013025_150013.txt",
+        "WoWCombatLog-070825_202238.txt",
+        "WoWCombatLog-053125_181710.txt",
+        "WoWCombatLog-070825_010314.txt",
+        "WoWCombatLog-050925_230340.txt",
+        "WoWCombatLog-071325_155337.txt",
+        "WoWCombatLog-032225_121849.txt",
+        "WoWCombatLog-010425_200400.txt",
+        "WoWCombatLog-071525_001142.txt"
+      ],
+      "characters_found": [
+        "Sluglishphsh"
+      ]
+    },
+    "Phlargus": {
+      "pet_names": [
+        "Chaos Tear",
+        "Zhaaghon",
+        "Overfiend",
+        "Tanggorg",
+        "Shadowy Tear",
+        "Prized Champion's Prestigious Banner",
+        "Darkglare",
+        "Eye of Kilrogg",
+        "Observer",
+        "Pit Lord",
+        "Unstable Tear",
+        "Kuppad",
+        "Vilrah",
+        "Infernal Fragment",
+        "Diabolic Imp",
+        "Mother of Chaos",
+        "Overlord",
+        "Infernal"
+      ],
+      "summon_count": 3307,
+      "logs_with_summons": [
+        "WoWCombatLog-031925_170400.txt",
+        "WoWCombatLog-040825_200539.txt",
+        "WoWCombatLog-041825_232025.txt",
+        "WoWCombatLog-032025_182747.txt",
+        "WoWCombatLog-071525_185006.txt",
+        "WoWCombatLog-032125_003003.txt",
+        "WoWCombatLog-032225_000522.txt",
+        "WoWCombatLog-070625_215831.txt",
+        "WoWCombatLog-030625_212911.txt",
+        "WoWCombatLog-062925_185308.txt",
+        "WoWCombatLog-020325_003645.txt",
+        "WoWCombatLog-021925_183908.txt",
+        "WoWCombatLog-050625_221429.txt",
+        "WoWCombatLog-032125_131914.txt",
+        "WoWCombatLog-060625_222846.txt",
+        "WoWCombatLog-053125_141919.txt",
+        "WoWCombatLog-021225_164505.txt",
+        "WoWCombatLog-051825_201322.txt",
+        "WoWCombatLog-042825_203154.txt",
+        "WoWCombatLog-053025_234139.txt",
+        "WoWCombatLog-022025_201059.txt",
+        "WoWCombatLog-032425_143012.txt",
+        "WoWCombatLog-051925_212513.txt",
+        "WoWCombatLog-022325_215457.txt",
+        "WoWCombatLog-071425_205317.txt",
+        "WoWCombatLog-070525_201951.txt",
+        "WoWCombatLog-013125_164758.txt",
+        "WoWCombatLog-032525_005937.txt",
+        "WoWCombatLog-013125_233003.txt",
+        "WoWCombatLog-030725_000227.txt",
+        "WoWCombatLog-052525_212333.txt",
+        "WoWCombatLog-060725_160327.txt",
+        "WoWCombatLog-020925_003627.txt",
+        "WoWCombatLog-070825_202238.txt",
+        "WoWCombatLog-031225_150741.txt",
+        "WoWCombatLog-050925_230340.txt",
+        "WoWCombatLog-032225_121849.txt",
+        "WoWCombatLog-022125_172254.txt",
+        "WoWCombatLog-010425_200400.txt",
+        "WoWCombatLog-032125_212050.txt",
+        "WoWCombatLog-060525_210444.txt",
+        "WoWCombatLog-062225_235256.txt",
+        "WoWCombatLog-032225_180505.txt",
+        "WoWCombatLog-032825_175412.txt",
+        "WoWCombatLog-020325_010842.txt",
+        "WoWCombatLog-071525_001142.txt",
+        "WoWCombatLog-031825_192716.txt",
+        "WoWCombatLog-012225_151036.txt",
+        "WoWCombatLog-021925_141938.txt"
+      ],
+      "characters_found": [
+        "Phlargus"
+      ]
+    },
+    "Iamlockedout": {
+      "pet_names": [
+        "Chaos Tear",
+        "Karuri",
+        "Lynnia",
+        "Overfiend",
+        "Shadowy Tear",
+        "Ormnak",
+        "Darkglare",
+        "Bench",
+        "Shaazhem",
+        "Infernal Fragment",
+        "Pit Lord",
+        "Unstable Tear",
+        "Prized Champion's Prestigious Banner",
+        "Eye of Kilrogg",
+        "Diabolic Imp",
+        "Mother of Chaos",
+        "Overlord",
+        "Infernal"
+      ],
+      "summon_count": 1762,
+      "logs_with_summons": [
+        "WoWCombatLog-061825_173153.txt",
+        "WoWCombatLog-060725_125608.txt",
+        "WoWCombatLog-030625_130411.txt",
+        "WoWCombatLog-021525_171453.txt",
+        "WoWCombatLog-071525_185006.txt",
+        "WoWCombatLog-062725_215947.txt",
+        "WoWCombatLog-031525_121258.txt",
+        "WoWCombatLog-061325_221325.txt",
+        "WoWCombatLog-011925_215917.txt",
+        "WoWCombatLog-062425_143412.txt",
+        "WoWCombatLog-032125_131914.txt",
+        "WoWCombatLog-060625_222846.txt",
+        "WoWCombatLog-060125_155010.txt",
+        "WoWCombatLog-011625_185847.txt",
+        "WoWCombatLog-060125_172152.txt",
+        "WoWCombatLog-032925_174120.txt",
+        "WoWCombatLog-053125_220725.txt",
+        "WoWCombatLog-020125_153531.txt",
+        "WoWCombatLog-062825_132130.txt",
+        "WoWCombatLog-012425_164929.txt",
+        "WoWCombatLog-030425_174458.txt",
+        "WoWCombatLog-062225_011431.txt",
+        "WoWCombatLog-032425_143012.txt",
+        "WoWCombatLog-011425_184154.txt",
+        "WoWCombatLog-062925_204528.txt",
+        "WoWCombatLog-032925_111112.txt",
+        "WoWCombatLog-031125_003815.txt",
+        "WoWCombatLog-030725_211224.txt",
+        "WoWCombatLog-062825_225728.txt",
+        "WoWCombatLog-033025_122622.txt",
+        "WoWCombatLog-011625_233057.txt",
+        "WoWCombatLog-060125_165352.txt",
+        "WoWCombatLog-061225_195134.txt",
+        "WoWCombatLog-070325_200121.txt",
+        "WoWCombatLog-071625_004602.txt",
+        "WoWCombatLog-042125_151700.txt",
+        "WoWCombatLog-070825_202238.txt",
+        "WoWCombatLog-011325_160001.txt",
+        "WoWCombatLog-062225_170321.txt",
+        "WoWCombatLog-062625_213111.txt",
+        "WoWCombatLog-032225_121849.txt",
+        "WoWCombatLog-060725_180240.txt",
+        "WoWCombatLog-061825_182644.txt",
+        "WoWCombatLog-030625_155305.txt",
+        "WoWCombatLog-071525_001142.txt",
+        "WoWCombatLog-040825_200539.txt"
+      ],
+      "characters_found": [
+        "Iamlockedout"
+      ]
+    },
+    "Phluglishp": {
+      "pet_names": [
+        "Devilsaur",
+        "T'zala",
+        "Dark Hound",
+        "Vogon",
+        "Cat",
+        "Beast",
+        "Hieronynmus",
+        "The Golden Serpent",
+        "Direhorn",
+        "Eventuality",
+        "Fenryr",
+        "Triceracop",
+        "Hati"
+      ],
+      "summon_count": 1559,
+      "logs_with_summons": [
+        "WoWCombatLog-012625_163756.txt",
+        "WoWCombatLog-070525_201951.txt",
+        "WoWCombatLog-012725_023459.txt",
+        "WoWCombatLog-011625_233057.txt",
+        "WoWCombatLog-011725_141237.txt",
+        "WoWCombatLog-070825_202238.txt",
+        "WoWCombatLog-012525_132729.txt",
+        "WoWCombatLog-012725_132050.txt",
+        "WoWCombatLog-012625_122716.txt",
+        "WoWCombatLog-011725_125703.txt"
+      ],
+      "characters_found": [
+        "Phluglishp"
+      ]
+    },
+    "Phunnybone": {
+      "pet_names": [
+        "Shadowfiend",
+        "Void Tendril"
+      ],
+      "summon_count": 208,
+      "logs_with_summons": [
+        "WoWCombatLog-020425_125530.txt",
+        "WoWCombatLog-020625_222641.txt",
+        "WoWCombatLog-020725_163522.txt",
+        "WoWCombatLog-020325_152255.txt",
+        "WoWCombatLog-020425_210002.txt",
+        "WoWCombatLog-020625_141235.txt"
+      ],
+      "characters_found": [
+        "Phunnybone"
+      ]
+    },
+    "Sluglishp": {
+      "pet_names": [
+        "Past Self",
+        "Prized Champion's Prestigious Banner",
+        "Snake Wrap",
+        "Dream Projection",
+        "Web Wrap",
+        "Dream Sprout"
+      ],
+      "summon_count": 696,
+      "logs_with_summons": [
+        "WoWCombatLog-060725_212913.txt",
+        "WoWCombatLog-021625_213810.txt",
+        "WoWCombatLog-051125_113758.txt",
+        "WoWCombatLog-051725_221037.txt",
+        "WoWCombatLog-021625_135326.txt",
+        "WoWCombatLog-060125_213839.txt",
+        "WoWCombatLog-051025_004503.txt",
+        "WoWCombatLog-032325_180118.txt",
+        "WoWCombatLog-051725_174340.txt",
+        "WoWCombatLog-052525_160015.txt",
+        "WoWCombatLog-062025_215903.txt",
+        "WoWCombatLog-060525_204130.txt",
+        "WoWCombatLog-052725_214215.txt",
+        "WoWCombatLog-021625_153014.txt",
+        "WoWCombatLog-052325_225747.txt",
+        "WoWCombatLog-052425_180115.txt",
+        "WoWCombatLog-021625_174924.txt",
+        "WoWCombatLog-032925_111112.txt",
+        "WoWCombatLog-051025_125405.txt",
+        "WoWCombatLog-051725_183828.txt",
+        "WoWCombatLog-022325_121223.txt",
+        "WoWCombatLog-021525_225638.txt",
+        "WoWCombatLog-051125_185512.txt",
+        "WoWCombatLog-032225_221605.txt",
+        "WoWCombatLog-051025_191137.txt",
+        "WoWCombatLog-032825_175412.txt",
+        "WoWCombatLog-061825_182644.txt",
+        "WoWCombatLog-063025_221604.txt"
+      ],
+      "characters_found": [
+        "Sluglishp"
+      ]
+    },
+    "Phrightful": {
+      "pet_names": [
+        "Sacred Weapon",
+        "Wax Statue",
+        "Mirror Image"
+      ],
+      "summon_count": 185,
+      "logs_with_summons": [
+        "WoWCombatLog-070125_174015.txt",
+        "WoWCombatLog-070625_123026.txt",
+        "WoWCombatLog-071225_000155.txt",
+        "WoWCombatLog-071325_002420.txt",
+        "WoWCombatLog-022225_144402.txt",
+        "WoWCombatLog-062825_132130.txt",
+        "WoWCombatLog-062425_184959.txt",
+        "WoWCombatLog-063025_221604.txt",
+        "WoWCombatLog-070625_173952.txt",
+        "WoWCombatLog-062425_143412.txt",
+        "WoWCombatLog-062625_213111.txt",
+        "WoWCombatLog-071125_183925.txt"
+      ],
+      "characters_found": [
+        "Phrightful"
+      ]
+    },
+    "Phlaresii": {
+      "pet_names": [
+        "Darkglare",
+        "Zhaamon",
+        "Felhunter"
+      ],
+      "summon_count": 89,
+      "logs_with_summons": [
+        "WoWCombatLog-040925_181311.txt",
+        "WoWCombatLog-040225_184348.txt",
+        "WoWCombatLog-040225_171307.txt"
+      ],
+      "characters_found": [
+        "Phlaresii"
+      ]
+    }
+  },
+  "pet_lookup": {
+    "Zhaakun": [
+      "Phlurbotomy"
+    ],
+    "Mezzmon": [
+      "Phlurbotomy"
+    ],
+    "Crawler Mine": [
+      "Phlurbotomy"
+    ],
+    "Overfiend": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Ethereal Warpweaver": [
+      "Phlurbotomy",
+      "Phlares"
+    ],
+    "Darkglare": [
+      "Phlurbotomy",
+      "Phlares",
+      "Sluglishphsh",
+      "Phlargus",
+      "Iamlockedout",
+      "Phlaresii"
+    ],
+    "Overlord": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Eye of Kilrogg": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Jaknip": [
+      "Phlurbotomy"
+    ],
+    "Pit Lord": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Infernal Fragment": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Diabolic Imp": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Mother of Chaos": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Druslith": [
+      "Phlurbotomy"
+    ],
+    "Infernal": [
+      "Phlurbotomy",
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Chaos Tear": [
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Warband Bank Convergence": [
+      "Phlares"
+    ],
+    "Alliance Battle Standard": [
+      "Phlares"
+    ],
+    "Vesper of Clarity": [
+      "Phlares"
+    ],
+    "Zorpad": [
+      "Phlares"
+    ],
+    "Graz'gorg": [
+      "Phlares"
+    ],
+    "Lamplighter's Skiff": [
+      "Phlares"
+    ],
+    "Swarthy Warning Sign": [
+      "Phlares"
+    ],
+    "Frostbound Devoted": [
+      "Phlares"
+    ],
+    "Anniversary Balloons": [
+      "Phlares"
+    ],
+    "Wax Statue": [
+      "Phlares",
+      "Phrightful"
+    ],
+    "Magnetocraft": [
+      "Phlares"
+    ],
+    "Vesper of Harmony": [
+      "Phlares"
+    ],
+    "Totem of Harmony": [
+      "Phlares"
+    ],
+    "Shadowy Tear": [
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Observer": [
+      "Phlares",
+      "Phlargus"
+    ],
+    "Dancing Flames": [
+      "Phlares"
+    ],
+    "Red Wooden Sled": [
+      "Phlares"
+    ],
+    "Sandbox Storm Gryphon": [
+      "Phlares"
+    ],
+    "Zhaazhem": [
+      "Phlares"
+    ],
+    "Silversage Incense": [
+      "Phlares"
+    ],
+    "Puntable Marmot": [
+      "Phlares"
+    ],
+    "Unstable Tear": [
+      "Phlares",
+      "Phlargus",
+      "Iamlockedout"
+    ],
+    "Prized Champion's Prestigious Banner": [
+      "Phlares",
+      "Sluglishphsh",
+      "Phlargus",
+      "Iamlockedout",
+      "Sluglishp"
+    ],
+    "Trained Flyer": [
+      "Phlares"
+    ],
+    "Sellissa": [
+      "Phlares"
+    ],
+    "Nheenum": [
+      "Sluglishphsh"
+    ],
+    "Chotip": [
+      "Sluglishphsh"
+    ],
+    "Zhaaghon": [
+      "Phlargus"
+    ],
+    "Tanggorg": [
+      "Phlargus"
+    ],
+    "Kuppad": [
+      "Phlargus"
+    ],
+    "Vilrah": [
+      "Phlargus"
+    ],
+    "Karuri": [
+      "Iamlockedout"
+    ],
+    "Lynnia": [
+      "Iamlockedout"
+    ],
+    "Ormnak": [
+      "Iamlockedout"
+    ],
+    "Bench": [
+      "Iamlockedout"
+    ],
+    "Shaazhem": [
+      "Iamlockedout"
+    ],
+    "Devilsaur": [
+      "Phluglishp"
+    ],
+    "T'zala": [
+      "Phluglishp"
+    ],
+    "Dark Hound": [
+      "Phluglishp"
+    ],
+    "Vogon": [
+      "Phluglishp"
+    ],
+    "Cat": [
+      "Phluglishp"
+    ],
+    "Beast": [
+      "Phluglishp"
+    ],
+    "Hieronynmus": [
+      "Phluglishp"
+    ],
+    "The Golden Serpent": [
+      "Phluglishp"
+    ],
+    "Direhorn": [
+      "Phluglishp"
+    ],
+    "Eventuality": [
+      "Phluglishp"
+    ],
+    "Fenryr": [
+      "Phluglishp"
+    ],
+    "Triceracop": [
+      "Phluglishp"
+    ],
+    "Hati": [
+      "Phluglishp"
+    ],
+    "Shadowfiend": [
+      "Phunnybone"
+    ],
+    "Void Tendril": [
+      "Phunnybone"
+    ],
+    "Past Self": [
+      "Sluglishp"
+    ],
+    "Snake Wrap": [
+      "Sluglishp"
+    ],
+    "Dream Projection": [
+      "Sluglishp"
+    ],
+    "Web Wrap": [
+      "Sluglishp"
+    ],
+    "Dream Sprout": [
+      "Sluglishp"
+    ],
+    "Sacred Weapon": [
+      "Phrightful"
+    ],
+    "Mirror Image": [
+      "Phrightful"
+    ],
+    "Zhaamon": [
+      "Phlaresii"
+    ],
+    "Felhunter": [
+      "Phlaresii"
+    ]
+  },
+  "statistics": {
+    "total_unique_pets": 118,
+    "total_summon_events": 20653,
+    "players_with_pets": 10,
+    "average_pets_per_player": 11.8
+  }
+}
