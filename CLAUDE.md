@@ -44,6 +44,18 @@ python pet_index_validation_test.py
 python focused_pet_validation_test.py
 ```
 
+### Computer Vision & Video Analysis
+```bash
+# Validate CV setup and dependencies
+python validate_cv_setup.py
+
+# Extract frames from WoW videos for UI analysis
+python test_frame_extraction.py
+
+# Test OCR on WoW UI elements and spell names
+python test_wow_ocr.py
+```
+
 ## Architecture Overview
 
 ### Core Components
@@ -68,6 +80,12 @@ python focused_pet_validation_test.py
    - Separates player actions from pet actions
    - Tracks pet dispels (Devour Magic) as `purges_own`
    - Maintains spell cast and purge lists for analysis
+
+5. **Computer Vision System** (NEW)
+   - OpenCV 4.12.0 for video frame extraction and analysis
+   - Tesseract OCR 5.5.0 for spell name and UI text recognition
+   - Supports 3440x1440 ultrawide resolution with 60fps video
+   - Analyzes cast bars, player frames, and combat text regions
 
 ### Data Flow
 
@@ -114,6 +132,11 @@ The system maps numeric zone IDs to arena names:
 - `pet_index_validation_test.py` - Pet index validation on problematic matches
 - `focused_pet_validation_test.py` - Focused pet testing on specific match window
 
+### Computer Vision Tools
+- `validate_cv_setup.py` - CV dependencies validation (OpenCV, Tesseract, NumPy, etc.)
+- `test_frame_extraction.py` - Video frame extraction and WoW UI region detection
+- `test_wow_ocr.py` - OCR testing on WoW UI elements and spell names
+
 ### Legacy Reference
 - `parse_logs_fast.py` - Original parser implementation (reference only)
 
@@ -122,6 +145,7 @@ The system maps numeric zone IDs to arena names:
 - `/Logs/` - Combat log files (WoWCombatLog-*.txt format)
 - `arena.db` - SQLite database for match storage
 - `player_pet_index.json` - Pet name mappings for dispel tracking
+- `/test_frames/` - Extracted video frames for computer vision analysis
 
 ## Development Notes
 
@@ -130,6 +154,7 @@ The system maps numeric zone IDs to arena names:
 - ~100/2,480 matches complete (~4%) as of last update
 - Death correlation verification working correctly
 - Data quality verified through spot checks
+- **Computer vision system operational**: OpenCV + Tesseract OCR ready for video analysis
 
 ### Key Algorithms
 1. **Smart Arena Boundary Detection**: Multi-strategy search (backward/forward) with validation

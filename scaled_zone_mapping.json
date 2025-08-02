@@ -1,0 +1,3762 @@
+{
+  "metadata": {
+    "total_zones": 73,
+    "extraction_method": "scaled_svg_parsing",
+    "coordinate_system": "scaled_transformed",
+    "resolution": "3440x1440",
+    "scale_factor_applied": 1.3333333333333333,
+    "coverage_validation": {
+      "valid": false,
+      "coverage": {
+        "max_x": 3416.5,
+        "max_y": 1374.5,
+        "width_coverage_pct": 99.3,
+        "height_coverage_pct": 95.5
+      },
+      "targets": {
+        "target_right": 3417,
+        "target_bottom": 1372,
+        "tolerance": 2
+      },
+      "validation": {
+        "right_edge_valid": true,
+        "right_edge_diff": -0.5,
+        "bottom_edge_valid": false,
+        "bottom_edge_diff": 2.5
+      },
+      "rightmost_zone": {
+        "annotation": "Current Time",
+        "color": "#330a0a",
+        "right_edge": 3416.5
+      },
+      "bottommost_zone": {
+        "annotation": "Player Abilities (1703, 1246)",
+        "color": "#5e17eb",
+        "bottom_edge": 1374.5
+      }
+    }
+  },
+  "zones": [
+    {
+      "zone_id": "zone_001",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 421.54,
+        "y": 364.96,
+        "width": 128.25,
+        "height": 56.8
+      },
+      "bbox": {
+        "x": 562.06,
+        "y": 486.61,
+        "width": 171.0,
+        "height": 75.73
+      },
+      "center": {
+        "x": 647.56,
+        "y": 524.48
+      },
+      "area": 12949.7,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Health",
+      "inferred_role": "player_health"
+    },
+    {
+      "zone_id": "zone_002",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 421.54,
+        "y": 429.46,
+        "width": 128.25,
+        "height": 56.8
+      },
+      "bbox": {
+        "x": 562.06,
+        "y": 572.61,
+        "width": 171.0,
+        "height": 75.73
+      },
+      "center": {
+        "x": 647.56,
+        "y": 610.48
+      },
+      "area": 12949.7,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Health",
+      "inferred_role": "player_health"
+    },
+    {
+      "zone_id": "zone_003",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 421.54,
+        "y": 493.96,
+        "width": 128.25,
+        "height": 56.8
+      },
+      "bbox": {
+        "x": 562.06,
+        "y": 658.61,
+        "width": 171.0,
+        "height": 75.73
+      },
+      "center": {
+        "x": 647.56,
+        "y": 696.48
+      },
+      "area": 12949.7,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Health",
+      "inferred_role": "player_health"
+    },
+    {
+      "zone_id": "zone_004",
+      "color": "#1800ad",
+      "original_bbox": {
+        "x": 552.56,
+        "y": 364.96,
+        "width": 165.7,
+        "height": 56.87
+      },
+      "bbox": {
+        "x": 736.74,
+        "y": 486.61,
+        "width": 220.94,
+        "height": 75.83
+      },
+      "center": {
+        "x": 847.21,
+        "y": 524.53
+      },
+      "area": 16753.28,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Major Abilities (847, 524)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_005",
+      "color": "#1800ad",
+      "original_bbox": {
+        "x": 552.56,
+        "y": 493.96,
+        "width": 165.7,
+        "height": 56.87
+      },
+      "bbox": {
+        "x": 736.74,
+        "y": 658.61,
+        "width": 220.94,
+        "height": 75.83
+      },
+      "center": {
+        "x": 847.21,
+        "y": 696.53
+      },
+      "area": 16753.28,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Major Abilities (847, 696)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_006",
+      "color": "#1800ad",
+      "original_bbox": {
+        "x": 552.56,
+        "y": 429.46,
+        "width": 165.7,
+        "height": 56.87
+      },
+      "bbox": {
+        "x": 736.74,
+        "y": 572.61,
+        "width": 220.94,
+        "height": 75.83
+      },
+      "center": {
+        "x": 847.21,
+        "y": 610.53
+      },
+      "area": 16753.28,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Major Abilities (847, 610)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_007",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 421.61,
+        "y": 421.83,
+        "width": 128.13,
+        "height": 7.5
+      },
+      "bbox": {
+        "x": 562.14,
+        "y": 562.44,
+        "width": 170.83,
+        "height": 10.0
+      },
+      "center": {
+        "x": 647.56,
+        "y": 567.44
+      },
+      "area": 1708.34,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Resource",
+      "inferred_role": "player_resource"
+    },
+    {
+      "zone_id": "zone_008",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 421.61,
+        "y": 486.33,
+        "width": 128.13,
+        "height": 7.5
+      },
+      "bbox": {
+        "x": 562.14,
+        "y": 648.44,
+        "width": 170.83,
+        "height": 10.0
+      },
+      "center": {
+        "x": 647.56,
+        "y": 653.44
+      },
+      "area": 1708.34,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Resource",
+      "inferred_role": "player_resource"
+    },
+    {
+      "zone_id": "zone_009",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 421.55,
+        "y": 550.83,
+        "width": 128.23,
+        "height": 8.88
+      },
+      "bbox": {
+        "x": 562.07,
+        "y": 734.44,
+        "width": 170.97,
+        "height": 11.83
+      },
+      "center": {
+        "x": 647.55,
+        "y": 740.36
+      },
+      "area": 2023.19,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Resource",
+      "inferred_role": "player_resource"
+    },
+    {
+      "zone_id": "zone_010",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 897.15,
+        "y": 651.46,
+        "width": 164.21,
+        "height": 28.5
+      },
+      "bbox": {
+        "x": 1196.2,
+        "y": 868.61,
+        "width": 218.94,
+        "height": 38.0
+      },
+      "center": {
+        "x": 1305.67,
+        "y": 887.61
+      },
+      "area": 8319.83,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Target Health",
+      "inferred_role": "target_health"
+    },
+    {
+      "zone_id": "zone_011",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 1535.61,
+        "y": 648.94,
+        "width": 170.96,
+        "height": 28.5
+      },
+      "bbox": {
+        "x": 2047.47,
+        "y": 865.26,
+        "width": 227.95,
+        "height": 38.0
+      },
+      "center": {
+        "x": 2161.45,
+        "y": 884.26
+      },
+      "area": 8662.02,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy 3 Health",
+      "inferred_role": "arena_enemy_3_health"
+    },
+    {
+      "zone_id": "zone_012",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 897.14,
+        "y": 680.27,
+        "width": 164.23,
+        "height": 13.21
+      },
+      "bbox": {
+        "x": 1196.18,
+        "y": 907.03,
+        "width": 218.97,
+        "height": 17.62
+      },
+      "center": {
+        "x": 1305.67,
+        "y": 915.84
+      },
+      "area": 3858.28,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Target Resource",
+      "inferred_role": "target_resource"
+    },
+    {
+      "zone_id": "zone_013",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 1535.59,
+        "y": 677.75,
+        "width": 182.23,
+        "height": 13.5
+      },
+      "bbox": {
+        "x": 2047.46,
+        "y": 903.67,
+        "width": 242.98,
+        "height": 18.0
+      },
+      "center": {
+        "x": 2168.95,
+        "y": 912.67
+      },
+      "area": 4373.63,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Resource (2168, 912)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_014",
+      "color": "#ffde59",
+      "original_bbox": {
+        "x": 897.13,
+        "y": 702.82,
+        "width": 164.25,
+        "height": 34.5
+      },
+      "bbox": {
+        "x": 1196.17,
+        "y": 937.1,
+        "width": 219.0,
+        "height": 46.0
+      },
+      "center": {
+        "x": 1305.67,
+        "y": 960.1
+      },
+      "area": 10074.0,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Specialized Resource (1305, 960)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_015",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 960.69,
+        "y": 758.04,
+        "width": 105.47,
+        "height": 18.48
+      },
+      "bbox": {
+        "x": 1280.92,
+        "y": 1010.72,
+        "width": 140.63,
+        "height": 24.64
+      },
+      "center": {
+        "x": 1351.23,
+        "y": 1023.04
+      },
+      "area": 3465.09,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Target Health",
+      "inferred_role": "target_health"
+    },
+    {
+      "zone_id": "zone_016",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 960.69,
+        "y": 776.52,
+        "width": 105.47,
+        "height": 13.23
+      },
+      "bbox": {
+        "x": 1280.92,
+        "y": 1035.36,
+        "width": 140.63,
+        "height": 17.64
+      },
+      "center": {
+        "x": 1351.23,
+        "y": 1044.18
+      },
+      "area": 2480.71,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Target Resource",
+      "inferred_role": "target_resource"
+    },
+    {
+      "zone_id": "zone_017",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 1912.63,
+        "y": 301.75,
+        "width": 100.48,
+        "height": 31.5
+      },
+      "bbox": {
+        "x": 2550.17,
+        "y": 402.33,
+        "width": 133.98,
+        "height": 42.0
+      },
+      "center": {
+        "x": 2617.16,
+        "y": 423.33
+      },
+      "area": 5627.13,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy 2 Health",
+      "inferred_role": "arena_enemy_2_health"
+    },
+    {
+      "zone_id": "zone_018",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 1912.63,
+        "y": 333.59,
+        "width": 99.93,
+        "height": 15.75
+      },
+      "bbox": {
+        "x": 2550.17,
+        "y": 444.78,
+        "width": 133.24,
+        "height": 21.0
+      },
+      "center": {
+        "x": 2616.79,
+        "y": 455.28
+      },
+      "area": 2798.03,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Resource (2616, 455)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_019",
+      "color": "#ffde59",
+      "original_bbox": {
+        "x": 424.13,
+        "y": 366.98,
+        "width": 11.74,
+        "height": 12.0
+      },
+      "bbox": {
+        "x": 565.51,
+        "y": 489.3,
+        "width": 15.66,
+        "height": 15.99
+      },
+      "center": {
+        "x": 573.34,
+        "y": 497.3
+      },
+      "area": 250.42,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Specialized Resource (573, 497)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_020",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 435.91,
+        "y": 366.98,
+        "width": 110.98,
+        "height": 11.99
+      },
+      "bbox": {
+        "x": 581.22,
+        "y": 489.3,
+        "width": 147.97,
+        "height": 15.99
+      },
+      "center": {
+        "x": 655.2,
+        "y": 497.3
+      },
+      "area": 2365.96,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Name",
+      "inferred_role": "player_name"
+    },
+    {
+      "zone_id": "zone_021",
+      "color": "#ffde59",
+      "original_bbox": {
+        "x": 424.13,
+        "y": 432.23,
+        "width": 11.74,
+        "height": 12.0
+      },
+      "bbox": {
+        "x": 565.51,
+        "y": 576.31,
+        "width": 15.66,
+        "height": 16.0
+      },
+      "center": {
+        "x": 573.34,
+        "y": 584.31
+      },
+      "area": 250.5,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Specialized Resource (573, 584)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_022",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 435.91,
+        "y": 432.23,
+        "width": 110.98,
+        "height": 11.99
+      },
+      "bbox": {
+        "x": 581.22,
+        "y": 576.31,
+        "width": 147.97,
+        "height": 15.99
+      },
+      "center": {
+        "x": 655.2,
+        "y": 584.3
+      },
+      "area": 2365.96,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Name",
+      "inferred_role": "player_name"
+    },
+    {
+      "zone_id": "zone_023",
+      "color": "#ffde59",
+      "original_bbox": {
+        "x": 424.13,
+        "y": 496.48,
+        "width": 11.74,
+        "height": 12.0
+      },
+      "bbox": {
+        "x": 565.51,
+        "y": 661.97,
+        "width": 15.66,
+        "height": 15.99
+      },
+      "center": {
+        "x": 573.34,
+        "y": 669.97
+      },
+      "area": 250.42,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Specialized Resource (573, 669)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_024",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 435.91,
+        "y": 496.48,
+        "width": 110.98,
+        "height": 11.99
+      },
+      "bbox": {
+        "x": 581.22,
+        "y": 661.97,
+        "width": 147.97,
+        "height": 15.99
+      },
+      "center": {
+        "x": 655.2,
+        "y": 669.97
+      },
+      "area": 2365.96,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Name",
+      "inferred_role": "player_name"
+    },
+    {
+      "zone_id": "zone_025",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 897.14,
+        "y": 634.39,
+        "width": 143.97,
+        "height": 17.03
+      },
+      "bbox": {
+        "x": 1196.19,
+        "y": 845.86,
+        "width": 191.96,
+        "height": 22.7
+      },
+      "center": {
+        "x": 1292.17,
+        "y": 857.21
+      },
+      "area": 4358.17,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Character Name (1292, 857)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_026",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 960.69,
+        "y": 740.97,
+        "width": 105.46,
+        "height": 17.06
+      },
+      "bbox": {
+        "x": 1280.92,
+        "y": 987.96,
+        "width": 140.61,
+        "height": 22.75
+      },
+      "center": {
+        "x": 1351.23,
+        "y": 999.34
+      },
+      "area": 3198.98,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Character Name (1351, 999)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_027",
+      "color": "#ffde59",
+      "original_bbox": {
+        "x": 1041.43,
+        "y": 634.4,
+        "width": 15.23,
+        "height": 14.24
+      },
+      "bbox": {
+        "x": 1388.57,
+        "y": 845.86,
+        "width": 20.3,
+        "height": 18.99
+      },
+      "center": {
+        "x": 1398.72,
+        "y": 855.36
+      },
+      "area": 385.53,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Specialized Resource (1398, 855)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_028",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 1912.63,
+        "y": 571.61,
+        "width": 101.98,
+        "height": 34.5
+      },
+      "bbox": {
+        "x": 2550.18,
+        "y": 762.15,
+        "width": 135.97,
+        "height": 46.0
+      },
+      "center": {
+        "x": 2618.16,
+        "y": 785.15
+      },
+      "area": 6254.56,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy 3 Health",
+      "inferred_role": "arena_enemy_3_health"
+    },
+    {
+      "zone_id": "zone_029",
+      "color": "#ff3131",
+      "original_bbox": {
+        "x": 1911.29,
+        "y": 435.23,
+        "width": 102.29,
+        "height": 34.5
+      },
+      "bbox": {
+        "x": 2548.39,
+        "y": 580.3,
+        "width": 136.39,
+        "height": 46.0
+      },
+      "center": {
+        "x": 2616.58,
+        "y": 603.3
+      },
+      "area": 6273.73,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy 2 Health",
+      "inferred_role": "arena_enemy_2_health"
+    },
+    {
+      "zone_id": "zone_030",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 1911.28,
+        "y": 469.97,
+        "width": 102.61,
+        "height": 15.75
+      },
+      "bbox": {
+        "x": 2548.37,
+        "y": 626.63,
+        "width": 136.82,
+        "height": 21.0
+      },
+      "center": {
+        "x": 2616.78,
+        "y": 637.13
+      },
+      "area": 2873.17,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Resource (2616, 637)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_031",
+      "color": "#5ce1e6",
+      "original_bbox": {
+        "x": 1912.63,
+        "y": 606.36,
+        "width": 101.27,
+        "height": 15.75
+      },
+      "bbox": {
+        "x": 2550.17,
+        "y": 808.48,
+        "width": 135.03,
+        "height": 21.0
+      },
+      "center": {
+        "x": 2617.68,
+        "y": 818.98
+      },
+      "area": 2835.55,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Resource (2617, 818)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_032",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": -0.0,
+        "y": 457.9,
+        "width": 245.25,
+        "height": 146.5
+      },
+      "bbox": {
+        "x": 0,
+        "y": 610.53,
+        "width": 327.0,
+        "height": 195.33
+      },
+      "center": {
+        "x": 163.5,
+        "y": 708.2
+      },
+      "area": 63872.37,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (Left Side)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_033",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": -0.0,
+        "y": 605.31,
+        "width": 245.25,
+        "height": 146.5
+      },
+      "bbox": {
+        "x": 0,
+        "y": 807.08,
+        "width": 327.0,
+        "height": 195.33
+      },
+      "center": {
+        "x": 163.5,
+        "y": 904.75
+      },
+      "area": 63874.07,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (Left Side)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_034",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 1.96,
+        "y": 293.64,
+        "width": 245.25,
+        "height": 146.5
+      },
+      "bbox": {
+        "x": 2.61,
+        "y": 391.52,
+        "width": 327.0,
+        "height": 195.33
+      },
+      "center": {
+        "x": 166.11,
+        "y": 489.19
+      },
+      "area": 63874.07,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (Left Side)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_035",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 1.96,
+        "y": 162.65,
+        "width": 245.24,
+        "height": 126.57
+      },
+      "bbox": {
+        "x": 2.62,
+        "y": 216.87,
+        "width": 326.98,
+        "height": 168.76
+      },
+      "center": {
+        "x": 166.11,
+        "y": 301.25
+      },
+      "area": 55180.38,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (Left Side)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_036",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 478.44,
+        "y": 0.82,
+        "width": 207.0,
+        "height": 146.63
+      },
+      "bbox": {
+        "x": 637.92,
+        "y": 1.09,
+        "width": 276.0,
+        "height": 195.51
+      },
+      "center": {
+        "x": 775.92,
+        "y": 98.85
+      },
+      "area": 53960.93,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (Left Side)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_037",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 691.73,
+        "y": 0.82,
+        "width": 205.39,
+        "height": 146.66
+      },
+      "bbox": {
+        "x": 922.31,
+        "y": 1.09,
+        "width": 273.85,
+        "height": 195.55
+      },
+      "center": {
+        "x": 1059.24,
+        "y": 98.87
+      },
+      "area": 53550.32,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (1059, 98)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_038",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 271.4,
+        "y": 0.82,
+        "width": 207.0,
+        "height": 146.63
+      },
+      "bbox": {
+        "x": 361.86,
+        "y": 1.09,
+        "width": 276.0,
+        "height": 195.51
+      },
+      "center": {
+        "x": 499.86,
+        "y": 98.85
+      },
+      "area": 53960.93,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (Left Side)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_039",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 1949.24,
+        "y": 814.85,
+        "width": 277.5,
+        "height": 159.44
+      },
+      "bbox": {
+        "x": 2598.99,
+        "y": 1086.46,
+        "width": 370.0,
+        "height": 212.58
+      },
+      "center": {
+        "x": 2783.99,
+        "y": 1192.76
+      },
+      "area": 78655.92,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (2783, 1192)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_040",
+      "color": "#ff914d",
+      "original_bbox": {
+        "x": 1669.13,
+        "y": 814.85,
+        "width": 277.49,
+        "height": 130.94
+      },
+      "bbox": {
+        "x": 2225.51,
+        "y": 1086.46,
+        "width": 369.98,
+        "height": 174.58
+      },
+      "center": {
+        "x": 2410.5,
+        "y": 1173.76
+      },
+      "area": 64593.16,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Combat Log (2410, 1173)",
+      "inferred_role": "combat_log"
+    },
+    {
+      "zone_id": "zone_041",
+      "color": "#ffffff",
+      "original_bbox": {
+        "x": 2012.95,
+        "y": 301.75,
+        "width": 48.75,
+        "height": 49.98
+      },
+      "bbox": {
+        "x": 2683.93,
+        "y": 402.33,
+        "width": 65.0,
+        "height": 66.64
+      },
+      "center": {
+        "x": 2716.43,
+        "y": 435.65
+      },
+      "area": 4331.64,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Medallion (2716, 435)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_042",
+      "color": "#ffffff",
+      "original_bbox": {
+        "x": 2014.29,
+        "y": 435.23,
+        "width": 48.74,
+        "height": 51.0
+      },
+      "bbox": {
+        "x": 2685.72,
+        "y": 580.3,
+        "width": 64.98,
+        "height": 68.0
+      },
+      "center": {
+        "x": 2718.22,
+        "y": 614.3
+      },
+      "area": 4418.93,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Medallion (2718, 614)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_043",
+      "color": "#ffffff",
+      "original_bbox": {
+        "x": 2014.29,
+        "y": 570.34,
+        "width": 48.74,
+        "height": 51.0
+      },
+      "bbox": {
+        "x": 2685.72,
+        "y": 760.45,
+        "width": 64.98,
+        "height": 68.0
+      },
+      "center": {
+        "x": 2718.22,
+        "y": 794.45
+      },
+      "area": 4418.93,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Medallion (2718, 794)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_044",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 1535.61,
+        "y": 629.02,
+        "width": 170.95,
+        "height": 19.91
+      },
+      "bbox": {
+        "x": 2047.48,
+        "y": 838.7,
+        "width": 227.94,
+        "height": 26.54
+      },
+      "center": {
+        "x": 2161.45,
+        "y": 851.97
+      },
+      "area": 6049.84,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Character Name (2161, 851)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_045",
+      "color": "#171717",
+      "original_bbox": {
+        "x": 2062.04,
+        "y": 301.75,
+        "width": 48.75,
+        "height": 49.98
+      },
+      "bbox": {
+        "x": 2749.39,
+        "y": 402.33,
+        "width": 65.0,
+        "height": 66.64
+      },
+      "center": {
+        "x": 2781.89,
+        "y": 435.65
+      },
+      "area": 4331.64,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Dispell (2781, 435)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_046",
+      "color": "#171717",
+      "original_bbox": {
+        "x": 2063.5,
+        "y": 435.23,
+        "width": 48.74,
+        "height": 51.0
+      },
+      "bbox": {
+        "x": 2751.33,
+        "y": 580.3,
+        "width": 64.98,
+        "height": 68.0
+      },
+      "center": {
+        "x": 2783.82,
+        "y": 614.3
+      },
+      "area": 4418.93,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Dispell (2783, 614)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_047",
+      "color": "#171717",
+      "original_bbox": {
+        "x": 2063.5,
+        "y": 570.34,
+        "width": 48.74,
+        "height": 51.0
+      },
+      "bbox": {
+        "x": 2751.33,
+        "y": 760.45,
+        "width": 64.98,
+        "height": 68.0
+      },
+      "center": {
+        "x": 2783.82,
+        "y": 794.45
+      },
+      "area": 4418.93,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Dispell (2783, 794)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_048",
+      "color": "#ff66c4",
+      "original_bbox": {
+        "x": 2077.0,
+        "y": 356.17,
+        "width": 29.94,
+        "height": 29.7
+      },
+      "bbox": {
+        "x": 2769.33,
+        "y": 474.9,
+        "width": 39.92,
+        "height": 39.59
+      },
+      "center": {
+        "x": 2789.29,
+        "y": 494.69
+      },
+      "area": 1580.45,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Racial (2789, 494)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_049",
+      "color": "#ff66c4",
+      "original_bbox": {
+        "x": 2076.49,
+        "y": 490.65,
+        "width": 30.24,
+        "height": 31.5
+      },
+      "bbox": {
+        "x": 2768.66,
+        "y": 654.2,
+        "width": 40.32,
+        "height": 42.0
+      },
+      "center": {
+        "x": 2788.82,
+        "y": 675.2
+      },
+      "area": 1693.34,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Racial (2788, 675)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_050",
+      "color": "#ff66c4",
+      "original_bbox": {
+        "x": 2077.0,
+        "y": 625.8,
+        "width": 30.24,
+        "height": 31.5
+      },
+      "bbox": {
+        "x": 2769.33,
+        "y": 834.41,
+        "width": 40.32,
+        "height": 42.0
+      },
+      "center": {
+        "x": 2789.49,
+        "y": 855.41
+      },
+      "area": 1693.34,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy Racial (2789, 855)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_051",
+      "color": "#5a321d",
+      "original_bbox": {
+        "x": 1874.23,
+        "y": 486.63,
+        "width": 176.75,
+        "height": 38.03
+      },
+      "bbox": {
+        "x": 2498.98,
+        "y": 648.84,
+        "width": 235.66,
+        "height": 50.7
+      },
+      "center": {
+        "x": 2616.81,
+        "y": 674.2
+      },
+      "area": 11948.77,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Cast Bar (2616, 674)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_052",
+      "color": "#5a321d",
+      "original_bbox": {
+        "x": 1874.25,
+        "y": 623.79,
+        "width": 178.41,
+        "height": 35.75
+      },
+      "bbox": {
+        "x": 2499.0,
+        "y": 831.71,
+        "width": 237.88,
+        "height": 47.67
+      },
+      "center": {
+        "x": 2617.94,
+        "y": 855.55
+      },
+      "area": 11340.2,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Cast Bar (2617, 855)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_053",
+      "color": "#5a321d",
+      "original_bbox": {
+        "x": 1874.42,
+        "y": 353.12,
+        "width": 176.96,
+        "height": 35.25
+      },
+      "bbox": {
+        "x": 2499.22,
+        "y": 470.83,
+        "width": 235.95,
+        "height": 47.0
+      },
+      "center": {
+        "x": 2617.2,
+        "y": 494.33
+      },
+      "area": 11089.54,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Cast Bar (2617, 494)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_054",
+      "color": "#1800ad",
+      "original_bbox": {
+        "x": 1874.17,
+        "y": 522.37,
+        "width": 187.84,
+        "height": 28.45
+      },
+      "bbox": {
+        "x": 2498.9,
+        "y": 696.49,
+        "width": 250.45,
+        "height": 37.94
+      },
+      "center": {
+        "x": 2624.12,
+        "y": 715.46
+      },
+      "area": 9501.37,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy Abilities",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_055",
+      "color": "#1800ad",
+      "original_bbox": {
+        "x": 1875.62,
+        "y": 387.87,
+        "width": 187.84,
+        "height": 28.45
+      },
+      "bbox": {
+        "x": 2500.83,
+        "y": 517.16,
+        "width": 250.45,
+        "height": 37.94
+      },
+      "center": {
+        "x": 2626.05,
+        "y": 536.13
+      },
+      "area": 9501.57,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy Abilities",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_056",
+      "color": "#1800ad",
+      "original_bbox": {
+        "x": 1875.52,
+        "y": 662.07,
+        "width": 187.84,
+        "height": 28.45
+      },
+      "bbox": {
+        "x": 2500.69,
+        "y": 882.76,
+        "width": 250.45,
+        "height": 37.94
+      },
+      "center": {
+        "x": 2625.91,
+        "y": 901.73
+      },
+      "area": 9501.57,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Enemy Abilities",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_057",
+      "color": "#5e17eb",
+      "original_bbox": {
+        "x": 1020.95,
+        "y": 838.89,
+        "width": 513.75,
+        "height": 192.0
+      },
+      "bbox": {
+        "x": 1361.27,
+        "y": 1118.52,
+        "width": 685.0,
+        "height": 256.0
+      },
+      "center": {
+        "x": 1703.77,
+        "y": 1246.52
+      },
+      "area": 175359.83,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Abilities (1703, 1246)",
+      "inferred_role": "player_abilities"
+    },
+    {
+      "zone_id": "zone_058",
+      "color": "#8c52ff",
+      "original_bbox": {
+        "x": 784.11,
+        "y": 742.72,
+        "width": 91.5,
+        "height": 89.94
+      },
+      "bbox": {
+        "x": 1045.48,
+        "y": 990.29,
+        "width": 122.0,
+        "height": 119.92
+      },
+      "center": {
+        "x": 1106.48,
+        "y": 1050.25
+      },
+      "area": 14630.47,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Pet Abilities (1106, 1050)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_059",
+      "color": "#e84d20",
+      "original_bbox": {
+        "x": 560.37,
+        "y": 614.04,
+        "width": 233.46,
+        "height": 114.75
+      },
+      "bbox": {
+        "x": 747.16,
+        "y": 818.71,
+        "width": 311.28,
+        "height": 153.0
+      },
+      "center": {
+        "x": 902.8,
+        "y": 895.21
+      },
+      "area": 47626.04,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Debuffs (902, 895)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_060",
+      "color": "#768047",
+      "original_bbox": {
+        "x": 823.64,
+        "y": 452.6,
+        "width": 233.58,
+        "height": 154.5
+      },
+      "bbox": {
+        "x": 1098.18,
+        "y": 603.47,
+        "width": 311.44,
+        "height": 206.0
+      },
+      "center": {
+        "x": 1253.9,
+        "y": 706.47
+      },
+      "area": 64157.24,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Buffs (1253, 706)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_061",
+      "color": "#e84d20",
+      "original_bbox": {
+        "x": 1535.6,
+        "y": 693.5,
+        "width": 164.23,
+        "height": 64.42
+      },
+      "bbox": {
+        "x": 2047.46,
+        "y": 924.67,
+        "width": 218.97,
+        "height": 85.9
+      },
+      "center": {
+        "x": 2156.95,
+        "y": 967.62
+      },
+      "area": 18808.98,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Debuffs (2156, 967)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_062",
+      "color": "#768047",
+      "original_bbox": {
+        "x": 1535.59,
+        "y": 760.56,
+        "width": 143.68,
+        "height": 83.91
+      },
+      "bbox": {
+        "x": 2047.45,
+        "y": 1014.08,
+        "width": 191.58,
+        "height": 111.88
+      },
+      "center": {
+        "x": 2143.24,
+        "y": 1070.02
+      },
+      "area": 21432.8,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Buffs (2143, 1070)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_063",
+      "color": "#a6a6a6",
+      "original_bbox": {
+        "x": 1734.43,
+        "y": 299.54,
+        "width": 130.5,
+        "height": 49.39
+      },
+      "bbox": {
+        "x": 2312.58,
+        "y": 399.39,
+        "width": 174.0,
+        "height": 65.86
+      },
+      "center": {
+        "x": 2399.58,
+        "y": 432.32
+      },
+      "area": 11459.53,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy CC Tracker (2399, 432)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_064",
+      "color": "#a6a6a6",
+      "original_bbox": {
+        "x": 1734.43,
+        "y": 435.23,
+        "width": 130.5,
+        "height": 49.39
+      },
+      "bbox": {
+        "x": 2312.58,
+        "y": 580.3,
+        "width": 174.0,
+        "height": 65.86
+      },
+      "center": {
+        "x": 2399.58,
+        "y": 613.23
+      },
+      "area": 11459.53,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy CC Tracker (2399, 613)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_065",
+      "color": "#a6a6a6",
+      "original_bbox": {
+        "x": 1734.43,
+        "y": 570.91,
+        "width": 130.5,
+        "height": 49.39
+      },
+      "bbox": {
+        "x": 2312.58,
+        "y": 761.22,
+        "width": 174.0,
+        "height": 65.86
+      },
+      "center": {
+        "x": 2399.58,
+        "y": 794.15
+      },
+      "area": 11459.53,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Enemy CC Tracker (2399, 794)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_066",
+      "color": "#ff5757",
+      "original_bbox": {
+        "x": 1197.2,
+        "y": 12.23,
+        "width": 186.75,
+        "height": 89.91
+      },
+      "bbox": {
+        "x": 1596.27,
+        "y": 16.3,
+        "width": 249.0,
+        "height": 119.87
+      },
+      "center": {
+        "x": 1720.77,
+        "y": 76.24
+      },
+      "area": 29848.87,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Arena Information (1720, 76)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_067",
+      "color": "#5e17eb",
+      "original_bbox": {
+        "x": 0.05,
+        "y": 0.82,
+        "width": 256.03,
+        "height": 23.23
+      },
+      "bbox": {
+        "x": 0.06,
+        "y": 1.09,
+        "width": 341.37,
+        "height": 30.97
+      },
+      "center": {
+        "x": 170.75,
+        "y": 16.58
+      },
+      "area": 10571.96,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Player Abilities (170, 16)",
+      "inferred_role": "player_abilities"
+    },
+    {
+      "zone_id": "zone_068",
+      "color": "#5a321d",
+      "original_bbox": {
+        "x": 1174.2,
+        "y": 695.77,
+        "width": 230.99,
+        "height": 16.23
+      },
+      "bbox": {
+        "x": 1565.6,
+        "y": 927.7,
+        "width": 307.98,
+        "height": 21.65
+      },
+      "center": {
+        "x": 1719.59,
+        "y": 938.52
+      },
+      "area": 6666.58,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Cast Bar (1719, 938)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_069",
+      "color": "#7ed957",
+      "original_bbox": {
+        "x": 1213.1,
+        "y": 712.02,
+        "width": 170.92,
+        "height": 12.0
+      },
+      "bbox": {
+        "x": 1617.47,
+        "y": 949.35,
+        "width": 227.89,
+        "height": 16.0
+      },
+      "center": {
+        "x": 1731.41,
+        "y": 957.35
+      },
+      "area": 3646.25,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Character Name (1731, 957)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_070",
+      "color": "#5170ff",
+      "original_bbox": {
+        "x": 1181.09,
+        "y": 490.15,
+        "width": 215.3,
+        "height": 90.75
+      },
+      "bbox": {
+        "x": 1574.79,
+        "y": 653.53,
+        "width": 287.06,
+        "height": 121.0
+      },
+      "center": {
+        "x": 1718.32,
+        "y": 714.03
+      },
+      "area": 34734.56,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Major Effect (1718, 714)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_071",
+      "color": "#545454",
+      "original_bbox": {
+        "x": 805.09,
+        "y": 311.11,
+        "width": 215.85,
+        "height": 141.48
+      },
+      "bbox": {
+        "x": 1073.46,
+        "y": 414.82,
+        "width": 287.8,
+        "height": 188.64
+      },
+      "center": {
+        "x": 1217.36,
+        "y": 509.14
+      },
+      "area": 54291.17,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Healer CC (1217, 509)",
+      "inferred_role": "unknown_role"
+    },
+    {
+      "zone_id": "zone_072",
+      "color": "#0097b2",
+      "original_bbox": {
+        "x": 2406.5,
+        "y": 2.48,
+        "width": 120.7,
+        "height": 15.75
+      },
+      "bbox": {
+        "x": 3208.67,
+        "y": 3.31,
+        "width": 160.94,
+        "height": 21.0
+      },
+      "center": {
+        "x": 3289.14,
+        "y": 13.81
+      },
+      "area": 3379.69,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Location Title",
+      "inferred_role": "location_title"
+    },
+    {
+      "zone_id": "zone_073",
+      "color": "#330a0a",
+      "original_bbox": {
+        "x": 2527.38,
+        "y": 2.48,
+        "width": 34.97,
+        "height": 15.75
+      },
+      "bbox": {
+        "x": 3369.84,
+        "y": 3.31,
+        "width": 46.63,
+        "height": 21.0
+      },
+      "center": {
+        "x": 3393.15,
+        "y": 13.81
+      },
+      "area": 979.23,
+      "scale_factor_applied": 1.3333333333333333,
+      "annotation": "Current Time",
+      "inferred_role": "current_time"
+    }
+  ],
+  "color_groups": {
+    "#ff3131": [
+      {
+        "zone_id": "zone_001",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 421.54,
+          "y": 364.96,
+          "width": 128.25,
+          "height": 56.8
+        },
+        "bbox": {
+          "x": 562.06,
+          "y": 486.61,
+          "width": 171.0,
+          "height": 75.73
+        },
+        "center": {
+          "x": 647.56,
+          "y": 524.48
+        },
+        "area": 12949.7,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Health",
+        "inferred_role": "player_health"
+      },
+      {
+        "zone_id": "zone_002",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 421.54,
+          "y": 429.46,
+          "width": 128.25,
+          "height": 56.8
+        },
+        "bbox": {
+          "x": 562.06,
+          "y": 572.61,
+          "width": 171.0,
+          "height": 75.73
+        },
+        "center": {
+          "x": 647.56,
+          "y": 610.48
+        },
+        "area": 12949.7,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Health",
+        "inferred_role": "player_health"
+      },
+      {
+        "zone_id": "zone_003",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 421.54,
+          "y": 493.96,
+          "width": 128.25,
+          "height": 56.8
+        },
+        "bbox": {
+          "x": 562.06,
+          "y": 658.61,
+          "width": 171.0,
+          "height": 75.73
+        },
+        "center": {
+          "x": 647.56,
+          "y": 696.48
+        },
+        "area": 12949.7,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Health",
+        "inferred_role": "player_health"
+      },
+      {
+        "zone_id": "zone_010",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 897.15,
+          "y": 651.46,
+          "width": 164.21,
+          "height": 28.5
+        },
+        "bbox": {
+          "x": 1196.2,
+          "y": 868.61,
+          "width": 218.94,
+          "height": 38.0
+        },
+        "center": {
+          "x": 1305.67,
+          "y": 887.61
+        },
+        "area": 8319.83,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Target Health",
+        "inferred_role": "target_health"
+      },
+      {
+        "zone_id": "zone_011",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 1535.61,
+          "y": 648.94,
+          "width": 170.96,
+          "height": 28.5
+        },
+        "bbox": {
+          "x": 2047.47,
+          "y": 865.26,
+          "width": 227.95,
+          "height": 38.0
+        },
+        "center": {
+          "x": 2161.45,
+          "y": 884.26
+        },
+        "area": 8662.02,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy 3 Health",
+        "inferred_role": "arena_enemy_3_health"
+      },
+      {
+        "zone_id": "zone_015",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 960.69,
+          "y": 758.04,
+          "width": 105.47,
+          "height": 18.48
+        },
+        "bbox": {
+          "x": 1280.92,
+          "y": 1010.72,
+          "width": 140.63,
+          "height": 24.64
+        },
+        "center": {
+          "x": 1351.23,
+          "y": 1023.04
+        },
+        "area": 3465.09,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Target Health",
+        "inferred_role": "target_health"
+      },
+      {
+        "zone_id": "zone_017",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 1912.63,
+          "y": 301.75,
+          "width": 100.48,
+          "height": 31.5
+        },
+        "bbox": {
+          "x": 2550.17,
+          "y": 402.33,
+          "width": 133.98,
+          "height": 42.0
+        },
+        "center": {
+          "x": 2617.16,
+          "y": 423.33
+        },
+        "area": 5627.13,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy 2 Health",
+        "inferred_role": "arena_enemy_2_health"
+      },
+      {
+        "zone_id": "zone_028",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 1912.63,
+          "y": 571.61,
+          "width": 101.98,
+          "height": 34.5
+        },
+        "bbox": {
+          "x": 2550.18,
+          "y": 762.15,
+          "width": 135.97,
+          "height": 46.0
+        },
+        "center": {
+          "x": 2618.16,
+          "y": 785.15
+        },
+        "area": 6254.56,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy 3 Health",
+        "inferred_role": "arena_enemy_3_health"
+      },
+      {
+        "zone_id": "zone_029",
+        "color": "#ff3131",
+        "original_bbox": {
+          "x": 1911.29,
+          "y": 435.23,
+          "width": 102.29,
+          "height": 34.5
+        },
+        "bbox": {
+          "x": 2548.39,
+          "y": 580.3,
+          "width": 136.39,
+          "height": 46.0
+        },
+        "center": {
+          "x": 2616.58,
+          "y": 603.3
+        },
+        "area": 6273.73,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy 2 Health",
+        "inferred_role": "arena_enemy_2_health"
+      }
+    ],
+    "#1800ad": [
+      {
+        "zone_id": "zone_004",
+        "color": "#1800ad",
+        "original_bbox": {
+          "x": 552.56,
+          "y": 364.96,
+          "width": 165.7,
+          "height": 56.87
+        },
+        "bbox": {
+          "x": 736.74,
+          "y": 486.61,
+          "width": 220.94,
+          "height": 75.83
+        },
+        "center": {
+          "x": 847.21,
+          "y": 524.53
+        },
+        "area": 16753.28,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Major Abilities (847, 524)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_005",
+        "color": "#1800ad",
+        "original_bbox": {
+          "x": 552.56,
+          "y": 493.96,
+          "width": 165.7,
+          "height": 56.87
+        },
+        "bbox": {
+          "x": 736.74,
+          "y": 658.61,
+          "width": 220.94,
+          "height": 75.83
+        },
+        "center": {
+          "x": 847.21,
+          "y": 696.53
+        },
+        "area": 16753.28,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Major Abilities (847, 696)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_006",
+        "color": "#1800ad",
+        "original_bbox": {
+          "x": 552.56,
+          "y": 429.46,
+          "width": 165.7,
+          "height": 56.87
+        },
+        "bbox": {
+          "x": 736.74,
+          "y": 572.61,
+          "width": 220.94,
+          "height": 75.83
+        },
+        "center": {
+          "x": 847.21,
+          "y": 610.53
+        },
+        "area": 16753.28,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Major Abilities (847, 610)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_054",
+        "color": "#1800ad",
+        "original_bbox": {
+          "x": 1874.17,
+          "y": 522.37,
+          "width": 187.84,
+          "height": 28.45
+        },
+        "bbox": {
+          "x": 2498.9,
+          "y": 696.49,
+          "width": 250.45,
+          "height": 37.94
+        },
+        "center": {
+          "x": 2624.12,
+          "y": 715.46
+        },
+        "area": 9501.37,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy Abilities",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_055",
+        "color": "#1800ad",
+        "original_bbox": {
+          "x": 1875.62,
+          "y": 387.87,
+          "width": 187.84,
+          "height": 28.45
+        },
+        "bbox": {
+          "x": 2500.83,
+          "y": 517.16,
+          "width": 250.45,
+          "height": 37.94
+        },
+        "center": {
+          "x": 2626.05,
+          "y": 536.13
+        },
+        "area": 9501.57,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy Abilities",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_056",
+        "color": "#1800ad",
+        "original_bbox": {
+          "x": 1875.52,
+          "y": 662.07,
+          "width": 187.84,
+          "height": 28.45
+        },
+        "bbox": {
+          "x": 2500.69,
+          "y": 882.76,
+          "width": 250.45,
+          "height": 37.94
+        },
+        "center": {
+          "x": 2625.91,
+          "y": 901.73
+        },
+        "area": 9501.57,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Enemy Abilities",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#5ce1e6": [
+      {
+        "zone_id": "zone_007",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 421.61,
+          "y": 421.83,
+          "width": 128.13,
+          "height": 7.5
+        },
+        "bbox": {
+          "x": 562.14,
+          "y": 562.44,
+          "width": 170.83,
+          "height": 10.0
+        },
+        "center": {
+          "x": 647.56,
+          "y": 567.44
+        },
+        "area": 1708.34,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Resource",
+        "inferred_role": "player_resource"
+      },
+      {
+        "zone_id": "zone_008",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 421.61,
+          "y": 486.33,
+          "width": 128.13,
+          "height": 7.5
+        },
+        "bbox": {
+          "x": 562.14,
+          "y": 648.44,
+          "width": 170.83,
+          "height": 10.0
+        },
+        "center": {
+          "x": 647.56,
+          "y": 653.44
+        },
+        "area": 1708.34,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Resource",
+        "inferred_role": "player_resource"
+      },
+      {
+        "zone_id": "zone_009",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 421.55,
+          "y": 550.83,
+          "width": 128.23,
+          "height": 8.88
+        },
+        "bbox": {
+          "x": 562.07,
+          "y": 734.44,
+          "width": 170.97,
+          "height": 11.83
+        },
+        "center": {
+          "x": 647.55,
+          "y": 740.36
+        },
+        "area": 2023.19,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Resource",
+        "inferred_role": "player_resource"
+      },
+      {
+        "zone_id": "zone_012",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 897.14,
+          "y": 680.27,
+          "width": 164.23,
+          "height": 13.21
+        },
+        "bbox": {
+          "x": 1196.18,
+          "y": 907.03,
+          "width": 218.97,
+          "height": 17.62
+        },
+        "center": {
+          "x": 1305.67,
+          "y": 915.84
+        },
+        "area": 3858.28,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Target Resource",
+        "inferred_role": "target_resource"
+      },
+      {
+        "zone_id": "zone_013",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 1535.59,
+          "y": 677.75,
+          "width": 182.23,
+          "height": 13.5
+        },
+        "bbox": {
+          "x": 2047.46,
+          "y": 903.67,
+          "width": 242.98,
+          "height": 18.0
+        },
+        "center": {
+          "x": 2168.95,
+          "y": 912.67
+        },
+        "area": 4373.63,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Resource (2168, 912)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_016",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 960.69,
+          "y": 776.52,
+          "width": 105.47,
+          "height": 13.23
+        },
+        "bbox": {
+          "x": 1280.92,
+          "y": 1035.36,
+          "width": 140.63,
+          "height": 17.64
+        },
+        "center": {
+          "x": 1351.23,
+          "y": 1044.18
+        },
+        "area": 2480.71,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Target Resource",
+        "inferred_role": "target_resource"
+      },
+      {
+        "zone_id": "zone_018",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 1912.63,
+          "y": 333.59,
+          "width": 99.93,
+          "height": 15.75
+        },
+        "bbox": {
+          "x": 2550.17,
+          "y": 444.78,
+          "width": 133.24,
+          "height": 21.0
+        },
+        "center": {
+          "x": 2616.79,
+          "y": 455.28
+        },
+        "area": 2798.03,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Resource (2616, 455)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_030",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 1911.28,
+          "y": 469.97,
+          "width": 102.61,
+          "height": 15.75
+        },
+        "bbox": {
+          "x": 2548.37,
+          "y": 626.63,
+          "width": 136.82,
+          "height": 21.0
+        },
+        "center": {
+          "x": 2616.78,
+          "y": 637.13
+        },
+        "area": 2873.17,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Resource (2616, 637)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_031",
+        "color": "#5ce1e6",
+        "original_bbox": {
+          "x": 1912.63,
+          "y": 606.36,
+          "width": 101.27,
+          "height": 15.75
+        },
+        "bbox": {
+          "x": 2550.17,
+          "y": 808.48,
+          "width": 135.03,
+          "height": 21.0
+        },
+        "center": {
+          "x": 2617.68,
+          "y": 818.98
+        },
+        "area": 2835.55,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Resource (2617, 818)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#ffde59": [
+      {
+        "zone_id": "zone_014",
+        "color": "#ffde59",
+        "original_bbox": {
+          "x": 897.13,
+          "y": 702.82,
+          "width": 164.25,
+          "height": 34.5
+        },
+        "bbox": {
+          "x": 1196.17,
+          "y": 937.1,
+          "width": 219.0,
+          "height": 46.0
+        },
+        "center": {
+          "x": 1305.67,
+          "y": 960.1
+        },
+        "area": 10074.0,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Specialized Resource (1305, 960)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_019",
+        "color": "#ffde59",
+        "original_bbox": {
+          "x": 424.13,
+          "y": 366.98,
+          "width": 11.74,
+          "height": 12.0
+        },
+        "bbox": {
+          "x": 565.51,
+          "y": 489.3,
+          "width": 15.66,
+          "height": 15.99
+        },
+        "center": {
+          "x": 573.34,
+          "y": 497.3
+        },
+        "area": 250.42,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Specialized Resource (573, 497)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_021",
+        "color": "#ffde59",
+        "original_bbox": {
+          "x": 424.13,
+          "y": 432.23,
+          "width": 11.74,
+          "height": 12.0
+        },
+        "bbox": {
+          "x": 565.51,
+          "y": 576.31,
+          "width": 15.66,
+          "height": 16.0
+        },
+        "center": {
+          "x": 573.34,
+          "y": 584.31
+        },
+        "area": 250.5,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Specialized Resource (573, 584)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_023",
+        "color": "#ffde59",
+        "original_bbox": {
+          "x": 424.13,
+          "y": 496.48,
+          "width": 11.74,
+          "height": 12.0
+        },
+        "bbox": {
+          "x": 565.51,
+          "y": 661.97,
+          "width": 15.66,
+          "height": 15.99
+        },
+        "center": {
+          "x": 573.34,
+          "y": 669.97
+        },
+        "area": 250.42,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Specialized Resource (573, 669)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_027",
+        "color": "#ffde59",
+        "original_bbox": {
+          "x": 1041.43,
+          "y": 634.4,
+          "width": 15.23,
+          "height": 14.24
+        },
+        "bbox": {
+          "x": 1388.57,
+          "y": 845.86,
+          "width": 20.3,
+          "height": 18.99
+        },
+        "center": {
+          "x": 1398.72,
+          "y": 855.36
+        },
+        "area": 385.53,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Specialized Resource (1398, 855)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#7ed957": [
+      {
+        "zone_id": "zone_020",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 435.91,
+          "y": 366.98,
+          "width": 110.98,
+          "height": 11.99
+        },
+        "bbox": {
+          "x": 581.22,
+          "y": 489.3,
+          "width": 147.97,
+          "height": 15.99
+        },
+        "center": {
+          "x": 655.2,
+          "y": 497.3
+        },
+        "area": 2365.96,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Name",
+        "inferred_role": "player_name"
+      },
+      {
+        "zone_id": "zone_022",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 435.91,
+          "y": 432.23,
+          "width": 110.98,
+          "height": 11.99
+        },
+        "bbox": {
+          "x": 581.22,
+          "y": 576.31,
+          "width": 147.97,
+          "height": 15.99
+        },
+        "center": {
+          "x": 655.2,
+          "y": 584.3
+        },
+        "area": 2365.96,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Name",
+        "inferred_role": "player_name"
+      },
+      {
+        "zone_id": "zone_024",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 435.91,
+          "y": 496.48,
+          "width": 110.98,
+          "height": 11.99
+        },
+        "bbox": {
+          "x": 581.22,
+          "y": 661.97,
+          "width": 147.97,
+          "height": 15.99
+        },
+        "center": {
+          "x": 655.2,
+          "y": 669.97
+        },
+        "area": 2365.96,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Name",
+        "inferred_role": "player_name"
+      },
+      {
+        "zone_id": "zone_025",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 897.14,
+          "y": 634.39,
+          "width": 143.97,
+          "height": 17.03
+        },
+        "bbox": {
+          "x": 1196.19,
+          "y": 845.86,
+          "width": 191.96,
+          "height": 22.7
+        },
+        "center": {
+          "x": 1292.17,
+          "y": 857.21
+        },
+        "area": 4358.17,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Character Name (1292, 857)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_026",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 960.69,
+          "y": 740.97,
+          "width": 105.46,
+          "height": 17.06
+        },
+        "bbox": {
+          "x": 1280.92,
+          "y": 987.96,
+          "width": 140.61,
+          "height": 22.75
+        },
+        "center": {
+          "x": 1351.23,
+          "y": 999.34
+        },
+        "area": 3198.98,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Character Name (1351, 999)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_044",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 1535.61,
+          "y": 629.02,
+          "width": 170.95,
+          "height": 19.91
+        },
+        "bbox": {
+          "x": 2047.48,
+          "y": 838.7,
+          "width": 227.94,
+          "height": 26.54
+        },
+        "center": {
+          "x": 2161.45,
+          "y": 851.97
+        },
+        "area": 6049.84,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Character Name (2161, 851)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_069",
+        "color": "#7ed957",
+        "original_bbox": {
+          "x": 1213.1,
+          "y": 712.02,
+          "width": 170.92,
+          "height": 12.0
+        },
+        "bbox": {
+          "x": 1617.47,
+          "y": 949.35,
+          "width": 227.89,
+          "height": 16.0
+        },
+        "center": {
+          "x": 1731.41,
+          "y": 957.35
+        },
+        "area": 3646.25,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Character Name (1731, 957)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#ff914d": [
+      {
+        "zone_id": "zone_032",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": -0.0,
+          "y": 457.9,
+          "width": 245.25,
+          "height": 146.5
+        },
+        "bbox": {
+          "x": 0,
+          "y": 610.53,
+          "width": 327.0,
+          "height": 195.33
+        },
+        "center": {
+          "x": 163.5,
+          "y": 708.2
+        },
+        "area": 63872.37,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (Left Side)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_033",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": -0.0,
+          "y": 605.31,
+          "width": 245.25,
+          "height": 146.5
+        },
+        "bbox": {
+          "x": 0,
+          "y": 807.08,
+          "width": 327.0,
+          "height": 195.33
+        },
+        "center": {
+          "x": 163.5,
+          "y": 904.75
+        },
+        "area": 63874.07,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (Left Side)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_034",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 1.96,
+          "y": 293.64,
+          "width": 245.25,
+          "height": 146.5
+        },
+        "bbox": {
+          "x": 2.61,
+          "y": 391.52,
+          "width": 327.0,
+          "height": 195.33
+        },
+        "center": {
+          "x": 166.11,
+          "y": 489.19
+        },
+        "area": 63874.07,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (Left Side)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_035",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 1.96,
+          "y": 162.65,
+          "width": 245.24,
+          "height": 126.57
+        },
+        "bbox": {
+          "x": 2.62,
+          "y": 216.87,
+          "width": 326.98,
+          "height": 168.76
+        },
+        "center": {
+          "x": 166.11,
+          "y": 301.25
+        },
+        "area": 55180.38,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (Left Side)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_036",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 478.44,
+          "y": 0.82,
+          "width": 207.0,
+          "height": 146.63
+        },
+        "bbox": {
+          "x": 637.92,
+          "y": 1.09,
+          "width": 276.0,
+          "height": 195.51
+        },
+        "center": {
+          "x": 775.92,
+          "y": 98.85
+        },
+        "area": 53960.93,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (Left Side)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_037",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 691.73,
+          "y": 0.82,
+          "width": 205.39,
+          "height": 146.66
+        },
+        "bbox": {
+          "x": 922.31,
+          "y": 1.09,
+          "width": 273.85,
+          "height": 195.55
+        },
+        "center": {
+          "x": 1059.24,
+          "y": 98.87
+        },
+        "area": 53550.32,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (1059, 98)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_038",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 271.4,
+          "y": 0.82,
+          "width": 207.0,
+          "height": 146.63
+        },
+        "bbox": {
+          "x": 361.86,
+          "y": 1.09,
+          "width": 276.0,
+          "height": 195.51
+        },
+        "center": {
+          "x": 499.86,
+          "y": 98.85
+        },
+        "area": 53960.93,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (Left Side)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_039",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 1949.24,
+          "y": 814.85,
+          "width": 277.5,
+          "height": 159.44
+        },
+        "bbox": {
+          "x": 2598.99,
+          "y": 1086.46,
+          "width": 370.0,
+          "height": 212.58
+        },
+        "center": {
+          "x": 2783.99,
+          "y": 1192.76
+        },
+        "area": 78655.92,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (2783, 1192)",
+        "inferred_role": "combat_log"
+      },
+      {
+        "zone_id": "zone_040",
+        "color": "#ff914d",
+        "original_bbox": {
+          "x": 1669.13,
+          "y": 814.85,
+          "width": 277.49,
+          "height": 130.94
+        },
+        "bbox": {
+          "x": 2225.51,
+          "y": 1086.46,
+          "width": 369.98,
+          "height": 174.58
+        },
+        "center": {
+          "x": 2410.5,
+          "y": 1173.76
+        },
+        "area": 64593.16,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Combat Log (2410, 1173)",
+        "inferred_role": "combat_log"
+      }
+    ],
+    "#ffffff": [
+      {
+        "zone_id": "zone_041",
+        "color": "#ffffff",
+        "original_bbox": {
+          "x": 2012.95,
+          "y": 301.75,
+          "width": 48.75,
+          "height": 49.98
+        },
+        "bbox": {
+          "x": 2683.93,
+          "y": 402.33,
+          "width": 65.0,
+          "height": 66.64
+        },
+        "center": {
+          "x": 2716.43,
+          "y": 435.65
+        },
+        "area": 4331.64,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Medallion (2716, 435)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_042",
+        "color": "#ffffff",
+        "original_bbox": {
+          "x": 2014.29,
+          "y": 435.23,
+          "width": 48.74,
+          "height": 51.0
+        },
+        "bbox": {
+          "x": 2685.72,
+          "y": 580.3,
+          "width": 64.98,
+          "height": 68.0
+        },
+        "center": {
+          "x": 2718.22,
+          "y": 614.3
+        },
+        "area": 4418.93,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Medallion (2718, 614)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_043",
+        "color": "#ffffff",
+        "original_bbox": {
+          "x": 2014.29,
+          "y": 570.34,
+          "width": 48.74,
+          "height": 51.0
+        },
+        "bbox": {
+          "x": 2685.72,
+          "y": 760.45,
+          "width": 64.98,
+          "height": 68.0
+        },
+        "center": {
+          "x": 2718.22,
+          "y": 794.45
+        },
+        "area": 4418.93,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Medallion (2718, 794)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#171717": [
+      {
+        "zone_id": "zone_045",
+        "color": "#171717",
+        "original_bbox": {
+          "x": 2062.04,
+          "y": 301.75,
+          "width": 48.75,
+          "height": 49.98
+        },
+        "bbox": {
+          "x": 2749.39,
+          "y": 402.33,
+          "width": 65.0,
+          "height": 66.64
+        },
+        "center": {
+          "x": 2781.89,
+          "y": 435.65
+        },
+        "area": 4331.64,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Dispell (2781, 435)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_046",
+        "color": "#171717",
+        "original_bbox": {
+          "x": 2063.5,
+          "y": 435.23,
+          "width": 48.74,
+          "height": 51.0
+        },
+        "bbox": {
+          "x": 2751.33,
+          "y": 580.3,
+          "width": 64.98,
+          "height": 68.0
+        },
+        "center": {
+          "x": 2783.82,
+          "y": 614.3
+        },
+        "area": 4418.93,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Dispell (2783, 614)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_047",
+        "color": "#171717",
+        "original_bbox": {
+          "x": 2063.5,
+          "y": 570.34,
+          "width": 48.74,
+          "height": 51.0
+        },
+        "bbox": {
+          "x": 2751.33,
+          "y": 760.45,
+          "width": 64.98,
+          "height": 68.0
+        },
+        "center": {
+          "x": 2783.82,
+          "y": 794.45
+        },
+        "area": 4418.93,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Dispell (2783, 794)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#ff66c4": [
+      {
+        "zone_id": "zone_048",
+        "color": "#ff66c4",
+        "original_bbox": {
+          "x": 2077.0,
+          "y": 356.17,
+          "width": 29.94,
+          "height": 29.7
+        },
+        "bbox": {
+          "x": 2769.33,
+          "y": 474.9,
+          "width": 39.92,
+          "height": 39.59
+        },
+        "center": {
+          "x": 2789.29,
+          "y": 494.69
+        },
+        "area": 1580.45,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Racial (2789, 494)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_049",
+        "color": "#ff66c4",
+        "original_bbox": {
+          "x": 2076.49,
+          "y": 490.65,
+          "width": 30.24,
+          "height": 31.5
+        },
+        "bbox": {
+          "x": 2768.66,
+          "y": 654.2,
+          "width": 40.32,
+          "height": 42.0
+        },
+        "center": {
+          "x": 2788.82,
+          "y": 675.2
+        },
+        "area": 1693.34,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Racial (2788, 675)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_050",
+        "color": "#ff66c4",
+        "original_bbox": {
+          "x": 2077.0,
+          "y": 625.8,
+          "width": 30.24,
+          "height": 31.5
+        },
+        "bbox": {
+          "x": 2769.33,
+          "y": 834.41,
+          "width": 40.32,
+          "height": 42.0
+        },
+        "center": {
+          "x": 2789.49,
+          "y": 855.41
+        },
+        "area": 1693.34,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy Racial (2789, 855)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#5a321d": [
+      {
+        "zone_id": "zone_051",
+        "color": "#5a321d",
+        "original_bbox": {
+          "x": 1874.23,
+          "y": 486.63,
+          "width": 176.75,
+          "height": 38.03
+        },
+        "bbox": {
+          "x": 2498.98,
+          "y": 648.84,
+          "width": 235.66,
+          "height": 50.7
+        },
+        "center": {
+          "x": 2616.81,
+          "y": 674.2
+        },
+        "area": 11948.77,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Cast Bar (2616, 674)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_052",
+        "color": "#5a321d",
+        "original_bbox": {
+          "x": 1874.25,
+          "y": 623.79,
+          "width": 178.41,
+          "height": 35.75
+        },
+        "bbox": {
+          "x": 2499.0,
+          "y": 831.71,
+          "width": 237.88,
+          "height": 47.67
+        },
+        "center": {
+          "x": 2617.94,
+          "y": 855.55
+        },
+        "area": 11340.2,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Cast Bar (2617, 855)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_053",
+        "color": "#5a321d",
+        "original_bbox": {
+          "x": 1874.42,
+          "y": 353.12,
+          "width": 176.96,
+          "height": 35.25
+        },
+        "bbox": {
+          "x": 2499.22,
+          "y": 470.83,
+          "width": 235.95,
+          "height": 47.0
+        },
+        "center": {
+          "x": 2617.2,
+          "y": 494.33
+        },
+        "area": 11089.54,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Cast Bar (2617, 494)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_068",
+        "color": "#5a321d",
+        "original_bbox": {
+          "x": 1174.2,
+          "y": 695.77,
+          "width": 230.99,
+          "height": 16.23
+        },
+        "bbox": {
+          "x": 1565.6,
+          "y": 927.7,
+          "width": 307.98,
+          "height": 21.65
+        },
+        "center": {
+          "x": 1719.59,
+          "y": 938.52
+        },
+        "area": 6666.58,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Cast Bar (1719, 938)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#5e17eb": [
+      {
+        "zone_id": "zone_057",
+        "color": "#5e17eb",
+        "original_bbox": {
+          "x": 1020.95,
+          "y": 838.89,
+          "width": 513.75,
+          "height": 192.0
+        },
+        "bbox": {
+          "x": 1361.27,
+          "y": 1118.52,
+          "width": 685.0,
+          "height": 256.0
+        },
+        "center": {
+          "x": 1703.77,
+          "y": 1246.52
+        },
+        "area": 175359.83,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Abilities (1703, 1246)",
+        "inferred_role": "player_abilities"
+      },
+      {
+        "zone_id": "zone_067",
+        "color": "#5e17eb",
+        "original_bbox": {
+          "x": 0.05,
+          "y": 0.82,
+          "width": 256.03,
+          "height": 23.23
+        },
+        "bbox": {
+          "x": 0.06,
+          "y": 1.09,
+          "width": 341.37,
+          "height": 30.97
+        },
+        "center": {
+          "x": 170.75,
+          "y": 16.58
+        },
+        "area": 10571.96,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Player Abilities (170, 16)",
+        "inferred_role": "player_abilities"
+      }
+    ],
+    "#8c52ff": [
+      {
+        "zone_id": "zone_058",
+        "color": "#8c52ff",
+        "original_bbox": {
+          "x": 784.11,
+          "y": 742.72,
+          "width": 91.5,
+          "height": 89.94
+        },
+        "bbox": {
+          "x": 1045.48,
+          "y": 990.29,
+          "width": 122.0,
+          "height": 119.92
+        },
+        "center": {
+          "x": 1106.48,
+          "y": 1050.25
+        },
+        "area": 14630.47,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Pet Abilities (1106, 1050)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#e84d20": [
+      {
+        "zone_id": "zone_059",
+        "color": "#e84d20",
+        "original_bbox": {
+          "x": 560.37,
+          "y": 614.04,
+          "width": 233.46,
+          "height": 114.75
+        },
+        "bbox": {
+          "x": 747.16,
+          "y": 818.71,
+          "width": 311.28,
+          "height": 153.0
+        },
+        "center": {
+          "x": 902.8,
+          "y": 895.21
+        },
+        "area": 47626.04,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Debuffs (902, 895)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_061",
+        "color": "#e84d20",
+        "original_bbox": {
+          "x": 1535.6,
+          "y": 693.5,
+          "width": 164.23,
+          "height": 64.42
+        },
+        "bbox": {
+          "x": 2047.46,
+          "y": 924.67,
+          "width": 218.97,
+          "height": 85.9
+        },
+        "center": {
+          "x": 2156.95,
+          "y": 967.62
+        },
+        "area": 18808.98,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Debuffs (2156, 967)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#768047": [
+      {
+        "zone_id": "zone_060",
+        "color": "#768047",
+        "original_bbox": {
+          "x": 823.64,
+          "y": 452.6,
+          "width": 233.58,
+          "height": 154.5
+        },
+        "bbox": {
+          "x": 1098.18,
+          "y": 603.47,
+          "width": 311.44,
+          "height": 206.0
+        },
+        "center": {
+          "x": 1253.9,
+          "y": 706.47
+        },
+        "area": 64157.24,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Buffs (1253, 706)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_062",
+        "color": "#768047",
+        "original_bbox": {
+          "x": 1535.59,
+          "y": 760.56,
+          "width": 143.68,
+          "height": 83.91
+        },
+        "bbox": {
+          "x": 2047.45,
+          "y": 1014.08,
+          "width": 191.58,
+          "height": 111.88
+        },
+        "center": {
+          "x": 2143.24,
+          "y": 1070.02
+        },
+        "area": 21432.8,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Buffs (2143, 1070)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#a6a6a6": [
+      {
+        "zone_id": "zone_063",
+        "color": "#a6a6a6",
+        "original_bbox": {
+          "x": 1734.43,
+          "y": 299.54,
+          "width": 130.5,
+          "height": 49.39
+        },
+        "bbox": {
+          "x": 2312.58,
+          "y": 399.39,
+          "width": 174.0,
+          "height": 65.86
+        },
+        "center": {
+          "x": 2399.58,
+          "y": 432.32
+        },
+        "area": 11459.53,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy CC Tracker (2399, 432)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_064",
+        "color": "#a6a6a6",
+        "original_bbox": {
+          "x": 1734.43,
+          "y": 435.23,
+          "width": 130.5,
+          "height": 49.39
+        },
+        "bbox": {
+          "x": 2312.58,
+          "y": 580.3,
+          "width": 174.0,
+          "height": 65.86
+        },
+        "center": {
+          "x": 2399.58,
+          "y": 613.23
+        },
+        "area": 11459.53,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy CC Tracker (2399, 613)",
+        "inferred_role": "unknown_role"
+      },
+      {
+        "zone_id": "zone_065",
+        "color": "#a6a6a6",
+        "original_bbox": {
+          "x": 1734.43,
+          "y": 570.91,
+          "width": 130.5,
+          "height": 49.39
+        },
+        "bbox": {
+          "x": 2312.58,
+          "y": 761.22,
+          "width": 174.0,
+          "height": 65.86
+        },
+        "center": {
+          "x": 2399.58,
+          "y": 794.15
+        },
+        "area": 11459.53,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Enemy CC Tracker (2399, 794)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#ff5757": [
+      {
+        "zone_id": "zone_066",
+        "color": "#ff5757",
+        "original_bbox": {
+          "x": 1197.2,
+          "y": 12.23,
+          "width": 186.75,
+          "height": 89.91
+        },
+        "bbox": {
+          "x": 1596.27,
+          "y": 16.3,
+          "width": 249.0,
+          "height": 119.87
+        },
+        "center": {
+          "x": 1720.77,
+          "y": 76.24
+        },
+        "area": 29848.87,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Arena Information (1720, 76)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#5170ff": [
+      {
+        "zone_id": "zone_070",
+        "color": "#5170ff",
+        "original_bbox": {
+          "x": 1181.09,
+          "y": 490.15,
+          "width": 215.3,
+          "height": 90.75
+        },
+        "bbox": {
+          "x": 1574.79,
+          "y": 653.53,
+          "width": 287.06,
+          "height": 121.0
+        },
+        "center": {
+          "x": 1718.32,
+          "y": 714.03
+        },
+        "area": 34734.56,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Major Effect (1718, 714)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#545454": [
+      {
+        "zone_id": "zone_071",
+        "color": "#545454",
+        "original_bbox": {
+          "x": 805.09,
+          "y": 311.11,
+          "width": 215.85,
+          "height": 141.48
+        },
+        "bbox": {
+          "x": 1073.46,
+          "y": 414.82,
+          "width": 287.8,
+          "height": 188.64
+        },
+        "center": {
+          "x": 1217.36,
+          "y": 509.14
+        },
+        "area": 54291.17,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Healer CC (1217, 509)",
+        "inferred_role": "unknown_role"
+      }
+    ],
+    "#0097b2": [
+      {
+        "zone_id": "zone_072",
+        "color": "#0097b2",
+        "original_bbox": {
+          "x": 2406.5,
+          "y": 2.48,
+          "width": 120.7,
+          "height": 15.75
+        },
+        "bbox": {
+          "x": 3208.67,
+          "y": 3.31,
+          "width": 160.94,
+          "height": 21.0
+        },
+        "center": {
+          "x": 3289.14,
+          "y": 13.81
+        },
+        "area": 3379.69,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Location Title",
+        "inferred_role": "location_title"
+      }
+    ],
+    "#330a0a": [
+      {
+        "zone_id": "zone_073",
+        "color": "#330a0a",
+        "original_bbox": {
+          "x": 2527.38,
+          "y": 2.48,
+          "width": 34.97,
+          "height": 15.75
+        },
+        "bbox": {
+          "x": 3369.84,
+          "y": 3.31,
+          "width": 46.63,
+          "height": 21.0
+        },
+        "center": {
+          "x": 3393.15,
+          "y": 13.81
+        },
+        "area": 979.23,
+        "scale_factor_applied": 1.3333333333333333,
+        "annotation": "Current Time",
+        "inferred_role": "current_time"
+      }
+    ]
+  },
+  "zone_summary": {
+    "#ff3131": {
+      "count": 9,
+      "annotations": [
+        "Player Health",
+        "Player Health",
+        "Player Health",
+        "Target Health",
+        "Arena Enemy 3 Health",
+        "Target Health",
+        "Arena Enemy 2 Health",
+        "Arena Enemy 3 Health",
+        "Arena Enemy 2 Health"
+      ]
+    },
+    "#1800ad": {
+      "count": 6,
+      "annotations": [
+        "Major Abilities (847, 524)",
+        "Major Abilities (847, 696)",
+        "Major Abilities (847, 610)",
+        "Arena Enemy Abilities",
+        "Arena Enemy Abilities",
+        "Arena Enemy Abilities"
+      ]
+    },
+    "#5ce1e6": {
+      "count": 9,
+      "annotations": [
+        "Player Resource",
+        "Player Resource",
+        "Player Resource",
+        "Target Resource",
+        "Resource (2168, 912)",
+        "Target Resource",
+        "Resource (2616, 455)",
+        "Resource (2616, 637)",
+        "Resource (2617, 818)"
+      ]
+    },
+    "#ffde59": {
+      "count": 5,
+      "annotations": [
+        "Specialized Resource (1305, 960)",
+        "Specialized Resource (573, 497)",
+        "Specialized Resource (573, 584)",
+        "Specialized Resource (573, 669)",
+        "Specialized Resource (1398, 855)"
+      ]
+    },
+    "#7ed957": {
+      "count": 7,
+      "annotations": [
+        "Player Name",
+        "Player Name",
+        "Player Name",
+        "Character Name (1292, 857)",
+        "Character Name (1351, 999)",
+        "Character Name (2161, 851)",
+        "Character Name (1731, 957)"
+      ]
+    },
+    "#ff914d": {
+      "count": 9,
+      "annotations": [
+        "Combat Log (Left Side)",
+        "Combat Log (Left Side)",
+        "Combat Log (Left Side)",
+        "Combat Log (Left Side)",
+        "Combat Log (Left Side)",
+        "Combat Log (1059, 98)",
+        "Combat Log (Left Side)",
+        "Combat Log (2783, 1192)",
+        "Combat Log (2410, 1173)"
+      ]
+    },
+    "#ffffff": {
+      "count": 3,
+      "annotations": [
+        "Enemy Medallion (2716, 435)",
+        "Enemy Medallion (2718, 614)",
+        "Enemy Medallion (2718, 794)"
+      ]
+    },
+    "#171717": {
+      "count": 3,
+      "annotations": [
+        "Enemy Dispell (2781, 435)",
+        "Enemy Dispell (2783, 614)",
+        "Enemy Dispell (2783, 794)"
+      ]
+    },
+    "#ff66c4": {
+      "count": 3,
+      "annotations": [
+        "Enemy Racial (2789, 494)",
+        "Enemy Racial (2788, 675)",
+        "Enemy Racial (2789, 855)"
+      ]
+    },
+    "#5a321d": {
+      "count": 4,
+      "annotations": [
+        "Cast Bar (2616, 674)",
+        "Cast Bar (2617, 855)",
+        "Cast Bar (2617, 494)",
+        "Cast Bar (1719, 938)"
+      ]
+    },
+    "#5e17eb": {
+      "count": 2,
+      "annotations": [
+        "Player Abilities (1703, 1246)",
+        "Player Abilities (170, 16)"
+      ]
+    },
+    "#8c52ff": {
+      "count": 1,
+      "annotations": [
+        "Pet Abilities (1106, 1050)"
+      ]
+    },
+    "#e84d20": {
+      "count": 2,
+      "annotations": [
+        "Debuffs (902, 895)",
+        "Debuffs (2156, 967)"
+      ]
+    },
+    "#768047": {
+      "count": 2,
+      "annotations": [
+        "Buffs (1253, 706)",
+        "Buffs (2143, 1070)"
+      ]
+    },
+    "#a6a6a6": {
+      "count": 3,
+      "annotations": [
+        "Enemy CC Tracker (2399, 432)",
+        "Enemy CC Tracker (2399, 613)",
+        "Enemy CC Tracker (2399, 794)"
+      ]
+    },
+    "#ff5757": {
+      "count": 1,
+      "annotations": [
+        "Arena Information (1720, 76)"
+      ]
+    },
+    "#5170ff": {
+      "count": 1,
+      "annotations": [
+        "Major Effect (1718, 714)"
+      ]
+    },
+    "#545454": {
+      "count": 1,
+      "annotations": [
+        "Healer CC (1217, 509)"
+      ]
+    },
+    "#0097b2": {
+      "count": 1,
+      "annotations": [
+        "Location Title"
+      ]
+    },
+    "#330a0a": {
+      "count": 1,
+      "annotations": [
+        "Current Time"
+      ]
+    }
+  }
+}

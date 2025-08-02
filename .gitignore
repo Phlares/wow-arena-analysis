@@ -1,42 +1,50 @@
-﻿# Video files - large binary files
+# WoW Arena Analysis Project .gitignore
+
+# Ignore video files (too large for git)
 *.mp4
 *.avi
-*.mkv
 *.mov
-*.wmv
+*.mkv
 
-# Image files - large screenshots (40GB+ in PNGS directory)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
+# Ignore large data files
+*.db
+master_index*.csv
+match_features*.csv
 
-# Exclude entire PNGS directory
-PNGS/
+# Ignore debug output directories
+debug_ocr_output/
+debug_outputs/
+archive_outputs/
+extracted_frames/
+annotation_frames/
 
-# JSON files in subdirectories (match metadata) but keep root-level JSON
-*/*.json
-
-# Large WoW combat log files (42GB+ total) 
-Logs/*.txt
-
-# Log files except build_index_errors.log
+# Ignore temporary files
+*.tmp
+*.temp
+nul
 *.log
-!build_index_errors.log
 
-# Python cache and IDE files
+# Ignore Python cache
 __pycache__/
-*.py[cod]
-*.class
-.idea/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# Ignore IDE files
 .vscode/
+.idea/
 *.swp
 *.swo
 *~
 
-# OS generated files
+# Ignore OS files
 .DS_Store
 .DS_Store?
 ._*
@@ -45,7 +53,14 @@ __pycache__/
 ehthumbs.db
 Thumbs.db
 
-# Temporary files
-.temp/
-*.tmp
-*.temp
+# Keep important config and mapping files
+!player_pet_index.json
+!scaled_zone_mapping.json
+!CLAUDE.md
+!Zone_Colour_Definitions.md
+!*.svg
+!*_IMG.png
+
+# Keep core scripts
+!*.py
+!README.md
