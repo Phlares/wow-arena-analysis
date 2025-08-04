@@ -1,0 +1,1153 @@
+{
+  "SPELL_AURA_REMOVED": {
+    "total_count": 2064,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_AURA_APPLIED": {
+    "total_count": 3335,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_CAST_SUCCESS": {
+    "total_count": 1066,
+    "coordinate_count": 1066,
+    "coordinate_examples": [
+      {
+        "line_number": 118372,
+        "timestamp": "2025-05-06 19:04:25.703000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1938.6,
+          "position_y": 1368.8,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1938.60, 1368.80",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 31,
+        "raw_line": "5/6/2025 19:04:25.703-4  SPELL_CAST_SUCCESS,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,0000000000000000,nil,0x80000000,0x80000000,115191,\"Stealth\",0x1,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,300,300,0,-1938.60,1368.80,0,3.9970,673"
+      },
+      {
+        "line_number": 118413,
+        "timestamp": "2025-05-06 19:04:29.642000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1949.15,
+          "position_y": 1352.57,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1949.15, 1352.57",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 31,
+        "raw_line": "5/6/2025 19:04:29.642-4  SPELL_CAST_SUCCESS,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,0000000000000000,nil,0x80000000,0x80000000,2983,\"Sprint\",0x1,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,300,300,0,-1949.15,1352.57,0,3.9990,673"
+      },
+      {
+        "line_number": 118425,
+        "timestamp": "2025-05-06 19:04:31.889000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1955.14,
+          "position_y": 1346.86,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1955.14, 1346.86",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 31,
+        "raw_line": "5/6/2025 19:04:31.889-4  SPELL_CAST_SUCCESS,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,0000000000000000,nil,0x80000000,0x80000000,200652,\"Tyr's Deliverance\",0x2,Player-11-0E9597D8,0000000000000000,11939160,11939160,106668,102565,95311,2331,0,0,0,2625000,2625000,60000,-1955.14,1346.86,0,4.9080,674"
+      },
+      {
+        "line_number": 118442,
+        "timestamp": "2025-05-06 19:04:31.993000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1944.52,
+          "position_y": 1317.74,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1944.52, 1317.74",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 31,
+        "raw_line": "5/6/2025 19:04:31.993-4  SPELL_CAST_SUCCESS,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,0000000000000000,nil,0x80000000,0x80000000,115191,\"Stealth\",0x1,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,300,300,0,-1944.52,1317.74,0,4.8677,673"
+      },
+      {
+        "line_number": 118444,
+        "timestamp": "2025-05-06 19:04:32.075000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1971.3,
+          "position_y": 1270.09,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1971.30, 1270.09",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 31,
+        "raw_line": "5/6/2025 19:04:32.075-4  SPELL_CAST_SUCCESS,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x548,0x0,0000000000000000,nil,0x80000000,0x80000000,385899,\"Soulburn\",0x20,Player-73-0F4BC0DB,0000000000000000,12723542,12723542,12322,102959,52979,2969,0,1272354,7,30,50,10,-1971.30,1270.09,0,1.7996,676"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "ARENA_MATCH_START": {
+    "total_count": 1,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "COMBATANT_INFO": {
+    "total_count": 6,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_CAST_START": {
+    "total_count": 190,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_HEAL": {
+    "total_count": 2091,
+    "coordinate_count": 2091,
+    "coordinate_examples": [
+      {
+        "line_number": 118422,
+        "timestamp": "2025-05-06 19:04:31.887000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1955.14,
+          "position_y": 1346.86,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1955.14, 1346.86",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:31.887-4  SPELL_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,200654,\"Tyr's Deliverance\",0x2,Player-11-0E9597D8,0000000000000000,11939160,11939160,106668,102565,95311,2331,0,0,0,2625000,2625000,0,-1955.14,1346.86,0,4.9080,674,75084,75084,75084,0,nil"
+      },
+      {
+        "line_number": 118427,
+        "timestamp": "2025-05-06 19:04:31.891000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1930.43,
+          "position_y": 1333.59,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1930.43, 1333.59",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:31.891-4  SPELL_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Pet-0-3021-1911-5918-417-010511E85C,\"Zhaakun\",0x1111,0x0,200654,\"Tyr's Deliverance\",0x2,Pet-0-3021-1911-5918-417-010511E85C,Player-60-0F6E0EE9,6353299,6353299,59158,118315,158688,0,0,635329,3,200,200,0,-1930.43,1333.59,0,0.0948,677,75084,75084,75084,0,nil"
+      },
+      {
+        "line_number": 118429,
+        "timestamp": "2025-05-06 19:04:31.891000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1944.78,
+          "position_y": 1319.4,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1944.78, 1319.40",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:31.891-4  SPELL_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,200654,\"Tyr's Deliverance\",0x2,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,300,300,0,-1944.78,1319.40,0,4.8677,673,67576,67576,67576,0,nil"
+      },
+      {
+        "line_number": 118431,
+        "timestamp": "2025-05-06 19:04:31.891000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1930.97,
+          "position_y": 1332.89,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1930.97, 1332.89",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:31.891-4  SPELL_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,200654,\"Tyr's Deliverance\",0x2,Player-60-0F6E0EE9,0000000000000000,12101522,12101522,12322,102883,52896,2753,0,1210152,0,2500000,2500000,0,-1930.97,1332.89,0,5.0903,677,67576,67576,67576,0,nil"
+      },
+      {
+        "line_number": 118433,
+        "timestamp": "2025-05-06 19:04:31.908000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1930.71,
+          "position_y": 1332.78,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1930.71, 1332.78",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:31.908-4  SPELL_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,53652,\"Beacon of Light\",0x2,Player-60-0F6E0EE9,0000000000000000,12101522,12101522,12322,102883,52896,2753,0,1210152,0,2500000,2500000,0,-1930.71,1332.78,0,5.0864,677,7095,7095,7095,0,nil"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_AURA_REFRESH": {
+    "total_count": 1268,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_CREATE": {
+    "total_count": 2,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_ENERGIZE": {
+    "total_count": 929,
+    "coordinate_count": 929,
+    "coordinate_examples": [
+      {
+        "line_number": 118456,
+        "timestamp": "2025-05-06 19:04:33.737000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1955.14,
+          "position_y": 1346.86,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1955.14, 1346.86",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:04:33.737-4  SPELL_ENERGIZE,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,88852,\"Beacon of Light\",0x1,Player-11-0E9597D8,0000000000000000,11939160,11939160,106668,102565,95311,2331,0,0,0,2583560,2625000,0,-1955.14,1346.86,0,4.9675,674,1.0000,0.0000,9,5"
+      },
+      {
+        "line_number": 118508,
+        "timestamp": "2025-05-06 19:04:36.702000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1963.94,
+          "position_y": 1277.6,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1963.94, 1277.60",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:04:36.702-4  SPELL_ENERGIZE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,394664,\"Shrouded Suffocation\",0x1,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,290,300,0,-1963.94,1277.60,0,0.9583,673,2.0000,0.0000,4,6"
+      },
+      {
+        "line_number": 118509,
+        "timestamp": "2025-05-06 19:04:36.703000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1963.94,
+          "position_y": 1277.6,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1963.94, 1277.60",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:04:36.703-4  SPELL_ENERGIZE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,703,\"Garrote\",0x1,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,290,300,0,-1963.94,1277.60,0,0.9583,673,1.0000,0.0000,4,6"
+      },
+      {
+        "line_number": 118530,
+        "timestamp": "2025-05-06 19:04:37.253000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1935.74,
+          "position_y": 1313.67,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1935.74, 1313.67",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:04:37.253-4  SPELL_ENERGIZE,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,215942,\"Soul Conduit\",0x20,Player-60-0F6E0EE9,0000000000000000,12101522,12101522,12322,102883,52896,2753,0,1210152,0,2270725,2500000,0,-1935.74,1313.67,0,4.1361,677,1.0000,0.0000,7,50"
+      },
+      {
+        "line_number": 118574,
+        "timestamp": "2025-05-06 19:04:37.945000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1949.05,
+          "position_y": 1314.83,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1949.05, 1314.83",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:04:37.945-4  SPELL_ENERGIZE,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,220637,\"Judgment\",0x2,Player-11-0E9597D8,0000000000000000,11939160,11939160,106668,102565,95311,2331,0,0,0,2450610,2625000,0,-1949.05,1314.83,0,4.5589,674,1.0000,0.0000,9,5"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_CAST_FAILED": {
+    "total_count": 207,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_AURA_APPLIED_DOSE": {
+    "total_count": 729,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_ABSORBED": {
+    "total_count": 3363,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_MISSED": {
+    "total_count": 438,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SWING_MISSED": {
+    "total_count": 144,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SWING_DAMAGE_LANDED": {
+    "total_count": 373,
+    "coordinate_count": 373,
+    "coordinate_examples": [
+      {
+        "line_number": 118523,
+        "timestamp": "2025-05-06 19:04:36.866000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1962.17,
+          "position_y": 1283.47,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1962.17, 1283.47",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:36.866-4  SWING_DAMAGE_LANDED,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x10548,0x0,Player-73-0F4BC0DB,0000000000000000,12723542,12723542,12322,102959,52979,2969,0,1242975,0,2263075,2500000,0,-1962.17,1283.47,0,0.9939,676,0,45853,-1,1,0,0,26113,nil,nil,nil"
+      },
+      {
+        "line_number": 118573,
+        "timestamp": "2025-05-06 19:04:37.821000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1937.71,
+          "position_y": 1310.63,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1937.71, 1310.63",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:37.821-4  SWING_DAMAGE_LANDED,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Player-60-0F6E0EE9,0000000000000000,12101522,12101522,12322,102883,52896,2753,0,968666,0,2232325,2500000,0,-1937.71,1310.63,0,4.1282,677,0,64574,-1,1,0,0,52384,1,nil,nil"
+      },
+      {
+        "line_number": 118621,
+        "timestamp": "2025-05-06 19:04:38.745000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1937.71,
+          "position_y": 1310.63,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1937.71, 1310.63",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:38.745-4  SWING_DAMAGE_LANDED,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Player-60-0F6E0EE9,0000000000000000,9681217,12101522,12322,102883,52896,2753,0,9314275,0,2254150,2500000,0,-1937.71,1310.63,0,4.1282,677,0,66118,-1,1,0,0,35823,nil,nil,nil"
+      },
+      {
+        "line_number": 118666,
+        "timestamp": "2025-05-06 19:04:39.589000",
+        "source_name": "Infernal",
+        "coordinates": {
+          "position_x": -1955.66,
+          "position_y": 1282.82,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1955.66, 1282.82",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:39.589-4  SWING_DAMAGE_LANDED,Creature-0-3021-1911-5918-89-00001A958A,\"Infernal\",0x2148,0x0,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-11-0E366FE1,0000000000000000,10209953,10282260,98686,13440,33841,2396,0,0,3,273,300,0,-1955.66,1282.82,0,1.3906,673,72307,119039,-1,1,0,0,0,nil,nil,nil"
+      },
+      {
+        "line_number": 118670,
+        "timestamp": "2025-05-06 19:04:39.665000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1937.71,
+          "position_y": 1310.63,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1937.71, 1310.63",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:39.665-4  SWING_DAMAGE_LANDED,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Player-60-0F6E0EE9,0000000000000000,9691622,12101522,12322,102883,52896,2753,0,9208643,0,2270350,2500000,0,-1937.71,1310.63,0,4.1282,677,0,70064,-1,1,0,0,38125,nil,nil,nil"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_PERIODIC_MISSED": {
+    "total_count": 1038,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_SUMMON": {
+    "total_count": 24,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_DAMAGE": {
+    "total_count": 1629,
+    "coordinate_count": 1629,
+    "coordinate_examples": [
+      {
+        "line_number": 118543,
+        "timestamp": "2025-05-06 19:04:37.493000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1959.01,
+          "position_y": 1281.77,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1959.01, 1281.77",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:37.493-4  SPELL_DAMAGE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x10548,0x0,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,22703,\"Infernal Awakening\",0x4,Player-11-0E366FE1,0000000000000000,10200288,10282260,98686,13440,33841,2396,0,0,3,247,300,0,-1959.01,1281.77,0,1.3749,673,81972,67377,-1,4,0,0,0,1,nil,nil,AOE"
+      },
+      {
+        "line_number": 118546,
+        "timestamp": "2025-05-06 19:04:37.524000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1958.58,
+          "position_y": 1281.68,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1958.58, 1281.68",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:37.524-4  SPELL_DAMAGE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x10548,0x0,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,196100,\"Grimoire of Sacrifice\",0x20,Player-11-0E366FE1,0000000000000000,10155880,10282260,98686,13440,33841,2396,0,0,3,254,300,0,-1958.58,1281.68,0,1.3752,673,44408,57633,-1,32,0,0,0,nil,nil,nil,ST"
+      },
+      {
+        "line_number": 118691,
+        "timestamp": "2025-05-06 19:04:39.819000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1959.3,
+          "position_y": 1281.27,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1959.30, 1281.27",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:39.819-4  SPELL_DAMAGE,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Creature-0-3021-1911-5918-89-00001A958A,\"Infernal\",0x2148,0x0,81297,\"Consecration\",0x2,Creature-0-3021-1911-5918-89-00001A958A,Player-73-0F4BC0DB,9539391,9542657,229341,229341,211916,0,0,0,1,0,0,0,-1959.30,1281.27,0,0.6011,676,3266,19178,-1,2,0,0,0,nil,nil,nil,AOE"
+      },
+      {
+        "line_number": 118764,
+        "timestamp": "2025-05-06 19:04:40.746000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1956.2,
+          "position_y": 1283.16,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1956.20, 1283.16",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:40.746-4  SPELL_DAMAGE,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Creature-0-3021-1911-5918-89-00001A958A,\"Infernal\",0x2148,0x0,81297,\"Consecration\",0x2,Creature-0-3021-1911-5918-89-00001A958A,Player-73-0F4BC0DB,9536203,9542657,229341,229341,211916,0,0,0,1,0,0,0,-1956.20,1283.16,0,1.0174,676,3188,18714,-1,2,0,0,0,nil,nil,nil,AOE"
+      },
+      {
+        "line_number": 118774,
+        "timestamp": "2025-05-06 19:04:41.001000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1936.25,
+          "position_y": 1308.87,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1936.25, 1308.87",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:41.001-4  SPELL_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,452538,\"Fatebound Coin (Tails)\",0x6a,Player-1185-0E8FC92B,0000000000000000,10399023,10782220,104812,19764,35515,2678,0,0,3,100,120,0,-1936.25,1308.87,0,2.3163,676,383197,499113,-1,106,0,0,0,nil,nil,nil,ST"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SWING_DAMAGE": {
+    "total_count": 289,
+    "coordinate_count": 289,
+    "coordinate_examples": [
+      {
+        "line_number": 118665,
+        "timestamp": "2025-05-06 19:04:39.588000",
+        "source_name": "Infernal",
+        "coordinates": {
+          "position_x": -1959.79,
+          "position_y": 1281.14,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1959.79, 1281.14",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:39.588-4  SWING_DAMAGE,Creature-0-3021-1911-5918-89-00001A958A,\"Infernal\",0x2148,0x0,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Creature-0-3021-1911-5918-89-00001A958A,Player-73-0F4BC0DB,9542657,9542657,229341,229341,211916,0,0,0,1,0,0,0,-1959.79,1281.14,0,0.2559,676,72307,119039,-1,1,0,0,0,nil,nil,nil"
+      },
+      {
+        "line_number": 118817,
+        "timestamp": "2025-05-06 19:04:41.782000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1935.61,
+          "position_y": 1308.17,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1935.61, 1308.17",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:41.782-4  SWING_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,300,300,0,-1935.61,1308.17,0,2.8150,673,28440,45144,-1,1,0,0,0,nil,nil,nil"
+      },
+      {
+        "line_number": 118834,
+        "timestamp": "2025-05-06 19:04:42.065000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1935.61,
+          "position_y": 1308.17,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1935.61, 1308.17",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:42.065-4  SWING_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,256,300,0,-1935.61,1308.17,0,2.8111,673,13744,21816,-1,1,0,0,0,nil,nil,nil"
+      },
+      {
+        "line_number": 118953,
+        "timestamp": "2025-05-06 19:04:43.525000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1936.35,
+          "position_y": 1310.79,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1936.35, 1310.79",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:43.525-4  SWING_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x10548,0x0,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,226,300,0,-1936.35,1310.79,0,4.1031,673,29592,46971,-1,1,0,0,0,nil,nil,nil"
+      },
+      {
+        "line_number": 118971,
+        "timestamp": "2025-05-06 19:04:43.809000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1936.35,
+          "position_y": 1310.79,
+          "x_parameter_index": 23,
+          "y_parameter_index": 24,
+          "advanced_start_index": null,
+          "coordinate_format": "-1936.35, 1310.79",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 38,
+        "raw_line": "5/6/2025 19:04:43.809-4  SWING_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x10548,0x0,Player-11-0E366FE1,0000000000000000,10282260,10282260,98686,13440,33841,2396,0,0,3,229,300,0,-1936.35,1310.79,0,4.4879,673,14230,22588,-1,1,0,0,0,nil,nil,nil"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_AURA_REMOVED_DOSE": {
+    "total_count": 238,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_PERIODIC_DAMAGE": {
+    "total_count": 3030,
+    "coordinate_count": 3030,
+    "coordinate_examples": [
+      {
+        "line_number": 118826,
+        "timestamp": "2025-05-06 19:04:41.979000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1937.6,
+          "position_y": 1309.44,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1937.60, 1309.44",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:41.979-4  SPELL_PERIODIC_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,381628,\"Internal Bleeding\",0x1,Player-1185-0E8FC92B,0000000000000000,10289806,10782220,104812,19764,35515,2678,0,0,3,115,120,0,-1937.60,1309.44,0,4.1856,676,64480,83985,-1,1,0,0,0,nil,nil,nil,ST"
+      },
+      {
+        "line_number": 118856,
+        "timestamp": "2025-05-06 19:04:42.178000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1935.61,
+          "position_y": 1308.17,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1935.61, 1308.17",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:42.178-4  SPELL_PERIODIC_DAMAGE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x10548,0x0,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,445474,\"Wither\",0x24,Player-11-0E366FE1,0000000000000000,10249892,10282260,98686,13440,33841,2396,0,0,3,256,300,0,-1935.61,1308.17,0,2.8111,673,32368,68638,-1,36,0,0,54116,1,nil,nil,ST"
+      },
+      {
+        "line_number": 118905,
+        "timestamp": "2025-05-06 19:04:42.938000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1937.6,
+          "position_y": 1309.44,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1937.60, 1309.44",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:42.938-4  SPELL_PERIODIC_DAMAGE,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,381628,\"Internal Bleeding\",0x1,Player-1185-0E8FC92B,0000000000000000,10170634,10782220,104812,19764,35515,2678,0,0,3,120,120,0,-1937.60,1309.44,0,4.1856,676,98617,85631,-1,1,0,0,0,1,nil,nil,ST"
+      },
+      {
+        "line_number": 118936,
+        "timestamp": "2025-05-06 19:04:43.122000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1938.09,
+          "position_y": 1292.78,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1938.09, 1292.78",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:43.122-4  SPELL_PERIODIC_DAMAGE,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x548,0x0,146739,\"Corruption\",0x20,Player-73-0F4BC0DB,0000000000000000,12601885,12723542,12322,102959,52979,2969,0,0,0,2295725,2500000,0,-1938.09,1292.78,0,1.5545,676,24597,53460,-1,32,0,0,16189,nil,nil,nil,ST"
+      },
+      {
+        "line_number": 118938,
+        "timestamp": "2025-05-06 19:04:43.218000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1937.6,
+          "position_y": 1293.28,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1937.60, 1293.28",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:43.218-4  SPELL_PERIODIC_DAMAGE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x548,0x0,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x548,0x0,387846,\"Fel Armor\",0x20,Player-73-0F4BC0DB,0000000000000000,12600810,12723542,12322,102959,52979,2969,0,0,0,2295725,2500000,0,-1937.60,1293.28,0,1.5545,676,1075,1074,-1,32,0,0,0,nil,nil,nil,ST"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_HEAL_ABSORBED": {
+    "total_count": 111,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_DISPEL": {
+    "total_count": 51,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_PERIODIC_HEAL": {
+    "total_count": 751,
+    "coordinate_count": 751,
+    "coordinate_examples": [
+      {
+        "line_number": 119412,
+        "timestamp": "2025-05-06 19:04:48.477000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1940.8,
+          "position_y": 1316.15,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1940.80, 1316.15",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:48.477-4  SPELL_PERIODIC_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,431381,\"Dawnlight\",0x6,Player-11-0E366FE1,0000000000000000,10282260,10282260,101889,13440,33841,2396,0,304295,3,259,300,0,-1940.80,1316.15,0,3.2902,673,341737,341737,341737,0,nil"
+      },
+      {
+        "line_number": 119590,
+        "timestamp": "2025-05-06 19:04:50.316000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1944.06,
+          "position_y": 1311.35,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1944.06, 1311.35",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:50.316-4  SPELL_PERIODIC_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,156322,\"Eternal Flame\",0x6,Player-11-0E366FE1,0000000000000000,9659267,10282260,101889,13440,33841,2396,0,0,3,226,300,0,-1944.06,1311.35,0,5.2655,673,22211,22211,0,0,nil"
+      },
+      {
+        "line_number": 119593,
+        "timestamp": "2025-05-06 19:04:50.345000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1944.28,
+          "position_y": 1311.08,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1944.28, 1311.08",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:50.345-4  SPELL_PERIODIC_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,431381,\"Dawnlight\",0x6,Player-11-0E366FE1,0000000000000000,10001004,10282260,101889,13440,33841,2396,0,0,3,226,300,0,-1944.28,1311.08,0,4.9945,673,341737,341737,0,0,nil"
+      },
+      {
+        "line_number": 119653,
+        "timestamp": "2025-05-06 19:04:50.985000",
+        "source_name": "Morvx-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1939.42,
+          "position_y": 1281.64,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1939.42, 1281.64",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:50.985-4  SPELL_PERIODIC_HEAL,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,426605,\"Slice and Dice\",0x1,Player-11-0E366FE1,0000000000000000,8627709,10282260,101889,13440,33841,2396,0,0,3,234,300,0,-1939.42,1281.64,0,1.2516,673,85137,85137,0,0,nil"
+      },
+      {
+        "line_number": 119786,
+        "timestamp": "2025-05-06 19:04:52.142000",
+        "source_name": "Rikhi-Tichondrius-US",
+        "coordinates": {
+          "position_x": -1939.42,
+          "position_y": 1281.64,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1939.42, 1281.64",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 36,
+        "raw_line": "5/6/2025 19:04:52.142-4  SPELL_PERIODIC_HEAL,Player-11-0E9597D8,\"Rikhi-Tichondrius-US\",0x512,0x1,Player-11-0E366FE1,\"Morvx-Tichondrius-US\",0x512,0x40,156322,\"Eternal Flame\",0x6,Player-11-0E366FE1,0000000000000000,8177156,10282260,101889,13440,33841,2396,0,0,3,182,300,0,-1939.42,1281.64,0,0.9807,673,22211,22211,0,0,nil"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "DAMAGE_SPLIT": {
+    "total_count": 1077,
+    "coordinate_count": 1077,
+    "coordinate_examples": [
+      {
+        "line_number": 119625,
+        "timestamp": "2025-05-06 19:04:50.677000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1959.8,
+          "position_y": 1279.74,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1959.80, 1279.74",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:50.677-4  DAMAGE_SPLIT,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Pet-0-3021-1911-5918-417-010511E85C,\"Zhaakun\",0x1111,0x0,108446,\"Soul Link\",0x20,Pet-0-3021-1911-5918-417-010511E85C,Player-60-0F6E0EE9,6353299,6353299,59158,118315,158688,0,0,538267,3,161,200,0,-1959.80,1279.74,0,3.7472,677,0,0,-1,124,0,0,97062,nil,nil,nil,AOE"
+      },
+      {
+        "line_number": 119637,
+        "timestamp": "2025-05-06 19:04:50.727000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1960.08,
+          "position_y": 1279.55,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1960.08, 1279.55",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:50.727-4  DAMAGE_SPLIT,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Pet-0-3021-1911-5918-417-010511E85C,\"Zhaakun\",0x1111,0x0,108446,\"Soul Link\",0x20,Pet-0-3021-1911-5918-417-010511E85C,Player-60-0F6E0EE9,6353299,6353299,59158,118315,158688,0,0,538003,3,161,200,0,-1960.08,1279.55,0,3.7472,677,0,0,-1,32,0,0,264,nil,nil,nil,AOE"
+      },
+      {
+        "line_number": 119656,
+        "timestamp": "2025-05-06 19:04:51.024000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1961.81,
+          "position_y": 1278.35,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1961.81, 1278.35",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:51.024-4  DAMAGE_SPLIT,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Pet-0-3021-1911-5918-417-010511E85C,\"Zhaakun\",0x1111,0x0,108446,\"Soul Link\",0x20,Pet-0-3021-1911-5918-417-010511E85C,Player-60-0F6E0EE9,6353299,6353299,59158,118315,158688,0,0,530660,3,161,200,0,-1961.81,1278.35,0,3.7472,677,0,0,-1,1,0,0,7343,nil,nil,nil,AOE"
+      },
+      {
+        "line_number": 119670,
+        "timestamp": "2025-05-06 19:04:51.062000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1962.01,
+          "position_y": 1278.21,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1962.01, 1278.21",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:51.062-4  DAMAGE_SPLIT,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Pet-0-3021-1911-5918-417-010511E85C,\"Zhaakun\",0x1111,0x0,108446,\"Soul Link\",0x20,Pet-0-3021-1911-5918-417-010511E85C,Player-60-0F6E0EE9,6353299,6353299,59158,118315,158688,0,0,520846,3,161,200,0,-1962.01,1278.21,0,3.7472,677,0,0,-1,1,0,0,9814,nil,nil,nil,AOE"
+      },
+      {
+        "line_number": 119690,
+        "timestamp": "2025-05-06 19:04:51.224000",
+        "source_name": "Phlurbotomy-Stormrage-US",
+        "coordinates": {
+          "position_x": -1962.96,
+          "position_y": 1277.56,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1962.96, 1277.56",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 42,
+        "raw_line": "5/6/2025 19:04:51.224-4  DAMAGE_SPLIT,Player-60-0F6E0EE9,\"Phlurbotomy-Stormrage-US\",0x511,0x4,Pet-0-3021-1911-5918-417-010511E85C,\"Zhaakun\",0x1111,0x0,108446,\"Soul Link\",0x20,Pet-0-3021-1911-5918-417-010511E85C,Player-60-0F6E0EE9,6353299,6353299,59158,118315,158688,0,0,520582,3,161,200,0,-1962.96,1277.56,0,3.7472,677,0,0,-1,32,0,0,264,nil,nil,nil,AOE"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_AURA_BROKEN_SPELL": {
+    "total_count": 12,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_INTERRUPT": {
+    "total_count": 13,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_PERIODIC_ENERGIZE": {
+    "total_count": 36,
+    "coordinate_count": 36,
+    "coordinate_examples": [
+      {
+        "line_number": 127737,
+        "timestamp": "2025-05-06 19:06:07.905000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1949.06,
+          "position_y": 1281.38,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1949.06, 1281.38",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:07.905-4  SPELL_PERIODIC_ENERGIZE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,457578,\"Summon Overfiend\",0x4,Player-73-0F4BC0DB,0000000000000000,8816218,12723542,12322,119879,52979,2969,0,0,0,2468275,2500000,0,-1949.06,1281.38,0,1.3884,676,0.1000,0.0000,7,50"
+      },
+      {
+        "line_number": 127855,
+        "timestamp": "2025-05-06 19:06:08.911000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1951.03,
+          "position_y": 1287.51,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1951.03, 1287.51",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:08.911-4  SPELL_PERIODIC_ENERGIZE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,457578,\"Summon Overfiend\",0x4,Player-73-0F4BC0DB,0000000000000000,9132929,12723542,12322,119879,52979,2969,0,0,0,2493300,2500000,0,-1951.03,1287.51,0,1.3413,676,0.1000,0.0000,7,50"
+      },
+      {
+        "line_number": 127968,
+        "timestamp": "2025-05-06 19:06:09.897000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1947.83,
+          "position_y": 1291.08,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1947.83, 1291.08",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:09.897-4  SPELL_PERIODIC_ENERGIZE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,457578,\"Summon Overfiend\",0x4,Player-73-0F4BC0DB,0000000000000000,8933519,12723542,12322,119879,52979,2969,0,0,0,2493200,2500000,0,-1947.83,1291.08,0,1.2274,676,0.1000,0.0000,7,50"
+      },
+      {
+        "line_number": 128090,
+        "timestamp": "2025-05-06 19:06:10.900000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1944.08,
+          "position_y": 1291.76,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1944.08, 1291.76",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:10.900-4  SPELL_PERIODIC_ENERGIZE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x20548,0x0,457578,\"Summon Overfiend\",0x4,Player-73-0F4BC0DB,0000000000000000,8969659,12723542,12322,119879,52979,2969,0,0,0,2500000,2500000,0,-1944.08,1291.76,0,1.2274,676,0.1000,0.0000,7,50"
+      },
+      {
+        "line_number": 128209,
+        "timestamp": "2025-05-06 19:06:11.898000",
+        "source_name": "Diirty-BleedingHollow-US",
+        "coordinates": {
+          "position_x": -1939.37,
+          "position_y": 1289.31,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1939.37, 1289.31",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:11.898-4  SPELL_PERIODIC_ENERGIZE,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x30548,0x0,Player-73-0F4BC0DB,\"Diirty-BleedingHollow-US\",0x30548,0x0,457578,\"Summon Overfiend\",0x4,Player-73-0F4BC0DB,0000000000000000,8906018,12723542,12322,105581,52979,2969,0,0,0,2480900,2500000,0,-1939.37,1289.31,0,1.9460,676,0.1000,0.0000,7,50"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "SPELL_INSTAKILL": {
+    "total_count": 1,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "UNIT_DIED": {
+    "total_count": 3,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_DRAIN": {
+    "total_count": 4,
+    "coordinate_count": 4,
+    "coordinate_examples": [
+      {
+        "line_number": 133168,
+        "timestamp": "2025-05-06 19:06:49.989000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1946.28,
+          "position_y": 1297.46,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1946.28, 1297.46",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:49.989-4  SPELL_DRAIN,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,22568,\"Ferocious Bite\",0x1,Player-1185-0E8FC92B,0000000000000000,10235838,10782220,118432,19764,35515,2678,0,1528,3,107,120,0,-1946.28,1297.46,0,5.0652,676,19,3,0,120"
+      },
+      {
+        "line_number": 133289,
+        "timestamp": "2025-05-06 19:06:50.987000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1945.6,
+          "position_y": 1297.09,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1945.60, 1297.09",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:50.987-4  SPELL_DRAIN,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,22568,\"Ferocious Bite\",0x1,Player-1185-0E8FC92B,0000000000000000,9998035,10782220,118432,19764,35515,2678,0,0,3,93,120,0,-1945.60,1297.09,0,4.3112,676,19,3,0,120"
+      },
+      {
+        "line_number": 133808,
+        "timestamp": "2025-05-06 19:06:54.005000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1944.39,
+          "position_y": 1296.96,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1944.39, 1296.96",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:54.005-4  SPELL_DRAIN,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x548,0x0,22568,\"Ferocious Bite\",0x1,Player-1185-0E8FC92B,0000000000000000,9129314,10782220,118432,19764,35515,2678,0,0,3,59,120,0,-1944.39,1296.96,0,3.9932,676,19,3,0,120"
+      },
+      {
+        "line_number": 134102,
+        "timestamp": "2025-05-06 19:06:55.913000",
+        "source_name": "Benchpress-Bloodscalp-US",
+        "coordinates": {
+          "position_x": -1945.06,
+          "position_y": 1297.51,
+          "x_parameter_index": 26,
+          "y_parameter_index": 27,
+          "advanced_start_index": null,
+          "coordinate_format": "-1945.06, 1297.51",
+          "coordinate_system": "world_negative",
+          "extraction_method": "pattern_scan"
+        },
+        "parameter_count": 35,
+        "raw_line": "5/6/2025 19:06:55.913-4  SPELL_DRAIN,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x30548,0x0,Player-1185-0E8FC92B,\"Benchpress-Bloodscalp-US\",0x30548,0x0,22568,\"Ferocious Bite\",0x1,Player-1185-0E8FC92B,0000000000000000,10419514,10782220,118432,19764,35515,2678,0,0,3,36,120,0,-1945.06,1297.51,0,4.3191,676,17,3,0,120"
+      }
+    ],
+    "coordinate_rate": 100.0
+  },
+  "PARTY_KILL": {
+    "total_count": 2,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "ARENA_MATCH_END": {
+    "total_count": 1,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "ZONE_CHANGE": {
+    "total_count": 1,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "MAP_CHANGE": {
+    "total_count": 2,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  },
+  "SPELL_EXTRA_ATTACKS": {
+    "total_count": 2,
+    "coordinate_count": 0,
+    "coordinate_examples": [],
+    "coordinate_rate": 0.0
+  }
+}

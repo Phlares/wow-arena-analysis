@@ -1,0 +1,107 @@
+{
+  "unit_name": "Phlurbotomy-Stormrage-US",
+  "unit_guid": "Player-60-0F6E0EE9",
+  "position_count": 2793,
+  "movement_count": 2792,
+  "total_distance": 47175.89198155284,
+  "total_time": 191.534,
+  "average_speed": 246.30557489298425,
+  "max_speed": 67871.11683183059,
+  "large_movements_count": 2051,
+  "event_type_distribution": {
+    "SPELL_CAST_SUCCESS": 129,
+    "SPELL_ENERGIZE": 34,
+    "SPELL_HEAL": 244,
+    "SPELL_PERIODIC_DAMAGE": 1445,
+    "SPELL_DAMAGE": 146,
+    "DAMAGE_SPLIT": 793,
+    "SPELL_PERIODIC_HEAL": 2
+  },
+  "coordinate_system": "world_negative",
+  "time_span": {
+    "start": "2025-05-06T19:04:33.423000",
+    "end": "2025-05-06T19:07:44.957000"
+  },
+  "large_movement_details": [
+    {
+      "distance": 0.0,
+      "speed": Infinity,
+      "time_diff": 0.0,
+      "start_time": "2025-05-06T19:04:37.253000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_ENERGIZE"
+    },
+    {
+      "distance": 17.854044359752354,
+      "speed": 126.62442808335004,
+      "time_diff": 0.141,
+      "start_time": "2025-05-06T19:04:42.981000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 12.881804997747869,
+      "speed": 322.0451249436967,
+      "time_diff": 0.04,
+      "start_time": "2025-05-06T19:04:44.109000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 3.1261797773000866,
+      "speed": 164.53577775263614,
+      "time_diff": 0.019,
+      "start_time": "2025-05-06T19:04:44.149000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_DAMAGE"
+    },
+    {
+      "distance": 14.664139933865924,
+      "speed": 14664.139933865923,
+      "time_diff": 0.001,
+      "start_time": "2025-05-06T19:04:45.089000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_ENERGIZE"
+    },
+    {
+      "distance": 14.664139933865924,
+      "speed": Infinity,
+      "time_diff": 0.0,
+      "start_time": "2025-05-06T19:04:45.090000",
+      "start_event": "SPELL_ENERGIZE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 17.710417838097545,
+      "speed": 290.3347186573368,
+      "time_diff": 0.061,
+      "start_time": "2025-05-06T19:04:45.090000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 18.85498872977669,
+      "speed": 88.10742397091911,
+      "time_diff": 0.214,
+      "start_time": "2025-05-06T19:04:45.151000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 18.85498872977669,
+      "speed": 192.3978441813948,
+      "time_diff": 0.098,
+      "start_time": "2025-05-06T19:04:45.365000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 20.619922405285642,
+      "speed": 282.46469048336496,
+      "time_diff": 0.073,
+      "start_time": "2025-05-06T19:04:46.047000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    }
+  ]
+}

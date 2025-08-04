@@ -1,0 +1,243 @@
+{
+  "unit_name": "Phlurbotomy-Stormrage-US",
+  "unit_guid": "Player-60-0F6E0EE9",
+  "position_count": 2016,
+  "movement_count": 2015,
+  "total_distance": 2265855.2856785296,
+  "total_time": 193.302,
+  "average_speed": 11721.840879445272,
+  "max_speed": 3530712.621922096,
+  "max_distance": 3817.614627656909,
+  "x_range": 3320.82,
+  "y_range": 4285.54,
+  "coordinate_systems_used": [
+    "mixed",
+    "world_positive",
+    "world_negative"
+  ],
+  "coordinate_system_transitions": 661,
+  "system_usage": {
+    "world_negative": 380,
+    "mixed": 34,
+    "world_positive": 1602
+  },
+  "large_movements_count": 1512,
+  "teleport_movements_count": 1226,
+  "system_transition_movements_count": 661,
+  "large_movement_details": [
+    {
+      "distance": 3782.2948980347896,
+      "speed": Infinity,
+      "time_diff": 0.0,
+      "system_transition": true,
+      "start_system": "world_negative",
+      "end_system": "mixed",
+      "start_time": "2025-05-06T19:04:37.253000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3780.6928228831284,
+      "speed": 2868.5074528703553,
+      "time_diff": 1.318,
+      "system_transition": true,
+      "start_system": "mixed",
+      "end_system": "world_negative",
+      "start_time": "2025-05-06T19:04:37.253000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3486.2324416194624,
+      "speed": 24725.052777442997,
+      "time_diff": 0.141,
+      "system_transition": true,
+      "start_system": "world_negative",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:42.981000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3487.4748543036117,
+      "speed": 87186.8713575903,
+      "time_diff": 0.04,
+      "system_transition": true,
+      "start_system": "world_positive",
+      "end_system": "world_negative",
+      "start_time": "2025-05-06T19:04:44.109000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3501.349666200164,
+      "speed": 184281.56137895602,
+      "time_diff": 0.019,
+      "system_transition": true,
+      "start_system": "world_negative",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:44.149000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 2330.520240675888,
+      "speed": 2330520.240675888,
+      "time_diff": 0.001,
+      "system_transition": true,
+      "start_system": "world_positive",
+      "end_system": "mixed",
+      "start_time": "2025-05-06T19:04:45.089000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 2330.520240675888,
+      "speed": Infinity,
+      "time_diff": 0.0,
+      "system_transition": true,
+      "start_system": "mixed",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:45.090000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 17.15000000000009,
+      "speed": 281.14754098360805,
+      "time_diff": 0.061,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:45.090000",
+      "classification": "teleportation"
+    },
+    {
+      "distance": 18.590000000000146,
+      "speed": 86.86915887850536,
+      "time_diff": 0.214,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:45.151000",
+      "classification": "large_movement"
+    },
+    {
+      "distance": 18.590000000000146,
+      "speed": 189.6938775510219,
+      "time_diff": 0.098,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:45.365000",
+      "classification": "very_large_movement"
+    },
+    {
+      "distance": 20.24000000000001,
+      "speed": 277.2602739726029,
+      "time_diff": 0.073,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:46.047000",
+      "classification": "teleportation"
+    },
+    {
+      "distance": 20.340000000000146,
+      "speed": 84.75000000000061,
+      "time_diff": 0.24,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:46.120000",
+      "classification": "large_movement"
+    },
+    {
+      "distance": 20.12000000000012,
+      "speed": 226.0674157303384,
+      "time_diff": 0.089,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:46.671000",
+      "classification": "teleportation"
+    },
+    {
+      "distance": 20.12000000000012,
+      "speed": 82.45901639344311,
+      "time_diff": 0.244,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:46.760000",
+      "classification": "large_movement"
+    },
+    {
+      "distance": 3488.5248011874587,
+      "speed": 8306.011431398712,
+      "time_diff": 0.42,
+      "system_transition": true,
+      "start_system": "world_positive",
+      "end_system": "world_negative",
+      "start_time": "2025-05-06T19:04:47.992000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3488.5248011874587,
+      "speed": 3488524.8011874584,
+      "time_diff": 0.001,
+      "system_transition": true,
+      "start_system": "world_negative",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:48.412000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3487.198862367903,
+      "speed": 11508.907136527734,
+      "time_diff": 0.303,
+      "system_transition": true,
+      "start_system": "world_positive",
+      "end_system": "world_negative",
+      "start_time": "2025-05-06T19:04:49.253000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 3487.198862367903,
+      "speed": 3487198.862367903,
+      "time_diff": 0.001,
+      "system_transition": true,
+      "start_system": "world_negative",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:49.556000",
+      "classification": "coordinate_system_transition"
+    },
+    {
+      "distance": 0.0,
+      "speed": Infinity,
+      "time_diff": 0.0,
+      "system_transition": false,
+      "start_system": "world_positive",
+      "end_system": "world_positive",
+      "start_time": "2025-05-06T19:04:49.943000",
+      "classification": "teleportation"
+    },
+    {
+      "distance": 3481.571622644004,
+      "speed": 1160523.874214668,
+      "time_diff": 0.003,
+      "system_transition": true,
+      "start_system": "world_positive",
+      "end_system": "world_negative",
+      "start_time": "2025-05-06T19:04:50.699000",
+      "classification": "coordinate_system_transition"
+    }
+  ],
+  "movement_quality_flags": {
+    "has_multiple_coordinate_systems": true,
+    "has_teleport_behavior": true,
+    "has_system_transitions": true,
+    "movement_variety_good": true,
+    "coordinate_coverage_good": true
+  },
+  "filename": "2025-05-06_19-03-32_-_Phlurbotomy_-_3v3_Mugambala_(Win).mp4",
+  "target_player": "Phlurbotomy",
+  "arena_start": "2025-05-06T19:04:28.939000",
+  "arena_end": "2025-05-06T19:07:46.926000",
+  "expected_bracket": "3v3",
+  "expected_map": "Mugambala",
+  "match_duration": 200
+}

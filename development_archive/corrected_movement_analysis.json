@@ -1,0 +1,211 @@
+{
+  "unit_name": "Phlurbotomy-Stormrage-US",
+  "total_distance": 2464186.2348048356,
+  "total_time": 193.302,
+  "average_speed": 12747.856901660798,
+  "position_count": 1959,
+  "movement_count": 1958,
+  "x_range": 9961.9,
+  "y_range": 1329.08,
+  "coverage_area": 13240162.052,
+  "large_movements_count": 1078,
+  "very_large_movements_count": 1071,
+  "teleport_movements_count": 1062,
+  "max_speed": Infinity,
+  "max_distance_segment": 7985.0681900657555,
+  "unique_positions": 333,
+  "max_position_repeats": 1362,
+  "repeated_positions": 13,
+  "has_anomalous_patterns": true,
+  "has_teleport_behavior": true,
+  "position_variety_ratio": 0.16998468606431852,
+  "filename": "2025-05-06_19-03-32_-_Phlurbotomy_-_3v3_Mugambala_(Win).mp4",
+  "target_player": "Phlurbotomy",
+  "unit_analyzed": "Phlurbotomy-Stormrage-US",
+  "unit_key": "Player-60-0F6E0EE9:Phlurbotomy-Stormrage-US",
+  "arena_start": "2025-05-06T19:04:28.939000",
+  "arena_end": "2025-05-06T19:07:46.926000",
+  "large_movements": 1078,
+  "large_movement_details": [
+    {
+      "distance": 2323.172255085705,
+      "time_diff": 1.079,
+      "speed": 2153.079013054407,
+      "start_time": "2025-05-06T19:04:33.423000",
+      "end_time": "2025-05-06T19:04:34.502000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 2325.2534212425107,
+      "time_diff": 0.001,
+      "speed": 2325253.421242511,
+      "start_time": "2025-05-06T19:04:34.502000",
+      "end_time": "2025-05-06T19:04:34.503000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 2320.719780800776,
+      "time_diff": 0.141,
+      "speed": 16459.005537594156,
+      "start_time": "2025-05-06T19:04:42.981000",
+      "end_time": "2025-05-06T19:04:43.122000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 2319.570942609861,
+      "time_diff": 0.04,
+      "speed": 57989.27356524653,
+      "start_time": "2025-05-06T19:04:44.109000",
+      "end_time": "2025-05-06T19:04:44.149000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 2319.570942609861,
+      "time_diff": 0.019,
+      "speed": 122082.68118999268,
+      "start_time": "2025-05-06T19:04:44.149000",
+      "end_time": "2025-05-06T19:04:44.168000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_DAMAGE"
+    },
+    {
+      "distance": 2327.7288038987704,
+      "time_diff": 0.42,
+      "speed": 5542.211437854216,
+      "start_time": "2025-05-06T19:04:47.992000",
+      "end_time": "2025-05-06T19:04:48.412000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 2327.7288038987704,
+      "time_diff": 0.001,
+      "speed": 2327728.8038987704,
+      "start_time": "2025-05-06T19:04:48.412000",
+      "end_time": "2025-05-06T19:04:48.413000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_DAMAGE"
+    },
+    {
+      "distance": 2325.3779141679315,
+      "time_diff": 0.303,
+      "speed": 7674.514568210995,
+      "start_time": "2025-05-06T19:04:49.253000",
+      "end_time": "2025-05-06T19:04:49.556000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 2325.3779141679315,
+      "time_diff": 0.001,
+      "speed": 2325377.9141679313,
+      "start_time": "2025-05-06T19:04:49.556000",
+      "end_time": "2025-05-06T19:04:49.557000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_DAMAGE"
+    },
+    {
+      "distance": 0.0,
+      "time_diff": 0.0,
+      "speed": Infinity,
+      "start_time": "2025-05-06T19:04:49.943000",
+      "end_time": "2025-05-06T19:04:49.943000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 2323.029345316154,
+      "time_diff": 0.003,
+      "speed": 774343.1151053846,
+      "start_time": "2025-05-06T19:04:50.699000",
+      "end_time": "2025-05-06T19:04:50.702000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_CAST_SUCCESS"
+    },
+    {
+      "distance": 7347.484863489002,
+      "time_diff": 0.024,
+      "speed": 306145.2026453751,
+      "start_time": "2025-05-06T19:04:50.702000",
+      "end_time": "2025-05-06T19:04:50.726000",
+      "start_event": "SPELL_CAST_SUCCESS",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 5289.102948515939,
+      "time_diff": 0.107,
+      "speed": 49430.86867771905,
+      "start_time": "2025-05-06T19:04:50.726000",
+      "end_time": "2025-05-06T19:04:50.833000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_DAMAGE"
+    },
+    {
+      "distance": 5289.102948515939,
+      "time_diff": 0.083,
+      "speed": 63724.13190983058,
+      "start_time": "2025-05-06T19:04:51.140000",
+      "end_time": "2025-05-06T19:04:51.223000",
+      "start_event": "SPELL_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 7347.296839743172,
+      "time_diff": 0.075,
+      "speed": 97963.9578632423,
+      "start_time": "2025-05-06T19:04:51.223000",
+      "end_time": "2025-05-06T19:04:51.298000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_HEAL"
+    },
+    {
+      "distance": 2321.723866289874,
+      "time_diff": 0.153,
+      "speed": 15174.665792744274,
+      "start_time": "2025-05-06T19:04:51.298000",
+      "end_time": "2025-05-06T19:04:51.451000",
+      "start_event": "SPELL_HEAL",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 2321.1687332893316,
+      "time_diff": 0.047,
+      "speed": 49386.56879339003,
+      "start_time": "2025-05-06T19:04:51.497000",
+      "end_time": "2025-05-06T19:04:51.544000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_HEAL"
+    },
+    {
+      "distance": 2321.1687332893316,
+      "time_diff": 0.025,
+      "speed": 92846.74933157326,
+      "start_time": "2025-05-06T19:04:51.544000",
+      "end_time": "2025-05-06T19:04:51.569000",
+      "start_event": "SPELL_HEAL",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 5373.101339077833,
+      "time_diff": 0.163,
+      "speed": 32963.81189618302,
+      "start_time": "2025-05-06T19:04:51.569000",
+      "end_time": "2025-05-06T19:04:51.732000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_PERIODIC_DAMAGE"
+    },
+    {
+      "distance": 7429.759639786472,
+      "time_diff": 0.126,
+      "speed": 58966.34634751168,
+      "start_time": "2025-05-06T19:04:51.732000",
+      "end_time": "2025-05-06T19:04:51.858000",
+      "start_event": "SPELL_PERIODIC_DAMAGE",
+      "end_event": "SPELL_CAST_SUCCESS"
+    }
+  ]
+}

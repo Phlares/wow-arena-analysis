@@ -20,22 +20,41 @@ class EnhancedProductionCombatParser:
         # Load pet index for comprehensive pet detection
         self.pet_index = self.load_pet_index()
         self.load_processed_logs()
+        
+        # Movement tracking capabilities with validated coordinate parsing
+        self.movement_capable_logs = set()
+        self.coordinate_validation_cache = {}
+        
+        # Validated coordinate event types and parameter positions
+        self.COORDINATE_EVENTS = {
+            'SPELL_CAST_SUCCESS': {'params': (26, 27), 'count': 31},
+            'SPELL_HEAL': {'params': (26, 27), 'count': 36}, 
+            'SPELL_DAMAGE': {'params': (26, 27), 'count': 42},
+            'SPELL_PERIODIC_DAMAGE': {'params': (26, 27), 'count': 42},
+            'DAMAGE_SPLIT': {'params': (26, 27), 'count': 42},
+            'SPELL_ENERGIZE': {'params': (26, 27), 'count': 35},
+            'SPELL_PERIODIC_HEAL': {'params': (26, 27), 'count': 36},
+            'SPELL_PERIODIC_ENERGIZE': {'params': (26, 27), 'count': 35},
+            'SPELL_DRAIN': {'params': (26, 27), 'count': 35},
+            'SWING_DAMAGE': {'params': (23, 24), 'count': 38},
+            'SWING_DAMAGE_LANDED': {'params': (23, 24), 'count': 38}
+        }
 
     def load_pet_index(self) -> Dict:
         """Load the comprehensive pet index."""
         index_file = self.base_dir / "player_pet_index.json"
 
         if not index_file.exists():
-            print("❌ Pet index not found! Run pet_index_builder.py first.")
+            print("ERROR: Pet index not found! Run pet_index_builder.py first.")
             return {'player_pets': {}, 'pet_lookup': {}}
 
         try:
             with open(index_file, 'r', encoding='utf-8') as f:
                 pet_index = json.load(f)
-                print(f"✅ Loaded pet index with {len(pet_index['player_pets'])} players")
+                print(f"Loaded pet index with {len(pet_index['player_pets'])} players")
                 return pet_index
         except Exception as e:
-            print(f"❌ Error loading pet index: {e}")
+            print(f"ERROR: Error loading pet index: {e}")
             return {'player_pets': {}, 'pet_lookup': {}}
 
     def get_player_pets(self, player_name: str) -> List[str]:
@@ -733,6 +752,225 @@ class EnhancedProductionCombatParser:
             pass
 
         return 'Unknown', 'Unknown'
+
+    def detect_advanced_logging(self, log_file_path: Path, sample_lines: int = 100) -> Dict[str, any]:
+        """
+        Detect if combat log has advanced coordinate data capability.
+        
+        Args:
+            log_file_path: Path to combat log file
+            sample_lines: Number of lines to sample for detection (default 100)
+            
+        Returns:
+            Dict with detection results:
+            {
+                'has_coordinates': bool,
+                'coordinate_events': list,
+                'sample_coordinates': list,
+                'arena_zone': str,
+                'confidence': float
+            }
+        """
+        detection_result = {
+            'has_coordinates': False,
+            'coordinate_events': [],
+            'sample_coordinates': [],
+            'arena_zone': 'unknown',
+            'confidence': 0.0
+        }
+        
+        try:
+            with open(log_file_path, 'r', encoding='utf-8') as f:
+                lines_checked = 0
+                coordinate_count = 0
+                
+                for line in f:
+                    if lines_checked >= sample_lines:
+                        break
+                        
+                    line = line.strip()
+                    if not line:
+                        continue
+                        
+                    lines_checked += 1
+                    
+                    # Check for zone information
+                    if 'ZONE_CHANGE' in line and detection_result['arena_zone'] == 'unknown':
+                        try:
+                            parts = line.split(',')
+                            if len(parts) >= 3:
+                                zone_id = parts[1].strip()
+                                zone_name = parts[2].strip().strip('"')
+                                detection_result['arena_zone'] = f"{zone_id}:{zone_name}"
+                        except:
+                            pass
+                    
+                    # Check for advanced combat events with coordinates
+                    if any(event in line for event in ['SPELL_HEAL', 'SPELL_DAMAGE', 'SPELL_CAST_SUCCESS', 
+                                                     'SPELL_ENERGIZE', 'RANGE_DAMAGE', 'SWING_DAMAGE']):
+                        
+                        # Look for coordinate pattern: ,-X.XX,Y.YY,0,F.FFFF,NNN
+                        coordinate_match = re.search(r',(-?\d+\.\d+),(-?\d+\.\d+),0,(\d+\.\d+),\d+', line)
+                        if coordinate_match:
+                            x_coord = float(coordinate_match.group(1))
+                            y_coord = float(coordinate_match.group(2))
+                            facing = float(coordinate_match.group(3))
+                            
+                            coordinate_count += 1
+                            detection_result['coordinate_events'].append(line.split(',')[0])  # Event type
+                            detection_result['sample_coordinates'].append({
+                                'x': x_coord,
+                                'y': y_coord,
+                                'facing': facing,
+                                'event': line.split(',')[0] if ',' in line else 'unknown'
+                            })
+                            
+                            # Limit sample coordinates to prevent memory bloat
+                            if len(detection_result['sample_coordinates']) >= 10:
+                                break
+                
+                # Calculate confidence based on coordinate density
+                if coordinate_count > 0:
+                    detection_result['has_coordinates'] = True
+                    detection_result['confidence'] = min(1.0, coordinate_count / 20.0)  # Max confidence at 20+ coords
+                    
+                    # Remove duplicate event types for cleaner reporting
+                    detection_result['coordinate_events'] = list(set(detection_result['coordinate_events']))
+                
+        except Exception as e:
+            print(f"ERROR: Error detecting advanced logging in {log_file_path}: {e}")
+            detection_result['error'] = str(e)
+        
+        return detection_result
+
+    def extract_validated_coordinates(self, line: str) -> Optional[Dict]:
+        """
+        Extract coordinates from combat log line using validated parameter positions.
+        
+        Args:
+            line: Raw combat log line
+            
+        Returns:
+            Dict with coordinate data or None if no coordinates found
+        """
+        if not line.strip():
+            return None
+        
+        # Split timestamp from event data
+        parts = line.strip().split('  ', 1)
+        if len(parts) != 2:
+            return None
+        
+        timestamp_str, event_data = parts
+        
+        # Parse timestamp
+        try:
+            clean_timestamp = re.sub(r'[+-]\d+$', '', timestamp_str)
+            timestamp = datetime.strptime(clean_timestamp, "%m/%d/%Y %H:%M:%S.%f")
+        except ValueError:
+            return None
+        
+        # Split parameters
+        params = [p.strip() for p in event_data.split(',')]
+        if len(params) < 10:
+            return None
+        
+        event_type = params[0]
+        
+        # Check if this event type has coordinates
+        if event_type not in self.COORDINATE_EVENTS:
+            return None
+        
+        event_info = self.COORDINATE_EVENTS[event_type]
+        x_idx, y_idx = event_info['params']
+        expected_count = event_info['count']
+        
+        # Verify parameter count matches expected
+        if len(params) != expected_count:
+            return None
+        
+        # Extract coordinates at validated positions
+        if x_idx < len(params) and y_idx < len(params):
+            try:
+                x_str = params[x_idx].strip()
+                y_str = params[y_idx].strip()
+                
+                # Validate coordinate format (####.##)
+                if self._is_coordinate_format(x_str) and self._is_coordinate_format(y_str):
+                    x = float(x_str)
+                    y = float(y_str)
+                    
+                    # Validate coordinate ranges
+                    if abs(x) < 50000 and abs(y) < 50000 and (abs(x) > 0.01 or abs(y) > 0.01):
+                        source_name = self._extract_quoted_name(params[2]) if len(params) > 2 else ""
+                        
+                        return {
+                            'timestamp': timestamp,
+                            'event_type': event_type,
+                            'source_name': source_name,
+                            'position_x': x,
+                            'position_y': y,
+                            'parameter_indices': f"{x_idx}-{y_idx}",
+                            'coordinate_system': 'world_negative' if x < -1000 else 'world_positive' if x > 1000 else 'local'
+                        }
+            except (ValueError, IndexError):
+                pass
+        
+        return None
+    
+    def _is_coordinate_format(self, value: str) -> bool:
+        """Check if a value matches coordinate format (####.##)."""
+        pattern = r'^-?\d+\.\d{2}$'
+        return bool(re.match(pattern, value))
+    
+    def _extract_quoted_name(self, param: str) -> str:
+        """Extract name from quoted parameter."""
+        if param.startswith('"') and param.endswith('"'):
+            return param[1:-1]
+        return param
+
+    def validate_arena_coordinates(self, coordinates: List[Dict], arena_zone: str) -> bool:
+        """
+        Validate coordinates are within reasonable arena boundaries.
+        
+        Args:
+            coordinates: List of coordinate dicts with x, y values
+            arena_zone: Arena zone identifier
+            
+        Returns:
+            bool: True if coordinates appear valid for the arena
+        """
+        if not coordinates:
+            return False
+        
+        # Define rough arena boundaries (can be refined later)
+        arena_boundaries = {
+            '1505': {'min_x': -2100, 'max_x': -1900, 'min_y': 6500, 'max_y': 6700},  # Nagrand
+            '572': {'min_x': 1200, 'max_x': 1400, 'min_y': 1200, 'max_y': 1400},     # Lordaeron
+            '1134': {'min_x': -1800, 'max_x': -1600, 'min_y': -4400, 'max_y': -4200}, # Tiger's Peak
+            # Add more as needed
+        }
+        
+        # Extract zone ID from arena_zone string
+        zone_id = arena_zone.split(':')[0] if ':' in arena_zone else arena_zone
+        
+        if zone_id not in arena_boundaries:
+            # If we don't have boundaries defined, accept reasonable coordinate ranges
+            for coord in coordinates:
+                if abs(coord['x']) > 10000 or abs(coord['y']) > 10000:
+                    return False
+            return True
+        
+        boundaries = arena_boundaries[zone_id]
+        valid_count = 0
+        
+        for coord in coordinates:
+            if (boundaries['min_x'] <= coord['x'] <= boundaries['max_x'] and
+                boundaries['min_y'] <= coord['y'] <= boundaries['max_y']):
+                valid_count += 1
+        
+        # Require at least 50% of coordinates to be within boundaries
+        return (valid_count / len(coordinates)) >= 0.5
 
     def parse_arena_start_line(self, line: str, event_time: datetime) -> Optional[Dict]:
         """Parse ARENA_MATCH_START line to extract arena info."""
