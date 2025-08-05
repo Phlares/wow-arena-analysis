@@ -156,7 +156,7 @@ class EnhancedProductionCombatParser:
                     old_purges = match_result['purges_own']
 
                     if new_interrupts > old_interrupts or new_purges > old_purges:
-                        print(f"      ✅ UPDATED: {filename}")
+                        print(f"      SUCCESS: UPDATED: {filename}")
                         print(f"         Interrupts: {old_interrupts} → {new_interrupts}")
                         print(f"         Purges: {old_purges} → {new_purges}")
                         
@@ -173,9 +173,9 @@ class EnhancedProductionCombatParser:
                 # Save updated results after Phase 1
                 if updated_count > 0:
                     existing_df.to_csv(output_csv, index=False)
-                    print(f"   ✅ Phase 1 complete: Updated {updated_count} matches")
+                    print(f"   SUCCESS: Phase 1 complete: Updated {updated_count} matches")
             else:
-                print("   ✅ No zero-interrupt matches found to re-process")
+                print("   SUCCESS: No zero-interrupt matches found to re-process")
 
         else:
             print(f"\n📊 PHASE 1: No existing CSV found - will create new one")
@@ -221,9 +221,9 @@ class EnhancedProductionCombatParser:
                 processed = self.process_matches_group(low_reliability, log_files, output_csv, time_window=300)
                 new_processed += processed
 
-            print(f"   ✅ Phase 2 complete: Processed {new_processed} new matches")
+            print(f"   SUCCESS: Phase 2 complete: Processed {new_processed} new matches")
         else:
-            print("   ✅ All matches already processed")
+            print("   SUCCESS: All matches already processed")
 
         print(f"\n🎉 Selective processing complete!")
         print(f"📈 Re-processed matches: {updated_count}")
@@ -284,7 +284,7 @@ class EnhancedProductionCombatParser:
         print(f"🗓️ Found {len(df_with_logs)} matches from 2025 onwards (when combat logs are available)")
 
         if len(df_with_logs) == 0:
-            print("❌ No matches found with available combat logs!")
+            print("ERROR: No matches found with available combat logs!")
             return
 
         # Group matches by reliability
@@ -541,7 +541,7 @@ class EnhancedProductionCombatParser:
             return best_match['start'], best_match['end']
 
         # Multiple matches - use enhanced verification
-        print(f"   🔍 Found {len(matching_starts)} potential arena matches for {filename}")
+        print(f"   SEARCH: Found {len(matching_starts)} potential arena matches for {filename}")
 
         # Strategy 1: Death correlation verification (most reliable)
         if death_data:
@@ -549,14 +549,14 @@ class EnhancedProductionCombatParser:
                 matching_starts, death_data, log_file, expected_bracket, expected_map
             )
             if verified_match:
-                print(f"   ✅ Death correlation verified match")
+                print(f"   SUCCESS: Death correlation verified match")
                 return verified_match['start'], verified_match['end']
 
         # Strategy 2: Duration-based verification
         expected_duration = video_duration
         duration_verified = self.verify_match_with_duration(matching_starts, expected_duration)
         if duration_verified:
-            print(f"   ✅ Duration verified match")
+            print(f"   SUCCESS: Duration verified match")
             return duration_verified['start'], duration_verified['end']
 
         # Strategy 3: Time proximity (fallback)
@@ -1141,7 +1141,7 @@ class EnhancedProductionCombatParser:
             ]
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
-            print(f"   ✅ Created new CSV with complete schema: {len(fieldnames)} columns")
+            print(f"   SUCCESS: Created new CSV with complete schema: {len(fieldnames)} columns")
 
     def write_features_to_csv(self, features: Dict, output_csv: str):
         """Write extracted features to the output CSV."""
