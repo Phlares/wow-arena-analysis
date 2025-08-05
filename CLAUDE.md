@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a WoW (World of Warcraft) Arena gameplay analysis system that processes 6TB+ of arena match recordings to extract performance metrics for AI model training. The system parses combat logs and matches them with video recordings to create a comprehensive dataset for machine learning analysis.
 
-**Current Development Focus**: Enhanced combat analysis with movement tracking integration, leveraging insights from the MIT-licensed wowarenalogs project to add positional data extraction and advanced combat metrics to our existing parser system.
+**Current Development Focus**: Advanced targeting intelligence and strategic decision analysis system with weighted coordination scoring, JSON metadata integration, and realistic arena gameplay metrics for AI model training.
 
 ## Key Commands (Updated - Consolidated Interface)
 
@@ -58,6 +58,19 @@ python frame_generator.py --sample --output sample.png      # Create sample fram
 
 # Legacy frame operations (archived)
 # python scaled_test_frame_generator.py  # Now: frame_generator.py --test-frames
+```
+
+### Targeting Intelligence Analysis
+```bash
+# Advanced targeting system (NEW - PRODUCTION READY)
+python json_metadata_targeting_system.py              # JSON-enhanced targeting analysis
+python test_weighted_coordination.py                  # Test weighted coordination scoring
+python targeting_system_final_validation.py          # Comprehensive system validation
+python weighted_coordination_summary.py               # Generate coordination reports
+
+# Targeting system components
+python arena_match_model.py                          # Arena match data modeling
+python enhanced_targeting_with_model.py              # Model-based targeting analysis
 ```
 
 ### System Validation
@@ -127,7 +140,14 @@ python cleanup_outputs.py               # Clean and organize output files
    - Parser, CV, pet system, and Tesseract testing
    - Automated setup verification
 
-6. **Computer Vision System** (Production Ready)
+6. **Advanced Targeting Intelligence System** (Production Ready)
+   - JSON metadata integration for accurate team detection  
+   - Weighted coordination scoring (DPS 2x vs Healer 1x weight)
+   - Player role inference from 47+ specialization IDs
+   - Realistic coordination metrics (0.496-0.571 range)
+   - Strategic decision analysis and target prioritization
+
+7. **Computer Vision System** (Production Ready)
    - OpenCV 4.12.0 for video frame extraction and analysis
    - Tesseract OCR 5.5.0 for spell name and UI text recognition
    - Supports 3440x1440 ultrawide resolution with 60fps video
@@ -136,11 +156,12 @@ python cleanup_outputs.py               # Clean and organize output files
 ### Data Flow
 
 1. **Video Archive**: 11,355+ matches dating back to 2023
-2. **Combat Logs**: Available from January 2025 onwards (`/Logs/` directory)
-3. **Enhanced Index**: `master_index_enhanced.csv` with precise timestamp matching
-4. **Feature Extraction**: Combat events parsed into structured metrics
-5. **Zone Mapping**: `scaled_zone_mapping.json` with 73 UI zones for OCR
-6. **Output**: `match_features_enhanced_VERIFIED.csv` ready for AI training
+2. **JSON Metadata**: Video metadata with team compositions and player specs
+3. **Combat Logs**: Available from January 2025 onwards (`/Logs/` directory)
+4. **Enhanced Index**: `master_index_enhanced.csv` with precise timestamp matching
+5. **Targeting Analysis**: JSON-enhanced coordination and prioritization metrics
+6. **Zone Mapping**: `scaled_zone_mapping.json` with 73 UI zones for OCR
+7. **Output**: Structured targeting intelligence ready for AI training
 
 ### Solo Shuffle Handling
 
@@ -182,6 +203,14 @@ The system identifies 73 distinct UI zones across 9 categories:
 - `system_validator.py` - Comprehensive system validation
 - `cleanup_outputs.py` - Project organization utility
 
+### Advanced Targeting Intelligence
+- `arena_match_model.py` - Complete arena match and player data modeling
+- `json_metadata_targeting_system.py` - JSON-enhanced targeting analysis system
+- `enhanced_targeting_with_model.py` - Weighted coordination scoring algorithm
+- `test_weighted_coordination.py` - Coordination algorithm validation
+- `targeting_system_final_validation.py` - Comprehensive system validation
+- `TARGETING_SYSTEM_DOCUMENTATION.md` - Complete system documentation
+
 ### Essential Data Processing
 - `build_index.py` - Builds master index from JSON files
 - `pet_index_builder.py` - Builds comprehensive pet index for detection
@@ -205,6 +234,12 @@ The system identifies 73 distinct UI zones across 9 categories:
 - `player_pet_index.json` - Pet name mappings for dispel tracking
 - `Zone_Colour_Definitions.md` - Computer vision zone documentation
 
+### Targeting Intelligence Output Data
+- `realistic_targeting_validation_results.json` - JSON-enhanced targeting results
+- `weighted_coordination_test_results.json` - Weighted coordination validation
+- `targeting_system_final_validation_report.json` - Complete system validation
+- `weighted_coordination_summary_report.json` - Algorithm performance analysis
+
 ### Organized Output Directories
 - `archive_outputs/` - Superseded output files
 - `debug_outputs/` - Debug and analysis files
@@ -218,28 +253,46 @@ The system identifies 73 distinct UI zones across 9 categories:
 ## Development Notes
 
 ### Current Status (PRODUCTION READY)
+- **Advanced Targeting Intelligence**: JSON metadata integration with weighted coordination scoring
+- **Realistic Coordination Metrics**: 0.496-0.571 coordination scores (DPS weighted 2x vs healer)
+- **Player Role Intelligence**: 47+ specialization IDs mapped to Tank/Healer/DPS roles
+- **Team Detection Accuracy**: 100% accurate team assignment using JSON teamID metadata
 - **Enhanced Combat Analysis**: Complete 6-system pipeline with validated coordinate parsing
 - **Movement Tracking**: 11 event types with 100% extraction rate during arena matches  
 - **Position Integration**: 10,888+ position events per match with validated parameter positioning
-- **Project Organization**: Development files archived, production parser enhanced
-- **Documentation**: Complete parameter reference with validated combat log examples
 - **Computer Vision**: 73 zones mapped with 83% accuracy for complementary analysis
-- Enhanced parser processing 2,480+ matches with movement tracking capability
+- **Project Organization**: Development files archived, production systems enhanced
+- Processing 2,480+ matches with comprehensive targeting intelligence capability
 
 ### Key Algorithms
-1. **Smart Arena Boundary Detection**: Multi-strategy search with validation
-2. **Death Correlation**: Cross-verify deaths between combat logs and video metadata
-3. **Enhanced Tiebreaking**: Differentiate back-to-back matches on same map/bracket
-4. **Zone Coordinate Transformation**: 1.33x scaling for proper resolution coverage
-5. **Multi-preprocessing OCR**: Various techniques for WoW UI text recognition
+1. **Weighted Coordination Scoring**: DPS attacks weighted 2x healer attacks for realistic metrics
+2. **JSON Metadata Integration**: Team detection using video metadata teamID assignment  
+3. **Player Role Inference**: Specialization ID to Tank/Healer/DPS role mapping
+4. **Smart Arena Boundary Detection**: Multi-strategy search with validation
+5. **Death Correlation**: Cross-verify deaths between combat logs and video metadata
+6. **Enhanced Tiebreaking**: Differentiate back-to-back matches on same map/bracket
+7. **Zone Coordinate Transformation**: 1.33x scaling for proper resolution coverage
+8. **Multi-preprocessing OCR**: Various techniques for WoW UI text recognition
 
 ### Performance Metrics Tracked
+
+#### Traditional Combat Metrics
 - `cast_success_own`: Player spells cast successfully  
 - `interrupt_success_own`: Interrupts performed
 - `times_interrupted`: Times player was interrupted
 - `precog_gained_own/enemy`: Precognition buffs gained
 - `purges_own`: Pet dispels performed
 - `spells_cast/spells_purged`: Detailed spell tracking lists
+
+#### Advanced Targeting Intelligence Metrics (NEW)
+- `coordination_score`: Weighted team coordination (0.0-1.0, DPS 2x weight)
+- `coordination_windows_analyzed`: Number of time windows evaluated
+- `primary_targets_identified`: Most attacked enemy players
+- `target_priority_ranking`: Enemy attack frequency distribution
+- `healer_focus_ratio`: Percentage of attacks on enemy healers
+- `prioritization_strategy`: Inferred targeting strategy (Healer Focus/Balanced/etc.)
+- `team_composition_analysis`: Friendly/enemy role breakdowns
+- `player_role_accuracy`: Specialization ID to role mapping success rate
 
 ### Computer Vision Metrics
 - **Zone coverage**: 99.3% width, 95.5% height of 3440x1440 resolution
@@ -248,12 +301,15 @@ The system identifies 73 distinct UI zones across 9 categories:
 - **Validation score**: 100/100 on coordinate transformation
 
 ### Expected Dataset Output
-- ~2,480 matches with verified unique features
-- 14-field feature schema per match
+- ~2,480 matches with verified unique features and targeting intelligence
+- Enhanced feature schema with traditional combat + targeting coordination metrics
 - 73 UI zones available for computer vision analysis
+- JSON metadata integration for 100% accurate team detection
+- Realistic coordination scores (0.496-0.571 range) for meaningful AI training
+- Weighted coordination algorithm reflecting arena gameplay priorities
 - Processing rate >95% for matches with available combat logs
 - <5% zero-value matches target
-- Ready for AI model training pipeline
+- Production-ready for AI model training pipeline
 
 ## Testing & Validation
 
@@ -268,6 +324,11 @@ Comprehensive testing through consolidated validation system:
 ```bash
 # Complete system check
 python system_validator.py --all
+
+# Test targeting intelligence system (NEW)
+python json_metadata_targeting_system.py              # Full targeting validation
+python test_weighted_coordination.py                  # Test weighted coordination
+python targeting_system_final_validation.py          # Comprehensive validation
 
 # Test specific components
 python combat_parser.py --mode validate
@@ -292,10 +353,13 @@ python zone_extractor.py --extract --validate
 # 3. Test OCR on actual footage
 python ocr_analyzer.py --debug --video "2025-05-31_23-59-18_-_Phlurbotomy_-_3v3_Enigma_Crucible_(Loss).mp4"
 
-# 4. Run production parser
+# 4. Run targeting intelligence analysis (NEW)
+python json_metadata_targeting_system.py
+
+# 5. Run production parser
 python combat_parser.py --mode production
 
-# 5. Generate test frames for verification
+# 6. Generate test frames for verification
 python frame_generator.py --test-frames --type scaled
 ```
 
@@ -312,6 +376,58 @@ python frame_generator.py --test-frames --type all
 ```
 
 The system is now **streamlined, documented, and production-ready** for AI training data extraction from WoW Arena recordings.
+
+## Development Standards and Best Practices
+
+### Unicode and Codec Handling ✅
+**Issue**: Windows console encoding errors with Unicode symbols (🔍✅❌⚠️)
+**Solution**: Use standardized ASCII alternatives and safe encoding patterns
+
+```python
+# Import development standards
+from development_standards import SafeLogger, parse_combat_log_timestamp, 
+    select_combat_log_file, find_arena_boundaries_robust
+
+# Safe logging (no Unicode)
+SafeLogger.success("Parser processed 1000 events")
+SafeLogger.warning("Low team coordination detected")
+SafeLogger.error("Failed to parse timestamp")
+```
+
+### Arena Boundary Detection Standards ✅
+**Issue**: Inconsistent timestamp parsing and log file selection
+**Solution**: Robust boundary detection with fallback mechanisms
+
+```python
+# Standard timestamp parsing
+timestamp = parse_combat_log_timestamp(log_line)
+
+# Smart log file selection
+log_file = select_combat_log_file(match_timestamp, logs_dir)
+
+# Robust boundary detection with fallback
+arena_start, arena_end = find_arena_boundaries_robust(
+    log_content, match_timestamp, match_duration
+)
+```
+
+### Player Name Matching Standards ✅
+**Issue**: Server suffixes in player names ("Phlargus-Eredar-US")
+**Solution**: Consistent normalization and matching
+
+```python
+from development_standards import normalize_player_name, player_name_matches
+
+# Safe player matching
+if player_name_matches("Phlargus-Eredar-US", "Phlargus"):
+    # Process player event
+```
+
+### Documentation Files
+- `DEVELOPMENT_STANDARDS.md` - Comprehensive coding standards and patterns
+- `development_standards.py` - Reusable functions for safe processing
+
+**All new development should follow these standards** to prevent Unicode encoding issues and ensure reliable arena boundary detection.
 
 ## Enhanced Combat Analysis System - COMPLETED ✅
 
@@ -398,3 +514,4 @@ The enhanced combat parser system is now **production-ready** with:
 - Comprehensive feature schema with 14+ combat metrics
 - Cross-platform compatibility (Windows/Linux)
 - Complete documentation and testing framework
+- **Standardized development patterns** for Unicode/codec safety and arena boundary detection

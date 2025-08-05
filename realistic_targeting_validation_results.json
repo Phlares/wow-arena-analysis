@@ -1,0 +1,176 @@
+{
+  "test_summary": {
+    "total_matches": 6,
+    "successful_matches": 5,
+    "failed_matches": 1,
+    "json_metadata_integration": true,
+    "realistic_scoring_enabled": true,
+    "test_timestamp": "2025-08-05T16:53:52.992246"
+  },
+  "detailed_results": [
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-11-04_-_Phlargus_-_3v3_Ruins_of_Lordaeron_(Win).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Phlargus(Ranged DPS)",
+          "Consolidate(Melee DPS)",
+          "Melonha(Healer)"
+        ],
+        "enemy_roles": [
+          "Easyxoxo(Unknown)",
+          "Tangatalagas(Healer)",
+          "Shamlockese(Ranged DPS)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.41975308641975306,
+        "windows_analyzed": 27,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    },
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-17-31_-_Phlargus_-_3v3_Ashamane's_Fall_(Loss).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Consolidate(Melee DPS)",
+          "Melonha(Healer)",
+          "Phlargus(Ranged DPS)"
+        ],
+        "enemy_roles": [
+          "Apehandler(Healer)",
+          "Angelawhite(Melee DPS)",
+          "Zlr(Melee DPS)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.4603174603174603,
+        "windows_analyzed": 21,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    },
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-21-13_-_Phlargus_-_3v3_Cage_of_Carnage_(Win).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Melonha(Healer)",
+          "Consolidate(Melee DPS)",
+          "Phlargus(Ranged DPS)"
+        ],
+        "enemy_roles": [
+          "Papaboog(Ranged DPS)",
+          "Brûnarr(Melee DPS)",
+          "Yssupymkcil(Healer)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.5,
+        "windows_analyzed": 14,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    },
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-26-04_-_Phlargus_-_3v3_Tiger's_Peak_(Win).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Consolidate(Melee DPS)",
+          "Phlargus(Ranged DPS)",
+          "Melonha(Healer)"
+        ],
+        "enemy_roles": [
+          "Dracarix(Ranged DPS)",
+          "Razzataz(Melee DPS)",
+          "Twentea(Healer)"
+        ]
+      },
+      "events_processed": 1780,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.5,
+        "windows_analyzed": 18,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    },
+    {
+      "success": false,
+      "error": "Too few events (0)"
+    },
+    {
+      "success": true,
+      "match_filename": "2025-05-10_12-55-04_-_Sluglishp_-_Solo_Shuffle_Cage_of_Carnage_(1-5).mp4",
+      "player_name": "Sluglishp",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Micronyx(Melee DPS)",
+          "Sluglishp(Healer)",
+          "Redoubt(Melee DPS)"
+        ],
+        "enemy_roles": [
+          "Feng(Unknown)",
+          "Rzialggx(Healer)",
+          "Ashraf(Melee DPS)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.3333333333333333,
+        "windows_analyzed": 8,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "test_summary": {
+    "algorithm": "weighted_coordination_scoring",
+    "dps_weight": 2.0,
+    "healer_weight": 1.0,
+    "total_matches": 3,
+    "successful_analyses": 3,
+    "test_timestamp": "2025-08-05T17:10:44.963427"
+  },
+  "coordination_scores": [
+    0.4962962962962963,
+    0.5523809523809524,
+    0.5714285714285714
+  ],
+  "detailed_results": [
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-11-04_-_Phlargus_-_3v3_Ruins_of_Lordaeron_(Win).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Phlargus(Ranged DPS)",
+          "Consolidate(Melee DPS)",
+          "Melonha(Healer)"
+        ],
+        "enemy_roles": [
+          "Easyxoxo(Unknown)",
+          "Tangatalagas(Healer)",
+          "Shamlockese(Ranged DPS)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.4962962962962963,
+        "windows_analyzed": 27,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    },
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-17-31_-_Phlargus_-_3v3_Ashamane's_Fall_(Loss).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Consolidate(Melee DPS)",
+          "Melonha(Healer)",
+          "Phlargus(Ranged DPS)"
+        ],
+        "enemy_roles": [
+          "Apehandler(Healer)",
+          "Angelawhite(Melee DPS)",
+          "Zlr(Melee DPS)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.5523809523809524,
+        "windows_analyzed": 21,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    },
+    {
+      "success": true,
+      "match_filename": "2025-05-06_22-21-13_-_Phlargus_-_3v3_Cage_of_Carnage_(Win).mp4",
+      "player_name": "Phlargus",
+      "json_metadata_used": true,
+      "team_composition": {
+        "friendly": 3,
+        "enemy": 3,
+        "friendly_roles": [
+          "Melonha(Healer)",
+          "Consolidate(Melee DPS)",
+          "Phlargus(Ranged DPS)"
+        ],
+        "enemy_roles": [
+          "Papaboog(Ranged DPS)",
+          "Brûnarr(Melee DPS)",
+          "Yssupymkcil(Healer)"
+        ]
+      },
+      "events_processed": 2000,
+      "coordination_analysis": {
+        "available": true,
+        "score": 0.5714285714285714,
+        "windows_analyzed": 14,
+        "details": []
+      },
+      "prioritization_analysis": {
+        "available": false,
+        "primary_targets": [],
+        "switch_count": 0
+      }
+    }
+  ]
+}
